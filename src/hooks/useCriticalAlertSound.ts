@@ -23,7 +23,7 @@ export function useCriticalAlertSound(isCritical: boolean) {
     return audioContextRef.current;
   }, []);
 
-  // Play industrial alarm sound
+  // Play industrial siren sound - rising/falling frequency sweep
   const playAlarm = useCallback(() => {
     if (isMuted || isPlayingRef.current) return;
     
@@ -36,31 +36,45 @@ export function useCriticalAlertSound(isCritical: boolean) {
       isPlayingRef.current = true;
       setIsPlaying(true);
 
-      // Create oscillator for alarm tone
+      // Create oscillator for siren tone
       const oscillator = ctx.createOscillator();
       const gainNode = ctx.createGain();
       
-      oscillator.connect(gainNode);
+      // Add slight distortion for more industrial feel
+      const distortion = ctx.createWaveShaper();
+      distortion.curve = makeDistortionCurve(20);
+      
+      oscillator.connect(distortion);
+      distortion.connect(gainNode);
       gainNode.connect(ctx.destination);
 
-      // Industrial alarm pattern: alternating frequencies
-      oscillator.type = "square";
-      oscillator.frequency.setValueAtTime(800, ctx.currentTime);
+      // Siren uses sawtooth wave for harsh industrial sound
+      oscillator.type = "sawtooth";
       
-      // Create pulsing effect
-      gainNode.gain.setValueAtTime(0, ctx.currentTime);
+      const duration = 3; // 3 second siren burst
+      const sirenCycles = 3; // Number of up/down cycles
+      const cycleTime = duration / sirenCycles;
       
-      const duration = 2; // 2 second alarm burst
-      const pulseRate = 0.15; // 150ms per pulse
+      // Low and high frequencies for siren sweep
+      const lowFreq = 400;
+      const highFreq = 900;
       
-      for (let i = 0; i < duration / pulseRate; i++) {
-        const time = ctx.currentTime + i * pulseRate;
-        // Alternate between two frequencies for siren effect
-        oscillator.frequency.setValueAtTime(i % 2 === 0 ? 800 : 600, time);
-        // Pulse the volume
-        gainNode.gain.setValueAtTime(0.3, time);
-        gainNode.gain.setValueAtTime(0.1, time + pulseRate * 0.5);
+      // Create smooth siren sweep
+      oscillator.frequency.setValueAtTime(lowFreq, ctx.currentTime);
+      
+      for (let i = 0; i < sirenCycles; i++) {
+        const cycleStart = ctx.currentTime + i * cycleTime;
+        // Rise
+        oscillator.frequency.linearRampToValueAtTime(highFreq, cycleStart + cycleTime * 0.5);
+        // Fall
+        oscillator.frequency.linearRampToValueAtTime(lowFreq, cycleStart + cycleTime);
       }
+      
+      // Volume envelope - slight fade in/out
+      gainNode.gain.setValueAtTime(0, ctx.currentTime);
+      gainNode.gain.linearRampToValueAtTime(0.25, ctx.currentTime + 0.05);
+      gainNode.gain.setValueAtTime(0.25, ctx.currentTime + duration - 0.1);
+      gainNode.gain.linearRampToValueAtTime(0, ctx.currentTime + duration);
 
       oscillator.start(ctx.currentTime);
       oscillator.stop(ctx.currentTime + duration);
@@ -80,6 +94,18 @@ export function useCriticalAlertSound(isCritical: boolean) {
       setIsPlaying(false);
     }
   }, [isMuted, initAudio]);
+  
+  // Create distortion curve for industrial harshness
+  function makeDistortionCurve(amount: number): Float32Array {
+    const samples = 44100;
+    const curve = new Float32Array(samples);
+    const deg = Math.PI / 180;
+    for (let i = 0; i < samples; i++) {
+      const x = (i * 2) / samples - 1;
+      curve[i] = ((3 + amount) * x * 20 * deg) / (Math.PI + amount * Math.abs(x));
+    }
+    return curve;
+  }
 
   // Stop the alarm
   const stopAlarm = useCallback(() => {
