@@ -7,8 +7,8 @@ import { OilDerrickIcon } from "@/components/icons/PlatformIcon";
 import { NavLinks } from "@/components/NavLinks";
 
 export const metadata: Metadata = {
-  title: "Industrial AI Copilot",
-  description: "Proactive AI Copilot for Industrial Operations",
+  title: "Industrial Copilot - AI-Powered Equipment Monitoring",
+  description: "Real-time monitoring and alert management for industrial equipment with anomaly detection",
 };
 
 function Nav() {
