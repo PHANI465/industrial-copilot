@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
-import { Gauge, Sliders, ClipboardList, FileText } from "lucide-react";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { OilDerrickIcon } from "@/components/icons/PlatformIcon";
+import { NavLinks } from "@/components/NavLinks";
 
 export const metadata: Metadata = {
   title: "Industrial AI Copilot",
@@ -34,38 +34,9 @@ function Nav() {
             </span>
           </div>
         </Link>
-        <div className="flex items-center gap-2">
-          <nav className="flex items-center gap-1">
-            <Link
-              href="/dashboard"
-              className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-accent/80 transition-all border border-transparent hover:border-border"
-            >
-              <Gauge className="h-4 w-4" />
-              <span className="hidden sm:inline">Dashboard</span>
-            </Link>
-            <Link
-              href="/simulator"
-              className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-accent/80 transition-all border border-transparent hover:border-border"
-            >
-              <Sliders className="h-4 w-4" />
-              <span className="hidden sm:inline">Simulator</span>
-            </Link>
-            <Link
-              href="/history"
-              className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-accent/80 transition-all border border-transparent hover:border-border"
-            >
-              <ClipboardList className="h-4 w-4" />
-              <span className="hidden sm:inline">History</span>
-            </Link>
-            <Link
-              href="/about"
-              className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-accent/80 transition-all border border-transparent hover:border-border"
-            >
-              <FileText className="h-4 w-4" />
-              <span className="hidden sm:inline">About</span>
-            </Link>
-          </nav>
-          <div className="w-px h-6 bg-border mx-1" />
+        <div className="flex items-center gap-3">
+          <NavLinks />
+          <div className="w-px h-8 bg-border" />
           <ThemeToggle />
         </div>
       </div>
