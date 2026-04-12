@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Wrench, AlertTriangle, Clock, ChevronDown, ChevronUp,
-  Filter, Calendar, Zap, Download,
+  Filter, Calendar, Zap, Download, ClipboardList, FileWarning,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -112,54 +112,79 @@ export default function HistoryPage() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold tracking-tight">Operations History</h1>
-        <p className="text-sm text-muted-foreground">
-          Maintenance work orders and historical failure events
-        </p>
-        <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted-foreground">
-          <span className="font-medium text-foreground">More exports:</span>
-          <a href="/api/export?type=assets" className="inline-flex items-center gap-1 hover:text-cyan-400">
-            <Download className="h-3 w-3" /> Assets
-          </a>
-          <a href="/api/export?type=sensors" className="inline-flex items-center gap-1 hover:text-cyan-400">
-            <Download className="h-3 w-3" /> All sensors
-          </a>
-          {timeseriesTags.map((t) => (
-            <a
-              key={t}
-              href={`/api/export?type=timeseries&tag=${encodeURIComponent(t)}`}
-              className="inline-flex items-center gap-1 hover:text-cyan-400"
-            >
-              <Download className="h-3 w-3" /> TS {t}
+      {/* Hero Header */}
+      <div className="relative -mx-4 sm:-mx-6 -mt-6 px-4 sm:px-6 pt-6 pb-8 mb-2 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: "url('/images/maintenance-worker.jpg')" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/80 to-background" />
+        <div className="relative">
+          <div className="flex items-center gap-2 mb-2">
+            <div className="p-2 rounded-lg bg-primary/10 border border-primary/20">
+              <ClipboardList className="h-5 w-5 text-primary" />
+            </div>
+            <span className="text-xs font-mono text-primary tracking-wider">MAINTENANCE RECORDS</span>
+          </div>
+          <h1 className="text-3xl font-bold tracking-tight">Operations History</h1>
+          <p className="text-sm text-muted-foreground mt-1 max-w-xl">
+            Browse maintenance work orders, historical failure events, and export data for analysis
+          </p>
+          
+          <div className="mt-4 flex flex-wrap items-center gap-2">
+            <span className="text-xs text-muted-foreground">Export:</span>
+            <a href="/api/export?type=assets" className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg bg-card border border-border hover:border-primary/30 hover:text-primary transition-all">
+              <Download className="h-3 w-3" /> Assets
             </a>
-          ))}
+            <a href="/api/export?type=sensors" className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg bg-card border border-border hover:border-primary/30 hover:text-primary transition-all">
+              <Download className="h-3 w-3" /> Sensors
+            </a>
+            {timeseriesTags.map((t) => (
+              <a
+                key={t}
+                href={`/api/export?type=timeseries&tag=${encodeURIComponent(t)}`}
+                className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg bg-card border border-border hover:border-primary/30 hover:text-primary transition-all"
+              >
+                <Download className="h-3 w-3" /> {t}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
 
       {/* Tab selector */}
-      <div className="flex gap-2">
+      <div className="flex gap-3 p-1 bg-muted/50 rounded-xl w-fit">
         <button
           onClick={() => setTab("maintenance")}
-          className={`flex items-center gap-1.5 px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+          className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium transition-all ${
             tab === "maintenance"
-              ? "bg-primary text-primary-foreground"
-              : "bg-card border border-border text-muted-foreground hover:bg-accent"
+              ? "bg-card text-foreground shadow-sm border border-border"
+              : "text-muted-foreground hover:text-foreground"
           }`}
         >
-          <Wrench className="h-4 w-4" />
-          Maintenance ({workOrders.length})
+          <Wrench className={`h-4 w-4 ${tab === "maintenance" ? "text-primary" : ""}`} />
+          Maintenance
+          <span className={`text-xs px-2 py-0.5 rounded-full ${
+            tab === "maintenance" 
+              ? "bg-primary/10 text-primary" 
+              : "bg-muted text-muted-foreground"
+          }`}>{workOrders.length}</span>
         </button>
         <button
           onClick={() => setTab("failures")}
-          className={`flex items-center gap-1.5 px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+          className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium transition-all ${
             tab === "failures"
-              ? "bg-primary text-primary-foreground"
-              : "bg-card border border-border text-muted-foreground hover:bg-accent"
+              ? "bg-card text-foreground shadow-sm border border-border"
+              : "text-muted-foreground hover:text-foreground"
           }`}
         >
-          <AlertTriangle className="h-4 w-4" />
-          Failure Events ({failures.length})
+          <FileWarning className={`h-4 w-4 ${tab === "failures" ? "text-red-400" : ""}`} />
+          Failure Events
+          <span className={`text-xs px-2 py-0.5 rounded-full ${
+            tab === "failures" 
+              ? "bg-red-500/10 text-red-400" 
+              : "bg-muted text-muted-foreground"
+          }`}>{failures.length}</span>
         </button>
       </div>
 
