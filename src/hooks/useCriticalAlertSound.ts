@@ -25,7 +25,7 @@ export function useCriticalAlertSound(isCritical: boolean) {
     return audioContextRef.current;
   }, []);
 
-  // Play industrial siren sound - rising/falling frequency sweep
+  // Play factory lockdown siren - classic two-tone wailing siren
   const playAlarm = useCallback(() => {
     if (!isEnabled || isPlayingRef.current) return;
     
@@ -38,53 +38,98 @@ export function useCriticalAlertSound(isCritical: boolean) {
       isPlayingRef.current = true;
       setIsPlaying(true);
 
-      // Create oscillator for siren tone
-      const oscillator = ctx.createOscillator();
-      const gainNode = ctx.createGain();
+      const duration = 4; // 4 second siren burst
       
-      // Add slight distortion for more industrial feel
-      const distortion = ctx.createWaveShaper();
-      distortion.curve = makeDistortionCurve(20);
+      // Create master gain for overall volume control
+      const masterGain = ctx.createGain();
+      masterGain.connect(ctx.destination);
+      masterGain.gain.setValueAtTime(0.35, ctx.currentTime);
       
-      oscillator.connect(distortion);
-      distortion.connect(gainNode);
-      gainNode.connect(ctx.destination);
-
-      // Siren uses sawtooth wave for harsh industrial sound
-      oscillator.type = "sawtooth";
+      // Primary siren oscillator - the main wailing tone
+      const primaryOsc = ctx.createOscillator();
+      const primaryGain = ctx.createGain();
+      primaryOsc.type = "sawtooth"; // Harsh industrial tone
+      primaryOsc.connect(primaryGain);
+      primaryGain.connect(masterGain);
+      primaryGain.gain.setValueAtTime(0.6, ctx.currentTime);
       
-      const duration = 3; // 3 second siren burst
-      const sirenCycles = 3; // Number of up/down cycles
-      const cycleTime = duration / sirenCycles;
+      // Secondary oscillator for thickness (slightly detuned)
+      const secondaryOsc = ctx.createOscillator();
+      const secondaryGain = ctx.createGain();
+      secondaryOsc.type = "square"; // Adds body
+      secondaryOsc.connect(secondaryGain);
+      secondaryGain.connect(masterGain);
+      secondaryGain.gain.setValueAtTime(0.25, ctx.currentTime);
       
-      // Low and high frequencies for siren sweep
-      const lowFreq = 400;
-      const highFreq = 900;
+      // Sub-bass for that chest-thumping factory feel
+      const subOsc = ctx.createOscillator();
+      const subGain = ctx.createGain();
+      subOsc.type = "sine";
+      subOsc.connect(subGain);
+      subGain.connect(masterGain);
+      subGain.gain.setValueAtTime(0.15, ctx.currentTime);
       
-      // Create smooth siren sweep
-      oscillator.frequency.setValueAtTime(lowFreq, ctx.currentTime);
+      // Factory lockdown siren: slow rise, hold, slow fall pattern
+      // Classic "WHOOP-WHOOP" two-tone alternating pattern
+      const lowFreq = 380;  // Low tone
+      const highFreq = 620; // High tone
+      const cycleTime = 0.8; // Time for each whoop
+      const cycles = Math.floor(duration / cycleTime);
       
-      for (let i = 0; i < sirenCycles; i++) {
+      // Start frequencies
+      primaryOsc.frequency.setValueAtTime(lowFreq, ctx.currentTime);
+      secondaryOsc.frequency.setValueAtTime(lowFreq * 0.5, ctx.currentTime);
+      subOsc.frequency.setValueAtTime(lowFreq * 0.25, ctx.currentTime);
+      
+      // Create the alternating WHOOP pattern
+      for (let i = 0; i < cycles; i++) {
         const cycleStart = ctx.currentTime + i * cycleTime;
-        // Rise
-        oscillator.frequency.linearRampToValueAtTime(highFreq, cycleStart + cycleTime * 0.5);
-        // Fall
-        oscillator.frequency.linearRampToValueAtTime(lowFreq, cycleStart + cycleTime);
+        const isHigh = i % 2 === 0;
+        const targetFreq = isHigh ? highFreq : lowFreq;
+        const riseTime = cycleTime * 0.3;  // Quick rise
+        const holdTime = cycleTime * 0.5;  // Hold the tone
+        const fallTime = cycleTime * 0.2;  // Quick fall to next
+        
+        // Primary siren sweep
+        primaryOsc.frequency.linearRampToValueAtTime(targetFreq, cycleStart + riseTime);
+        primaryOsc.frequency.setValueAtTime(targetFreq, cycleStart + riseTime + holdTime);
+        primaryOsc.frequency.linearRampToValueAtTime(
+          isHigh ? lowFreq : highFreq, 
+          cycleStart + cycleTime
+        );
+        
+        // Secondary follows but slightly lower
+        secondaryOsc.frequency.linearRampToValueAtTime(targetFreq * 0.5, cycleStart + riseTime);
+        secondaryOsc.frequency.setValueAtTime(targetFreq * 0.5, cycleStart + riseTime + holdTime);
+        
+        // Sub follows the fundamental
+        subOsc.frequency.linearRampToValueAtTime(targetFreq * 0.25, cycleStart + riseTime);
+        
+        // Pulse the volume slightly on each cycle for urgency
+        primaryGain.gain.setValueAtTime(0.5, cycleStart);
+        primaryGain.gain.linearRampToValueAtTime(0.7, cycleStart + riseTime);
+        primaryGain.gain.linearRampToValueAtTime(0.5, cycleStart + cycleTime);
       }
       
-      // Volume envelope - slight fade in/out
-      gainNode.gain.setValueAtTime(0, ctx.currentTime);
-      gainNode.gain.linearRampToValueAtTime(0.25, ctx.currentTime + 0.05);
-      gainNode.gain.setValueAtTime(0.25, ctx.currentTime + duration - 0.1);
-      gainNode.gain.linearRampToValueAtTime(0, ctx.currentTime + duration);
+      // Master volume envelope - fade in and out
+      masterGain.gain.setValueAtTime(0, ctx.currentTime);
+      masterGain.gain.linearRampToValueAtTime(0.35, ctx.currentTime + 0.1);
+      masterGain.gain.setValueAtTime(0.35, ctx.currentTime + duration - 0.2);
+      masterGain.gain.linearRampToValueAtTime(0, ctx.currentTime + duration);
 
-      oscillator.start(ctx.currentTime);
-      oscillator.stop(ctx.currentTime + duration);
+      // Start all oscillators
+      primaryOsc.start(ctx.currentTime);
+      secondaryOsc.start(ctx.currentTime);
+      subOsc.start(ctx.currentTime);
+      
+      primaryOsc.stop(ctx.currentTime + duration);
+      secondaryOsc.stop(ctx.currentTime + duration);
+      subOsc.stop(ctx.currentTime + duration);
 
-      oscillatorRef.current = oscillator;
-      gainNodeRef.current = gainNode;
+      oscillatorRef.current = primaryOsc;
+      gainNodeRef.current = masterGain;
 
-      oscillator.onended = () => {
+      primaryOsc.onended = () => {
         isPlayingRef.current = false;
         setIsPlaying(false);
         oscillatorRef.current = null;
@@ -96,18 +141,6 @@ export function useCriticalAlertSound(isCritical: boolean) {
       setIsPlaying(false);
     }
   }, [isEnabled, initAudio]);
-  
-  // Create distortion curve for industrial harshness
-  function makeDistortionCurve(amount: number): Float32Array {
-    const samples = 44100;
-    const curve = new Float32Array(samples);
-    const deg = Math.PI / 180;
-    for (let i = 0; i < samples; i++) {
-      const x = (i * 2) / samples - 1;
-      curve[i] = ((3 + amount) * x * 20 * deg) / (Math.PI + amount * Math.abs(x));
-    }
-    return curve;
-  }
 
   // Stop the alarm
   const stopAlarm = useCallback(() => {

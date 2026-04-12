@@ -329,6 +329,7 @@ export default function HistoryPage() {
           description: alert.reason,
           dueDate: data.dueDate,
           notes: data.notes,
+          sensorType: alert.sensorType,
         }),
       });
       
