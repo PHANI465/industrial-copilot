@@ -13,19 +13,22 @@ export const metadata: Metadata = {
 function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-md">
+      {/* Industrial stripe accent */}
+      <div className="h-0.5 warning-stripes-subtle" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         <Link href="/dashboard" className="flex items-center gap-3 group">
           <div className="relative">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center shadow-lg shadow-amber-500/20 group-hover:shadow-amber-500/30 transition-shadow">
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center shadow-lg shadow-amber-500/20 group-hover:shadow-amber-500/30 transition-shadow border border-amber-400/30">
               <Flame className="h-5 w-5 text-white" />
             </div>
-            <div className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-emerald-500 rounded-full border-2 border-background animate-pulse" />
+            {/* LED indicator */}
+            <div className="absolute -top-1 -right-1 led led-green" />
           </div>
           <div className="flex flex-col">
             <span className="font-bold text-sm tracking-tight text-foreground">
               Industrial AI Copilot
             </span>
-            <span className="text-[10px] text-muted-foreground font-mono tracking-wider">
+            <span className="tech-label text-muted-foreground">
               NORTH SEA PLATFORM ALPHA
             </span>
           </div>

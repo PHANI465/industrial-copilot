@@ -81,31 +81,47 @@ export function SystemCard({
     ADVISORY: "shadow-blue-500/10 border-blue-500/25",
     NORMAL: "border-border",
   }[status] || "border-border";
+  
+  const ledClass = {
+    CRITICAL: "led-red",
+    WARNING: "led-amber",
+    ADVISORY: "led-blue",
+    NORMAL: "led-green",
+  }[status] || "led-off";
 
   return (
     <Card
-      className={`cursor-pointer transition-all duration-200 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 ${statusGlow} ${
+      className={`cursor-pointer transition-all duration-200 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 overflow-hidden ${statusGlow} ${
         selected ? "border-primary ring-2 ring-primary/20 shadow-lg shadow-primary/10" : ""
       }`}
       onClick={onClick}
     >
+      {/* Warning stripe for critical/warning */}
+      {(status === "CRITICAL" || status === "WARNING") && (
+        <div className={`h-1 ${status === "CRITICAL" ? "bg-red-500" : "warning-stripes"}`} />
+      )}
+      
       <CardHeader className="pb-2">
         <div className="flex items-center justify-between gap-2">
           <div className="flex items-center gap-2.5 min-w-0">
-            <div className={`p-1.5 rounded-md ${
-              status === "CRITICAL" ? "bg-red-500/15" :
-              status === "WARNING" ? "bg-amber-500/15" :
-              status === "ADVISORY" ? "bg-blue-500/15" :
-              "bg-muted"
-            }`}>
-              {createElement(resolveIconForAsset(assetInfo?.type, assetInfo?.subtype), {
-                className: `h-4 w-4 ${
-                  status === "CRITICAL" ? "text-red-400" :
-                  status === "WARNING" ? "text-amber-400" :
-                  status === "ADVISORY" ? "text-blue-400" :
-                  "text-muted-foreground"
-                }`,
-              })}
+            {/* LED indicator */}
+            <div className="flex flex-col items-center gap-1">
+              <div className={`led ${ledClass}`} />
+              <div className={`p-1.5 rounded-md ${
+                status === "CRITICAL" ? "bg-red-500/15" :
+                status === "WARNING" ? "bg-amber-500/15" :
+                status === "ADVISORY" ? "bg-blue-500/15" :
+                "bg-muted"
+              }`}>
+                {createElement(resolveIconForAsset(assetInfo?.type, assetInfo?.subtype), {
+                  className: `h-4 w-4 ${
+                    status === "CRITICAL" ? "text-red-400" :
+                    status === "WARNING" ? "text-amber-400" :
+                    status === "ADVISORY" ? "text-blue-400" :
+                    "text-muted-foreground"
+                  }`,
+                })}
+              </div>
             </div>
             <div className="min-w-0">
               <CardTitle className="text-sm font-mono font-bold tracking-tight">{assetTag}</CardTitle>

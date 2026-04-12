@@ -11,9 +11,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { AnalysisResult, AnomalyResult, SimulateResponse } from "@/lib/types";
 import {
   Activity, Radio, Shield, MessageSquare, AlertTriangle,
-  ChevronDown, ChevronUp, X, Filter, Download, Search,
+  ChevronDown, ChevronUp, X, Filter, Download, Search, Gauge, Zap,
 } from "lucide-react";
 import { downloadCSV } from "@/lib/csv-export";
+import { StatusLED } from "@/components/IndustrialGauge";
 
 interface AssetEntry {
   tag: string;
@@ -445,54 +446,89 @@ export default function DashboardPage() {
         );
       })()}
 
-      {/* Summary stats */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <Card className="border-l-4 border-l-cyan-500 bg-gradient-to-r from-cyan-500/5 to-transparent">
+      {/* Summary stats - Industrial Panel Style */}
+      <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
+        <Card className="industrial-panel overflow-hidden">
+          <div className="h-1 bg-cyan-500" />
           <CardContent className="flex items-center gap-4 py-4">
-            <div className="p-3 rounded-lg bg-cyan-500/10">
-              <Radio className="h-5 w-5 text-cyan-400" />
+            <div className="flex flex-col items-center gap-1">
+              <StatusLED status="online" size="md" />
+              <div className="p-2 rounded-lg bg-cyan-500/10">
+                <Radio className="h-5 w-5 text-cyan-400" />
+              </div>
             </div>
             <div>
-              <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider">Systems Monitored</p>
-              <p className="text-2xl font-bold tabular-nums">{activeAssets.length}</p>
+              <p className="tech-label text-muted-foreground">Systems Online</p>
+              <p className="text-2xl font-bold tabular-nums font-mono">{activeAssets.length}</p>
             </div>
           </CardContent>
         </Card>
-        <Card className={`border-l-4 ${activeAlertCount > 0 ? "border-l-amber-500 bg-gradient-to-r from-amber-500/5 to-transparent" : "border-l-emerald-500 bg-gradient-to-r from-emerald-500/5 to-transparent"}`}>
+        
+        <Card className="industrial-panel overflow-hidden">
+          <div className={`h-1 ${activeAlertCount > 0 ? "warning-stripes" : "bg-emerald-500"}`} />
           <CardContent className="flex items-center gap-4 py-4">
-            <div className={`p-3 rounded-lg ${activeAlertCount > 0 ? "bg-amber-500/10" : "bg-emerald-500/10"}`}>
-              <Activity className={`h-5 w-5 ${activeAlertCount > 0 ? "text-amber-400" : "text-emerald-400"}`} />
+            <div className="flex flex-col items-center gap-1">
+              <StatusLED status={activeAlertCount > 0 ? "warning" : "online"} size="md" />
+              <div className={`p-2 rounded-lg ${activeAlertCount > 0 ? "bg-amber-500/10" : "bg-emerald-500/10"}`}>
+                <Activity className={`h-5 w-5 ${activeAlertCount > 0 ? "text-amber-400" : "text-emerald-400"}`} />
+              </div>
             </div>
             <div>
-              <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider">Active Alerts</p>
-              <p className="text-2xl font-bold tabular-nums">{activeAlertCount}</p>
+              <p className="tech-label text-muted-foreground">Active Alerts</p>
+              <p className={`text-2xl font-bold tabular-nums font-mono ${activeAlertCount > 0 ? "text-amber-400" : ""}`}>{activeAlertCount}</p>
             </div>
           </CardContent>
         </Card>
-        <Card className={`border-l-4 ${
-          worstStatus === "CRITICAL" ? "border-l-red-500 bg-gradient-to-r from-red-500/5 to-transparent" :
-          worstStatus === "WARNING" ? "border-l-amber-500 bg-gradient-to-r from-amber-500/5 to-transparent" :
-          "border-l-emerald-500 bg-gradient-to-r from-emerald-500/5 to-transparent"
-        }`}>
+        
+        <Card className="industrial-panel overflow-hidden">
+          <div className={`h-1 ${
+            worstStatus === "CRITICAL" ? "bg-red-500" :
+            worstStatus === "WARNING" ? "warning-stripes" :
+            "bg-emerald-500"
+          }`} />
           <CardContent className="flex items-center gap-4 py-4">
-            <div className={`p-3 rounded-lg ${
-              worstStatus === "CRITICAL" ? "bg-red-500/10" :
-              worstStatus === "WARNING" ? "bg-amber-500/10" :
-              "bg-emerald-500/10"
-            }`}>
-              <Shield className={`h-5 w-5 ${
-                worstStatus === "CRITICAL" ? "text-red-400" :
-                worstStatus === "WARNING" ? "text-amber-400" :
-                "text-emerald-400"
-              }`} />
+            <div className="flex flex-col items-center gap-1">
+              <StatusLED status={
+                worstStatus === "CRITICAL" ? "critical" :
+                worstStatus === "WARNING" ? "warning" : "online"
+              } size="md" />
+              <div className={`p-2 rounded-lg ${
+                worstStatus === "CRITICAL" ? "bg-red-500/10" :
+                worstStatus === "WARNING" ? "bg-amber-500/10" :
+                "bg-emerald-500/10"
+              }`}>
+                <Shield className={`h-5 w-5 ${
+                  worstStatus === "CRITICAL" ? "text-red-400" :
+                  worstStatus === "WARNING" ? "text-amber-400" :
+                  "text-emerald-400"
+                }`} />
+              </div>
             </div>
             <div>
-              <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider">System Status</p>
-              <p className={`text-2xl font-bold ${
+              <p className="tech-label text-muted-foreground">System Status</p>
+              <p className={`text-2xl font-bold font-mono ${
                 worstStatus === "CRITICAL" ? "text-red-400" :
                 worstStatus === "WARNING" ? "text-amber-400" :
                 "text-emerald-400"
               }`}>{worstStatus}</p>
+            </div>
+          </CardContent>
+        </Card>
+        
+        <Card className="industrial-panel overflow-hidden">
+          <div className="h-1 bg-primary" />
+          <CardContent className="flex items-center gap-4 py-4">
+            <div className="flex flex-col items-center gap-1">
+              <StatusLED status={running ? "online" : "offline"} size="md" />
+              <div className="p-2 rounded-lg bg-primary/10">
+                <Zap className="h-5 w-5 text-primary" />
+              </div>
+            </div>
+            <div>
+              <p className="tech-label text-muted-foreground">Data Feed</p>
+              <p className={`text-lg font-bold font-mono ${running ? "text-emerald-400" : "text-muted-foreground"}`}>
+                {running ? "STREAMING" : "PAUSED"}
+              </p>
             </div>
           </CardContent>
         </Card>

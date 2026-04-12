@@ -61,20 +61,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Bar */}
+      {/* Stats Bar - Industrial Panel Style */}
       <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {[
-          { label: "Equipment Monitored", value: "95+", icon: Gauge, color: "text-cyan-400" },
-          { label: "Active Sensors", value: "175", icon: Activity, color: "text-emerald-400" },
-          { label: "Historical Failures", value: "7", icon: AlertTriangle, color: "text-amber-400" },
-          { label: "Work Orders", value: "84", icon: Wrench, color: "text-primary" },
+          { label: "Equipment Online", value: "95+", icon: Gauge, color: "text-cyan-400", ledStatus: "online" as const },
+          { label: "Active Sensors", value: "175", icon: Activity, color: "text-emerald-400", ledStatus: "online" as const },
+          { label: "Historical Failures", value: "7", icon: AlertTriangle, color: "text-amber-400", ledStatus: "warning" as const },
+          { label: "Work Orders", value: "84", icon: Wrench, color: "text-primary", ledStatus: "online" as const },
         ].map((stat) => {
           const Icon = stat.icon;
           return (
-            <div key={stat.label} className="p-4 rounded-xl bg-card border border-border">
-              <Icon className={`h-5 w-5 ${stat.color} mb-2`} />
-              <p className="text-2xl font-bold tabular-nums">{stat.value}</p>
-              <p className="text-xs text-muted-foreground">{stat.label}</p>
+            <div key={stat.label} className="industrial-panel rounded-xl overflow-hidden">
+              <div className={`h-1 ${stat.ledStatus === "warning" ? "warning-stripes" : stat.color.includes("cyan") ? "bg-cyan-500" : stat.color.includes("emerald") ? "bg-emerald-500" : "bg-primary"}`} />
+              <div className="p-4">
+                <div className="flex items-center justify-between mb-2">
+                  <Icon className={`h-5 w-5 ${stat.color}`} />
+                  <div className={`led ${stat.ledStatus === "warning" ? "led-amber" : "led-green"}`} />
+                </div>
+                <p className="text-2xl font-bold tabular-nums font-mono">{stat.value}</p>
+                <p className="tech-label text-muted-foreground mt-1">{stat.label}</p>
+              </div>
             </div>
           );
         })}
@@ -177,23 +183,30 @@ export default function Home() {
             with calibrated thresholds and real-time analysis.
           </p>
           
-          <div className="space-y-3">
+          <div className="space-y-2">
             {[
-              { area: "HP Separation Train", count: "15 assets", status: "Active" },
-              { area: "LP Compression", count: "12 assets", status: "Active" },
-              { area: "Water Treatment", count: "18 assets", status: "Active" },
-              { area: "Utilities", count: "22 assets", status: "Active" },
-              { area: "Metering & Export", count: "14 assets", status: "Active" },
+              { area: "HP Separation Train", count: "15", status: "online" as const },
+              { area: "LP Compression", count: "12", status: "online" as const },
+              { area: "Water Treatment", count: "18", status: "online" as const },
+              { area: "Utilities", count: "22", status: "warning" as const },
+              { area: "Metering & Export", count: "14", status: "online" as const },
             ].map((area) => (
               <div 
                 key={area.area}
-                className="flex items-center justify-between p-3 rounded-lg bg-card border border-border"
+                className="industrial-panel flex items-center justify-between p-3 rounded-lg"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 rounded-full bg-emerald-500" />
+                  <div className={`led ${area.status === "warning" ? "led-amber" : "led-green"}`} />
                   <span className="font-medium text-sm">{area.area}</span>
                 </div>
-                <span className="text-xs text-muted-foreground font-mono">{area.count}</span>
+                <div className="flex items-center gap-3">
+                  <span className="tech-label text-muted-foreground">{area.count} ASSETS</span>
+                  <span className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded ${
+                    area.status === "warning" 
+                      ? "bg-amber-500/10 text-amber-400" 
+                      : "bg-emerald-500/10 text-emerald-400"
+                  }`}>{area.status}</span>
+                </div>
               </div>
             ))}
           </div>
