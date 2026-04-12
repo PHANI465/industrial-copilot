@@ -5,6 +5,7 @@ import { useEffect, useRef, useCallback, useState } from "react";
 /**
  * Generates an industrial alarm sound using Web Audio API
  * Plays when critical alert is detected, with option to mute
+ * NOTE: Sounds are OFF by default - user must enable them due to browser autoplay policy
  */
 export function useCriticalAlertSound(isCritical: boolean) {
   const audioContextRef = useRef<AudioContext | null>(null);
@@ -12,10 +13,11 @@ export function useCriticalAlertSound(isCritical: boolean) {
   const gainNodeRef = useRef<GainNode | null>(null);
   const isPlayingRef = useRef(false);
   const prevCriticalRef = useRef(false);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isEnabled, setIsEnabled] = useState(false); // Sounds OFF by default
   const [isPlaying, setIsPlaying] = useState(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
 
-  // Initialize audio context on first interaction
+  // Initialize audio context - requires user interaction first
   const initAudio = useCallback(() => {
     if (!audioContextRef.current) {
       audioContextRef.current = new (window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext)();
@@ -25,7 +27,7 @@ export function useCriticalAlertSound(isCritical: boolean) {
 
   // Play industrial siren sound - rising/falling frequency sweep
   const playAlarm = useCallback(() => {
-    if (isMuted || isPlayingRef.current) return;
+    if (!isEnabled || isPlayingRef.current) return;
     
     try {
       const ctx = initAudio();
@@ -93,7 +95,7 @@ export function useCriticalAlertSound(isCritical: boolean) {
       isPlayingRef.current = false;
       setIsPlaying(false);
     }
-  }, [isMuted, initAudio]);
+  }, [isEnabled, initAudio]);
   
   // Create distortion curve for industrial harshness
   function makeDistortionCurve(amount: number): Float32Array {
@@ -121,26 +123,58 @@ export function useCriticalAlertSound(isCritical: boolean) {
     setIsPlaying(false);
   }, []);
 
-  // Toggle mute
-  const toggleMute = useCallback(() => {
-    setIsMuted(prev => {
-      if (!prev) {
-        // If muting, stop current alarm
+  // Toggle sound enabled/disabled
+  const toggleSound = useCallback(() => {
+    setIsEnabled(prev => {
+      if (prev) {
+        // If disabling, stop current alarm
         stopAlarm();
+      } else {
+        // If enabling, initialize audio context (requires user click)
+        setHasInteracted(true);
+        initAudio();
       }
       return !prev;
     });
-  }, [stopAlarm]);
+  }, [stopAlarm, initAudio]);
+
+  // Test the siren sound
+  const testSound = useCallback(() => {
+    setHasInteracted(true);
+    const wasEnabled = isEnabled;
+    setIsEnabled(true);
+    
+    // Small delay to ensure state updates
+    setTimeout(() => {
+      const ctx = initAudio();
+      if (ctx.state === "suspended") {
+        ctx.resume().then(() => {
+          playAlarm();
+        });
+      } else {
+        playAlarm();
+      }
+      // Restore previous state after test
+      if (!wasEnabled) {
+        setTimeout(() => setIsEnabled(false), 3500);
+      }
+    }, 50);
+  }, [isEnabled, initAudio, playAlarm]);
 
   // Play alarm when entering critical state
   useEffect(() => {
     const justBecameCritical = isCritical && !prevCriticalRef.current;
     prevCriticalRef.current = isCritical;
 
-    if (justBecameCritical && !isMuted) {
-      playAlarm();
+    if (justBecameCritical && isEnabled && hasInteracted) {
+      const ctx = initAudio();
+      if (ctx.state === "suspended") {
+        ctx.resume().then(() => playAlarm());
+      } else {
+        playAlarm();
+      }
     }
-  }, [isCritical, isMuted, playAlarm]);
+  }, [isCritical, isEnabled, hasInteracted, playAlarm, initAudio]);
 
   // Cleanup on unmount
   useEffect(() => {
@@ -153,9 +187,10 @@ export function useCriticalAlertSound(isCritical: boolean) {
   }, [stopAlarm]);
 
   return {
-    isMuted,
+    isEnabled,
     isPlaying,
-    toggleMute,
+    toggleSound,
+    testSound,
     playAlarm,
     stopAlarm,
   };

@@ -86,7 +86,7 @@ export default function SimulatorPage() {
     [isCritical, result, asset]
   );
   useCriticalAlertNotify(isCritical, criticalTags, "simulator");
-  const { isMuted, isPlaying, toggleMute, stopAlarm } = useCriticalAlertSound(isCritical);
+  const { isEnabled, isPlaying, toggleSound, testSound, stopAlarm } = useCriticalAlertSound(isCritical);
   const currentAssetName =
     assetOptions.find((a) => a.tag === asset)?.name || asset;
 
@@ -116,9 +116,10 @@ export default function SimulatorPage() {
             </p>
           </div>
           <SoundControl 
-            isMuted={isMuted}
+            isEnabled={isEnabled}
             isPlaying={isPlaying}
-            onToggleMute={toggleMute}
+            onToggleSound={toggleSound}
+            onTestSound={testSound}
             onStopAlarm={stopAlarm}
           />
         </div>

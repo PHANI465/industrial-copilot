@@ -1,53 +1,67 @@
 "use client";
 
-import { Volume2, VolumeX, Bell, BellOff } from "lucide-react";
+import { Volume2, VolumeX, Bell, BellOff, Play } from "lucide-react";
 
 interface SoundControlProps {
-  isMuted: boolean;
+  isEnabled: boolean;
   isPlaying: boolean;
-  onToggleMute: () => void;
+  onToggleSound: () => void;
+  onTestSound: () => void;
   onStopAlarm: () => void;
 }
 
 export function SoundControl({ 
-  isMuted, 
+  isEnabled, 
   isPlaying, 
-  onToggleMute,
+  onToggleSound,
+  onTestSound,
   onStopAlarm 
 }: SoundControlProps) {
   return (
-    <div className="flex items-center gap-1">
+    <div className="flex items-center gap-1.5">
       {/* Stop alarm button - only visible when playing */}
       {isPlaying && (
         <button
           onClick={onStopAlarm}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-red-500/20 text-red-400 border border-red-500/30 hover:bg-red-500/30 transition-all animate-pulse"
+          className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium bg-red-500/20 text-red-400 border border-red-500/30 hover:bg-red-500/30 transition-all animate-pulse"
           title="Stop alarm"
         >
-          <Bell className="h-3.5 w-3.5" />
-          <span className="hidden sm:inline">Stop Alarm</span>
+          <BellOff className="h-3.5 w-3.5" />
+          <span className="hidden sm:inline">Stop</span>
         </button>
       )}
       
-      {/* Mute toggle */}
+      {/* Test sound button */}
+      {!isPlaying && (
+        <button
+          onClick={onTestSound}
+          className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium bg-muted/50 text-muted-foreground border border-border hover:bg-accent hover:text-foreground transition-all"
+          title="Test siren sound"
+        >
+          <Play className="h-3.5 w-3.5" />
+          <span className="hidden sm:inline">Test</span>
+        </button>
+      )}
+      
+      {/* Enable/disable toggle */}
       <button
-        onClick={onToggleMute}
-        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border transition-all ${
-          isMuted
-            ? "bg-muted text-muted-foreground border-border hover:bg-accent"
-            : "bg-emerald-500/10 text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/20"
+        onClick={onToggleSound}
+        className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium border transition-all ${
+          isEnabled
+            ? "bg-emerald-500/15 text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/25"
+            : "bg-muted/50 text-muted-foreground border-border hover:bg-accent"
         }`}
-        title={isMuted ? "Unmute alerts" : "Mute alerts"}
+        title={isEnabled ? "Disable alert sounds" : "Enable alert sounds"}
       >
-        {isMuted ? (
-          <>
-            <VolumeX className="h-3.5 w-3.5" />
-            <span className="hidden sm:inline">Muted</span>
-          </>
-        ) : (
+        {isEnabled ? (
           <>
             <Volume2 className="h-3.5 w-3.5" />
             <span className="hidden sm:inline">Sound On</span>
+          </>
+        ) : (
+          <>
+            <VolumeX className="h-3.5 w-3.5" />
+            <span className="hidden sm:inline">Sound Off</span>
           </>
         )}
       </button>
@@ -57,9 +71,10 @@ export function SoundControl({
 
 // Compact version for header
 export function SoundControlCompact({ 
-  isMuted, 
+  isEnabled, 
   isPlaying, 
-  onToggleMute,
+  onToggleSound,
+  onTestSound,
   onStopAlarm 
 }: SoundControlProps) {
   return (
@@ -74,19 +89,29 @@ export function SoundControlCompact({
         </button>
       )}
       
+      {!isPlaying && (
+        <button
+          onClick={onTestSound}
+          className="p-2 rounded-lg bg-muted/50 text-muted-foreground border border-border hover:bg-accent transition-all"
+          title="Test siren sound"
+        >
+          <Play className="h-4 w-4" />
+        </button>
+      )}
+      
       <button
-        onClick={onToggleMute}
+        onClick={onToggleSound}
         className={`p-2 rounded-lg border transition-all ${
-          isMuted
-            ? "bg-muted/50 text-muted-foreground border-border hover:bg-accent"
-            : "bg-emerald-500/10 text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/20"
+          isEnabled
+            ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/20"
+            : "bg-muted/50 text-muted-foreground border-border hover:bg-accent"
         }`}
-        title={isMuted ? "Unmute critical alerts" : "Mute critical alerts"}
+        title={isEnabled ? "Disable critical alert sounds" : "Enable critical alert sounds"}
       >
-        {isMuted ? (
-          <VolumeX className="h-4 w-4" />
-        ) : (
+        {isEnabled ? (
           <Volume2 className="h-4 w-4" />
+        ) : (
+          <VolumeX className="h-4 w-4" />
         )}
       </button>
     </div>

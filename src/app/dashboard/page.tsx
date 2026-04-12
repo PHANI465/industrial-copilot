@@ -232,7 +232,7 @@ export default function DashboardPage() {
   useCriticalAlertNotify(isCritical, criticalAssets, "dashboard");
   
   // Sound alert for critical conditions
-  const { isMuted, isPlaying, toggleMute, stopAlarm } = useCriticalAlertSound(isCritical);
+  const { isEnabled, isPlaying, toggleSound, testSound, stopAlarm } = useCriticalAlertSound(isCritical);
 
   const statusColor = (status: string) => {
     switch (status) {
@@ -343,9 +343,10 @@ export default function DashboardPage() {
             </select>
             {/* Sound control for critical alerts */}
             <SoundControl 
-              isMuted={isMuted}
+              isEnabled={isEnabled}
               isPlaying={isPlaying}
-              onToggleMute={toggleMute}
+              onToggleSound={toggleSound}
+              onTestSound={testSound}
               onStopAlarm={stopAlarm}
             />
           </div>
