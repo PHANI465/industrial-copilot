@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Wrench, AlertTriangle, Clock, ChevronDown, ChevronUp,
   Filter, Calendar, Zap, Download, ClipboardList, FileWarning,
   Bell, CheckCircle2, AlertCircle, Send, X, User, FileText,
-  Plus, Mail, ExternalLink,
+  Plus, Mail, ExternalLink, Database, Activity, Gauge, TrendingUp,
 } from "lucide-react";
 import Link from "next/link";
 import { useAlertStore, TECHNICIANS, type Alert, type WorkOrder, type Priority } from "@/lib/alert-store";
@@ -249,7 +249,7 @@ function WorkOrderModal({
 export default function HistoryPage() {
   const [historicalWorkOrders, setHistoricalWorkOrders] = useState<MaintenanceWorkOrder[]>([]);
   const [failures, setFailures] = useState<FailureEvent[]>([]);
-  const [tab, setTab] = useState<"alerts" | "workorders" | "maintenance" | "failures">("alerts");
+  const [tab, setTab] = useState<"alerts" | "workorders" | "maintenance" | "failures" | "export">("alerts");
   const [filterTag, setFilterTag] = useState("");
   const [filterType, setFilterType] = useState("");
   const [expandedWO, setExpandedWO] = useState<string | null>(null);
@@ -364,24 +364,7 @@ export default function HistoryPage() {
             Manage active alerts, create work orders, and browse maintenance history
           </p>
           
-          <div className="mt-4 flex flex-wrap items-center gap-2">
-            <span className="text-xs text-muted-foreground">Export:</span>
-            <a href="/api/export?type=assets" className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg bg-card border border-border hover:border-primary/30 hover:text-primary transition-all">
-              <Download className="h-3 w-3" /> Assets
-            </a>
-            <a href="/api/export?type=sensors" className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg bg-card border border-border hover:border-primary/30 hover:text-primary transition-all">
-              <Download className="h-3 w-3" /> Sensors
-            </a>
-            {timeseriesTags.slice(0, 3).map((t) => (
-              <a
-                key={t}
-                href={`/api/export?type=timeseries&tag=${encodeURIComponent(t)}`}
-                className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg bg-card border border-border hover:border-primary/30 hover:text-primary transition-all"
-              >
-                <Download className="h-3 w-3" /> {t}
-              </a>
-            ))}
-          </div>
+
         </div>
       </div>
 
@@ -450,6 +433,17 @@ export default function HistoryPage() {
               ? "bg-red-500/10 text-red-400" 
               : "bg-muted text-muted-foreground"
           }`}>{failures.length}</span>
+        </button>
+        <button
+          onClick={() => setTab("export")}
+          className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+            tab === "export"
+              ? "bg-card text-foreground shadow-sm border border-border"
+              : "text-muted-foreground hover:text-foreground"
+          }`}
+        >
+          <Download className={`h-4 w-4 ${tab === "export" ? "text-cyan-400" : ""}`} />
+          Data Export
         </button>
       </div>
 
@@ -905,6 +899,136 @@ export default function HistoryPage() {
               );
             })}
           </div>
+        </div>
+      )}
+
+      {/* Data Export Tab */}
+      {tab === "export" && (
+        <div className="space-y-6">
+          {/* Introduction */}
+          <Card className="border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
+            <CardContent className="pt-6">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-xl bg-primary/10 border border-primary/20">
+                  <Download className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-1">Data Export Center</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Export operational data in CSV format for analysis, reporting, or integration with external systems. 
+                    All exports include timestamps and relevant metadata for comprehensive data tracking.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Export Categories */}
+          <div className="grid gap-6 md:grid-cols-2">
+            {/* Master Data Exports */}
+            <Card>
+              <CardHeader className="pb-3">
+                <div className="flex items-center gap-2">
+                  <Database className="h-5 w-5 text-cyan-400" />
+                  <CardTitle className="text-base">Master Data</CardTitle>
+                </div>
+                <p className="text-xs text-muted-foreground">
+                  Configuration and reference data for all monitored equipment
+                </p>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <a 
+                  href="/api/export?type=assets" 
+                  className="flex items-center justify-between p-3 rounded-lg bg-muted/50 border border-border hover:border-primary/30 hover:bg-accent transition-all group"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 rounded-lg bg-background border border-border">
+                      <Activity className="h-4 w-4 text-emerald-400" />
+                    </div>
+                    <div>
+                      <p className="font-medium text-sm">Asset Registry</p>
+                      <p className="text-xs text-muted-foreground">Equipment IDs, locations, specifications</p>
+                    </div>
+                  </div>
+                  <Download className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                </a>
+                <a 
+                  href="/api/export?type=sensors" 
+                  className="flex items-center justify-between p-3 rounded-lg bg-muted/50 border border-border hover:border-primary/30 hover:bg-accent transition-all group"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 rounded-lg bg-background border border-border">
+                      <Gauge className="h-4 w-4 text-amber-400" />
+                    </div>
+                    <div>
+                      <p className="font-medium text-sm">Sensor Configuration</p>
+                      <p className="text-xs text-muted-foreground">Sensor types, thresholds, units</p>
+                    </div>
+                  </div>
+                  <Download className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                </a>
+              </CardContent>
+            </Card>
+
+            {/* Timeseries Data Exports */}
+            <Card>
+              <CardHeader className="pb-3">
+                <div className="flex items-center gap-2">
+                  <TrendingUp className="h-5 w-5 text-blue-400" />
+                  <CardTitle className="text-base">Timeseries Data</CardTitle>
+                </div>
+                <p className="text-xs text-muted-foreground">
+                  Historical sensor readings for each monitored system
+                </p>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                {timeseriesTags.length === 0 ? (
+                  <div className="text-center py-6 text-muted-foreground text-sm">
+                    <Clock className="h-8 w-8 mx-auto mb-2 opacity-50" />
+                    <p>No timeseries data available yet</p>
+                    <p className="text-xs mt-1">Data will appear as systems are monitored</p>
+                  </div>
+                ) : (
+                  timeseriesTags.map((tag) => (
+                    <a
+                      key={tag}
+                      href={`/api/export?type=timeseries&tag=${encodeURIComponent(tag)}`}
+                      className="flex items-center justify-between p-3 rounded-lg bg-muted/50 border border-border hover:border-primary/30 hover:bg-accent transition-all group"
+                    >
+                      <div className="flex items-center gap-3">
+                        <div className="p-2 rounded-lg bg-background border border-border">
+                          <Activity className="h-4 w-4 text-blue-400" />
+                        </div>
+                        <div>
+                          <p className="font-medium text-sm font-mono">{tag}</p>
+                          <p className="text-xs text-muted-foreground">Sensor readings & timestamps</p>
+                        </div>
+                      </div>
+                      <Download className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                    </a>
+                  ))
+                )}
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Export Info */}
+          <Card className="border-dashed">
+            <CardContent className="pt-6">
+              <div className="flex items-start gap-3">
+                <AlertTriangle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                <div className="text-sm">
+                  <p className="font-medium text-foreground mb-1">Export Format Information</p>
+                  <ul className="text-muted-foreground space-y-1 list-disc list-inside">
+                    <li>All exports are in CSV (Comma-Separated Values) format</li>
+                    <li>Timestamps are in ISO 8601 format (UTC timezone)</li>
+                    <li>Large datasets may take a moment to generate</li>
+                    <li>For API access, use the same URLs programmatically</li>
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       )}
 

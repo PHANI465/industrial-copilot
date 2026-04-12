@@ -171,28 +171,106 @@ export function useCriticalAlertSound(isCritical: boolean) {
     });
   }, [stopAlarm, initAudio]);
 
-  // Test the siren sound
+  // Test the siren sound - plays directly without checking isEnabled
   const testSound = useCallback(() => {
-    setHasInteracted(true);
-    const wasEnabled = isEnabled;
-    setIsEnabled(true);
+    if (isPlayingRef.current) return;
     
-    // Small delay to ensure state updates
-    setTimeout(() => {
+    setHasInteracted(true);
+    
+    try {
       const ctx = initAudio();
       if (ctx.state === "suspended") {
-        ctx.resume().then(() => {
-          playAlarm();
-        });
-      } else {
-        playAlarm();
+        ctx.resume();
       }
-      // Restore previous state after test
-      if (!wasEnabled) {
-        setTimeout(() => setIsEnabled(false), 3500);
+
+      isPlayingRef.current = true;
+      setIsPlaying(true);
+
+      const duration = 4;
+      
+      const masterGain = ctx.createGain();
+      masterGain.connect(ctx.destination);
+      masterGain.gain.setValueAtTime(0.35, ctx.currentTime);
+      
+      const primaryOsc = ctx.createOscillator();
+      const primaryGain = ctx.createGain();
+      primaryOsc.type = "sawtooth";
+      primaryOsc.connect(primaryGain);
+      primaryGain.connect(masterGain);
+      primaryGain.gain.setValueAtTime(0.6, ctx.currentTime);
+      
+      const secondaryOsc = ctx.createOscillator();
+      const secondaryGain = ctx.createGain();
+      secondaryOsc.type = "square";
+      secondaryOsc.connect(secondaryGain);
+      secondaryGain.connect(masterGain);
+      secondaryGain.gain.setValueAtTime(0.25, ctx.currentTime);
+      
+      const subOsc = ctx.createOscillator();
+      const subGain = ctx.createGain();
+      subOsc.type = "sine";
+      subOsc.connect(subGain);
+      subGain.connect(masterGain);
+      subGain.gain.setValueAtTime(0.15, ctx.currentTime);
+      
+      const lowFreq = 380;
+      const highFreq = 620;
+      const cycleTime = 0.8;
+      const cycles = Math.floor(duration / cycleTime);
+      
+      primaryOsc.frequency.setValueAtTime(lowFreq, ctx.currentTime);
+      secondaryOsc.frequency.setValueAtTime(lowFreq * 0.5, ctx.currentTime);
+      subOsc.frequency.setValueAtTime(lowFreq * 0.25, ctx.currentTime);
+      
+      for (let i = 0; i < cycles; i++) {
+        const cycleStart = ctx.currentTime + i * cycleTime;
+        const isHigh = i % 2 === 0;
+        const targetFreq = isHigh ? highFreq : lowFreq;
+        const riseTime = cycleTime * 0.3;
+        const holdTime = cycleTime * 0.5;
+        
+        primaryOsc.frequency.linearRampToValueAtTime(targetFreq, cycleStart + riseTime);
+        primaryOsc.frequency.setValueAtTime(targetFreq, cycleStart + riseTime + holdTime);
+        primaryOsc.frequency.linearRampToValueAtTime(isHigh ? lowFreq : highFreq, cycleStart + cycleTime);
+        
+        secondaryOsc.frequency.linearRampToValueAtTime(targetFreq * 0.5, cycleStart + riseTime);
+        secondaryOsc.frequency.setValueAtTime(targetFreq * 0.5, cycleStart + riseTime + holdTime);
+        
+        subOsc.frequency.linearRampToValueAtTime(targetFreq * 0.25, cycleStart + riseTime);
+        
+        primaryGain.gain.setValueAtTime(0.5, cycleStart);
+        primaryGain.gain.linearRampToValueAtTime(0.7, cycleStart + riseTime);
+        primaryGain.gain.linearRampToValueAtTime(0.5, cycleStart + cycleTime);
       }
-    }, 50);
-  }, [isEnabled, initAudio, playAlarm]);
+      
+      masterGain.gain.setValueAtTime(0, ctx.currentTime);
+      masterGain.gain.linearRampToValueAtTime(0.35, ctx.currentTime + 0.1);
+      masterGain.gain.setValueAtTime(0.35, ctx.currentTime + duration - 0.2);
+      masterGain.gain.linearRampToValueAtTime(0, ctx.currentTime + duration);
+
+      primaryOsc.start(ctx.currentTime);
+      secondaryOsc.start(ctx.currentTime);
+      subOsc.start(ctx.currentTime);
+      
+      primaryOsc.stop(ctx.currentTime + duration);
+      secondaryOsc.stop(ctx.currentTime + duration);
+      subOsc.stop(ctx.currentTime + duration);
+
+      oscillatorRef.current = primaryOsc;
+      gainNodeRef.current = masterGain;
+
+      primaryOsc.onended = () => {
+        isPlayingRef.current = false;
+        setIsPlaying(false);
+        oscillatorRef.current = null;
+        gainNodeRef.current = null;
+      };
+    } catch (error) {
+      console.error("[v0] Failed to play test sound:", error);
+      isPlayingRef.current = false;
+      setIsPlaying(false);
+    }
+  }, [initAudio]);
 
   // Play alarm when entering critical state
   useEffect(() => {
