@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isResendConfigured } from "@/lib/send-alert-email";
-import { promises as fs } from "fs";
-import path from "path";
+import failureEventsData from "../../../../public/data/failure-events.json";
 
 interface FailureEvent {
   failure_event_id: string;
@@ -34,11 +33,9 @@ interface WorkOrderNotifyPayload {
 }
 
 // Load historical failure events for similar equipment
-async function getRelevantHistory(assetTag: string, sensorType?: string): Promise<FailureEvent[]> {
+function getRelevantHistory(assetTag: string): FailureEvent[] {
   try {
-    const filePath = path.join(process.cwd(), "public/data/failure-events.json");
-    const data = await fs.readFile(filePath, "utf-8");
-    const events: FailureEvent[] = JSON.parse(data);
+    const events = failureEventsData as FailureEvent[];
     
     // Get asset type from tag (e.g., P-101 -> "P" for pump)
     const assetPrefix = assetTag.split("-")[0];
@@ -132,7 +129,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Fetch relevant historical failures for this equipment type
-    const historicalEvents = await getRelevantHistory(assetTag, sensorType);
+    const historicalEvents = getRelevantHistory(assetTag);
 
     const key = process.env.RESEND_API_KEY;
     const from =

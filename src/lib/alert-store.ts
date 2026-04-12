@@ -107,13 +107,21 @@ function getServerSnapshot(): AlertState {
   return serverSnapshot;
 }
 
-// Initialize state from storage
-if (typeof window !== "undefined") {
-  state = loadState();
+// Track if we've initialized from storage
+let initialized = false;
+
+function initializeState() {
+  if (!initialized && typeof window !== "undefined") {
+    state = loadState();
+    initialized = true;
+  }
 }
 
 // Hook to use the alert store
 export function useAlertStore() {
+  // Initialize on first use (client-side only)
+  initializeState();
+  
   const currentState = useSyncExternalStore(
     subscribe,
     getState,
