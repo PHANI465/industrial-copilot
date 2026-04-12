@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { Input } from "@/components/ui/input";
-import { Send, Bot, User, Sparkles, Search, Trash2 } from "lucide-react";
+import { Send, Bot, User, Sparkles, Search, Trash2, Cpu } from "lucide-react";
 import type { ChatMessage, AnalysisResult } from "@/lib/types";
 
 interface LiveDataPayload {
@@ -111,29 +111,34 @@ export function ChatPanel({
 
   return (
     <div className="flex flex-col h-full">
-      <div className="flex items-center gap-2 pb-2 border-b border-border mb-2">
-        <Bot className="h-4 w-4 text-emerald-400" />
-        <span className="text-sm font-medium">AI Assistant</span>
+      <div className="flex items-center gap-3 pb-3 border-b border-border mb-3">
+        <div className="p-2 rounded-lg bg-gradient-to-br from-amber-500/20 to-orange-600/20 border border-amber-500/20">
+          <Cpu className="h-4 w-4 text-amber-400" />
+        </div>
+        <div className="flex flex-col">
+          <span className="text-sm font-semibold">Operations Assistant</span>
+          <span className="text-[10px] text-muted-foreground font-mono">AI-POWERED DIAGNOSTICS</span>
+        </div>
         {asset && (
-          <span className="text-xs text-muted-foreground">
-            Context: {asset}
+          <span className="text-xs text-muted-foreground bg-accent/50 px-2 py-0.5 rounded-md font-mono">
+            {asset}
           </span>
         )}
-        <span className="ml-auto flex items-center gap-1.5">
+        <span className="ml-auto flex items-center gap-2">
           {aiMode === "openai" && (
-            <span className="text-xs bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 px-1.5 py-0.5 rounded flex items-center gap-1">
-              <Sparkles className="h-3 w-3" /> GPT
+            <span className="text-xs bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 px-2 py-1 rounded-md flex items-center gap-1.5 font-medium">
+              <Sparkles className="h-3 w-3" /> GPT Active
             </span>
           )}
           {aiMode === "keyword" && (
-            <span className="text-xs bg-blue-500/15 text-blue-400 border border-blue-500/30 px-1.5 py-0.5 rounded flex items-center gap-1">
+            <span className="text-xs bg-blue-500/15 text-blue-400 border border-blue-500/30 px-2 py-1 rounded-md flex items-center gap-1.5 font-medium">
               <Search className="h-3 w-3" /> Keyword
             </span>
           )}
           {messages.length > 1 && (
             <button
               onClick={clearChat}
-              className="text-muted-foreground hover:text-foreground transition-colors p-0.5"
+              className="text-muted-foreground hover:text-destructive transition-colors p-1.5 rounded-md hover:bg-destructive/10"
               title="Clear conversation"
             >
               <Trash2 className="h-3.5 w-3.5" />
@@ -148,48 +153,54 @@ export function ChatPanel({
         </p>
       )}
 
-      <div className="flex-1 overflow-y-auto pr-1 min-h-0">
-        <div className="space-y-3 pb-2">
+      <div className="flex-1 overflow-y-auto pr-1 min-h-0 scrollbar-thin">
+        <div className="space-y-4 pb-2">
           {messages.map((msg, i) => (
             <div
               key={i}
-              className={`flex gap-2 ${
+              className={`flex gap-3 ${
                 msg.role === "user" ? "justify-end" : "justify-start"
               }`}
             >
               {msg.role === "assistant" && (
-                <Bot className="h-5 w-5 text-emerald-400 shrink-0 mt-0.5" />
+                <div className="p-1.5 rounded-md bg-amber-500/10 h-fit">
+                  <Bot className="h-4 w-4 text-amber-400 shrink-0" />
+                </div>
               )}
               <div
-                className={`rounded-lg px-3 py-2 max-w-[85%] text-sm ${
+                className={`rounded-lg px-4 py-2.5 max-w-[85%] text-sm ${
                   msg.role === "user"
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-muted"
+                    ? "bg-primary text-primary-foreground shadow-sm"
+                    : "bg-muted/80 border border-border/50"
                 }`}
               >
-                <p className="whitespace-pre-wrap">{msg.content}</p>
+                <p className="whitespace-pre-wrap leading-relaxed">{msg.content}</p>
                 {msg.sources && msg.sources.length > 0 && (
-                  <div className="mt-2 pt-1 border-t border-border/50">
-                    <p className="text-xs text-muted-foreground">Sources:</p>
+                  <div className="mt-2.5 pt-2 border-t border-border/30">
+                    <p className="text-xs text-muted-foreground font-medium mb-1">Reference Documents:</p>
                     {msg.sources.map((s, j) => (
-                      <p key={j} className="text-xs text-muted-foreground">
-                        • {s}
+                      <p key={j} className="text-xs text-muted-foreground font-mono">
+                        {s}
                       </p>
                     ))}
                   </div>
                 )}
               </div>
               {msg.role === "user" && (
-                <User className="h-5 w-5 text-muted-foreground shrink-0 mt-0.5" />
+                <div className="p-1.5 rounded-md bg-primary/20 h-fit">
+                  <User className="h-4 w-4 text-primary shrink-0" />
+                </div>
               )}
             </div>
           ))}
           {loading && (
-            <div className="flex gap-2">
-              <Bot className="h-5 w-5 text-emerald-400 shrink-0" />
-              <div className="bg-muted rounded-lg px-3 py-2">
-                <span className="text-sm text-muted-foreground animate-pulse">
-                  Thinking...
+            <div className="flex gap-3">
+              <div className="p-1.5 rounded-md bg-amber-500/10 h-fit">
+                <Bot className="h-4 w-4 text-amber-400 shrink-0 animate-pulse" />
+              </div>
+              <div className="bg-muted/80 border border-border/50 rounded-lg px-4 py-2.5">
+                <span className="text-sm text-muted-foreground">
+                  Analyzing data...
                 </span>
               </div>
             </div>
@@ -198,7 +209,7 @@ export function ChatPanel({
         </div>
       </div>
 
-      <div className="flex gap-2 pt-2 border-t border-border mt-auto">
+      <div className="flex gap-2 pt-3 border-t border-border mt-auto">
         <Input
           value={input}
           onChange={(e) => setInput(e.target.value)}
@@ -208,14 +219,14 @@ export function ChatPanel({
               sendMessage();
             }
           }}
-          placeholder="Ask about equipment, procedures, or what's happening now..."
-          className="text-sm"
+          placeholder="Ask about equipment diagnostics, SOPs, or maintenance..."
+          className="text-sm bg-muted/50 border-border/50 focus:border-primary"
           disabled={loading}
         />
         <button
           onClick={sendMessage}
           disabled={loading || !input.trim()}
-          className="px-3 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors disabled:opacity-50"
+          className="px-4 py-2 bg-gradient-to-r from-amber-500 to-orange-600 text-white rounded-lg hover:from-amber-600 hover:to-orange-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-sm"
         >
           <Send className="h-4 w-4" />
         </button>

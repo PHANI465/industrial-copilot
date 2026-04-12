@@ -73,22 +73,42 @@ export function SystemCard({
   compact?: boolean;
 }) {
   const name = assetInfo?.name || assetTag;
+  const status = analysis?.overallStatus || "NORMAL";
+  
+  const statusGlow = {
+    CRITICAL: "shadow-red-500/20 border-red-500/40",
+    WARNING: "shadow-amber-500/15 border-amber-500/30",
+    ADVISORY: "shadow-blue-500/10 border-blue-500/25",
+    NORMAL: "border-border",
+  }[status] || "border-border";
 
   return (
     <Card
-      className={`cursor-pointer transition-all hover:border-primary/40 ${
-        selected ? "border-primary ring-1 ring-primary/20" : ""
+      className={`cursor-pointer transition-all duration-200 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 ${statusGlow} ${
+        selected ? "border-primary ring-2 ring-primary/20 shadow-lg shadow-primary/10" : ""
       }`}
       onClick={onClick}
     >
       <CardHeader className="pb-2">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2 min-w-0">
-            {createElement(resolveIconForAsset(assetInfo?.type, assetInfo?.subtype), {
-              className: "h-4 w-4 text-muted-foreground shrink-0",
-            })}
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2.5 min-w-0">
+            <div className={`p-1.5 rounded-md ${
+              status === "CRITICAL" ? "bg-red-500/15" :
+              status === "WARNING" ? "bg-amber-500/15" :
+              status === "ADVISORY" ? "bg-blue-500/15" :
+              "bg-muted"
+            }`}>
+              {createElement(resolveIconForAsset(assetInfo?.type, assetInfo?.subtype), {
+                className: `h-4 w-4 ${
+                  status === "CRITICAL" ? "text-red-400" :
+                  status === "WARNING" ? "text-amber-400" :
+                  status === "ADVISORY" ? "text-blue-400" :
+                  "text-muted-foreground"
+                }`,
+              })}
+            </div>
             <div className="min-w-0">
-              <CardTitle className="text-sm font-mono">{assetTag}</CardTitle>
+              <CardTitle className="text-sm font-mono font-bold tracking-tight">{assetTag}</CardTitle>
               <p className="text-xs text-muted-foreground truncate">{name}</p>
             </div>
           </div>
@@ -108,11 +128,11 @@ export function SystemCard({
         )}
         <Link
           href={`/assets/${assetTag}`}
-          className="flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"
+          className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors group"
           onClick={(e) => e.stopPropagation()}
         >
-          <ExternalLink className="h-3 w-3" />
-          Details
+          <ExternalLink className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" />
+          View Details
         </Link>
       </CardContent>
     </Card>

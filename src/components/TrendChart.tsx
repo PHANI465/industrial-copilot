@@ -37,10 +37,11 @@ const SENSOR_LABELS: Record<string, string> = {
   PV: "Process Value",
 };
 
+// Industrial color palette - amber, cyan, steel, orange, red tones
 const COLOR_PALETTE = [
-  "#22c55e", "#3b82f6", "#f59e0b", "#8b5cf6", "#ec4899",
-  "#ef4444", "#f97316", "#06b6d4", "#a855f7", "#14b8a6",
-  "#e879f9", "#84cc16", "#fb923c", "#38bdf8", "#d946ef",
+  "#f59e0b", "#06b6d4", "#94a3b8", "#f97316", "#ef4444",
+  "#22c55e", "#3b82f6", "#fbbf24", "#0ea5e9", "#64748b",
+  "#fb923c", "#14b8a6", "#facc15", "#38bdf8", "#78716c",
 ];
 
 function formatLabel(key: string): string {
@@ -250,11 +251,13 @@ export function TrendChart({
               <YAxis tick={{ fontSize: 10, fill: "#888" }} width={45} />
               <Tooltip
                 contentStyle={{
-                  backgroundColor: "rgba(20,20,25,0.95)",
-                  border: "1px solid rgba(255,255,255,0.1)",
+                  backgroundColor: "rgba(15,23,42,0.98)",
+                  border: "1px solid rgba(148,163,184,0.2)",
                   borderRadius: "8px",
                   fontSize: 12,
+                  boxShadow: "0 10px 25px rgba(0,0,0,0.3)",
                 }}
+                labelStyle={{ color: "#94a3b8", fontFamily: "monospace", fontSize: 10 }}
               />
               <Legend iconSize={8} wrapperStyle={{ fontSize: 11 }} />
               {activeSensors.map((key) => {

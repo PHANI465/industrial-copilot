@@ -256,73 +256,86 @@ export default function DashboardPage() {
     <div className="space-y-6">
       {/* CRITICAL flash banner */}
       {isCritical && (
-        <div className="animate-pulse bg-red-600/20 border border-red-500/60 rounded-lg px-4 py-3 flex items-center gap-3">
-          <AlertTriangle className="h-5 w-5 text-red-400 shrink-0" />
-          <div>
-            <p className="text-sm font-bold text-red-400">
-              CRITICAL CONDITION DETECTED
+        <div className="relative overflow-hidden bg-gradient-to-r from-red-600/25 via-red-500/20 to-red-600/25 border border-red-500/50 rounded-xl px-5 py-4 flex items-center gap-4 shadow-lg shadow-red-500/10">
+          <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.02)_50%,transparent_75%)] bg-[length:250%_250%] animate-[shimmer_3s_linear_infinite]" />
+          <div className="p-2.5 bg-red-500/20 rounded-lg">
+            <AlertTriangle className="h-6 w-6 text-red-400 animate-pulse" />
+          </div>
+          <div className="flex-1">
+            <p className="text-sm font-bold text-red-400 tracking-wide uppercase flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-red-400 animate-ping" />
+              Critical Condition Detected
             </p>
-            <p className="text-xs text-red-300/80">
+            <p className="text-xs text-red-300/90 mt-0.5">
               System{criticalAssets.length > 1 ? "s" : ""}{" "}
-              <span className="font-mono font-bold">{criticalAssets.join(", ")}</span>{" "}
-              {criticalAssets.length > 1 ? "are" : "is"} in CRITICAL state.
-              Immediate attention required.
+              <span className="font-mono font-bold text-red-200">{criticalAssets.join(", ")}</span>{" "}
+              {criticalAssets.length > 1 ? "require" : "requires"} immediate attention
             </p>
           </div>
         </div>
       )}
 
-      {/* Header controls */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-bold tracking-tight">
-            Operations Dashboard
-          </h1>
-          <p className="text-sm text-muted-foreground">
-            Monitoring {activeAssets.length} systems across the platform
-          </p>
-        </div>
-        <div className="flex items-center gap-3 flex-wrap">
-          <button
-            onClick={() => setFilterOpen((o) => !o)}
-            className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md border border-border bg-card hover:bg-accent transition-colors"
-          >
-            <Filter className="h-3.5 w-3.5" />
-            Systems ({activeAssets.length})
-            {filterOpen ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
-          </button>
-          <select
-            value={scenario}
-            onChange={(e) => setScenario(e.target.value)}
-            className="text-sm bg-card border border-border rounded-md px-3 py-1.5 outline-none"
-          >
-            {SCENARIOS.map((s) => (
-              <option key={s.value} value={s.value}>
-                {s.label}
-              </option>
-            ))}
-          </select>
-          <button
-            onClick={() => setRunning((r) => !r)}
-            className={`text-xs font-mono px-3 py-1.5 rounded-md border transition-colors ${
-              running
-                ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/30"
-                : "bg-red-500/10 text-red-400 border-red-500/30"
-            }`}
-          >
-            {running ? "● LIVE" : "■ PAUSED"}
-          </button>
-          <select
-            value={speed}
-            onChange={(e) => setSpeed(Number(e.target.value))}
-            className="text-sm bg-card border border-border rounded-md px-3 py-1.5 outline-none"
-          >
-            <option value={500}>0.5s</option>
-            <option value={1000}>1s</option>
-            <option value={1500}>1.5s</option>
-            <option value={2000}>2s</option>
-            <option value={3000}>3s</option>
-          </select>
+      {/* Header with hero background */}
+      <div className="relative -mx-4 sm:-mx-6 -mt-6 px-4 sm:px-6 pt-6 pb-8 mb-2 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-15"
+          style={{ backgroundImage: "url('/images/platform-hero.jpg')" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/80 to-background" />
+        <div className="relative flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4">
+          <div>
+            <p className="text-xs font-mono text-amber-500 tracking-wider mb-1">REAL-TIME MONITORING</p>
+            <h1 className="text-3xl font-bold tracking-tight">
+              Operations Dashboard
+            </h1>
+            <p className="text-sm text-muted-foreground mt-1">
+              Monitoring <span className="font-semibold text-foreground">{activeAssets.length}</span> systems across the North Sea Platform Alpha
+            </p>
+          </div>
+          <div className="flex items-center gap-2 flex-wrap">
+            <button
+              onClick={() => setFilterOpen((o) => !o)}
+              className="flex items-center gap-2 text-xs px-3 py-2 rounded-lg border border-border bg-card/80 backdrop-blur-sm hover:bg-accent transition-all hover:border-primary/30"
+            >
+              <Filter className="h-3.5 w-3.5 text-muted-foreground" />
+              <span className="font-medium">Systems</span>
+              <span className="bg-primary/20 text-primary px-1.5 py-0.5 rounded text-[10px] font-bold">{activeAssets.length}</span>
+              {filterOpen ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
+            </button>
+            <select
+              value={scenario}
+              onChange={(e) => setScenario(e.target.value)}
+              className="text-xs bg-card/80 backdrop-blur-sm border border-border rounded-lg px-3 py-2 outline-none hover:border-primary/30 transition-colors cursor-pointer"
+            >
+              {SCENARIOS.map((s) => (
+                <option key={s.value} value={s.value}>
+                  {s.label}
+                </option>
+              ))}
+            </select>
+            <button
+              onClick={() => setRunning((r) => !r)}
+              className={`text-xs font-mono px-4 py-2 rounded-lg border transition-all flex items-center gap-2 ${
+                running
+                  ? "bg-emerald-500/15 text-emerald-400 border-emerald-500/30 shadow-sm shadow-emerald-500/10"
+                  : "bg-red-500/15 text-red-400 border-red-500/30"
+              }`}
+            >
+              <span className={`w-2 h-2 rounded-full ${running ? "bg-emerald-400 animate-pulse" : "bg-red-400"}`} />
+              {running ? "LIVE" : "PAUSED"}
+            </button>
+            <select
+              value={speed}
+              onChange={(e) => setSpeed(Number(e.target.value))}
+              className="text-xs bg-card/80 backdrop-blur-sm border border-border rounded-lg px-3 py-2 outline-none hover:border-primary/30 transition-colors cursor-pointer"
+            >
+              <option value={500}>0.5s</option>
+              <option value={1000}>1s</option>
+              <option value={1500}>1.5s</option>
+              <option value={2000}>2s</option>
+              <option value={3000}>3s</option>
+            </select>
+          </div>
         </div>
       </div>
 
@@ -433,35 +446,53 @@ export default function DashboardPage() {
       })()}
 
       {/* Summary stats */}
-      <div className="grid grid-cols-3 gap-4">
-        <Card>
-          <CardContent className="flex items-center gap-3 py-3">
-            <Radio className="h-5 w-5 text-muted-foreground" />
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <Card className="border-l-4 border-l-cyan-500 bg-gradient-to-r from-cyan-500/5 to-transparent">
+          <CardContent className="flex items-center gap-4 py-4">
+            <div className="p-3 rounded-lg bg-cyan-500/10">
+              <Radio className="h-5 w-5 text-cyan-400" />
+            </div>
             <div>
-              <p className="text-xs text-muted-foreground">Systems Monitored</p>
-              <p className="text-lg font-bold">{activeAssets.length}</p>
+              <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider">Systems Monitored</p>
+              <p className="text-2xl font-bold tabular-nums">{activeAssets.length}</p>
             </div>
           </CardContent>
         </Card>
-        <Card>
-          <CardContent className="flex items-center gap-3 py-3">
-            <Activity className="h-5 w-5 text-amber-400" />
+        <Card className={`border-l-4 ${activeAlertCount > 0 ? "border-l-amber-500 bg-gradient-to-r from-amber-500/5 to-transparent" : "border-l-emerald-500 bg-gradient-to-r from-emerald-500/5 to-transparent"}`}>
+          <CardContent className="flex items-center gap-4 py-4">
+            <div className={`p-3 rounded-lg ${activeAlertCount > 0 ? "bg-amber-500/10" : "bg-emerald-500/10"}`}>
+              <Activity className={`h-5 w-5 ${activeAlertCount > 0 ? "text-amber-400" : "text-emerald-400"}`} />
+            </div>
             <div>
-              <p className="text-xs text-muted-foreground">Active Alerts</p>
-              <p className="text-lg font-bold">{activeAlertCount}</p>
+              <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider">Active Alerts</p>
+              <p className="text-2xl font-bold tabular-nums">{activeAlertCount}</p>
             </div>
           </CardContent>
         </Card>
-        <Card>
-          <CardContent className="flex items-center gap-3 py-3">
-            <Shield className={`h-5 w-5 ${
-              worstStatus === "CRITICAL" ? "text-red-400" :
-              worstStatus === "WARNING" ? "text-amber-400" :
-              "text-emerald-400"
-            }`} />
+        <Card className={`border-l-4 ${
+          worstStatus === "CRITICAL" ? "border-l-red-500 bg-gradient-to-r from-red-500/5 to-transparent" :
+          worstStatus === "WARNING" ? "border-l-amber-500 bg-gradient-to-r from-amber-500/5 to-transparent" :
+          "border-l-emerald-500 bg-gradient-to-r from-emerald-500/5 to-transparent"
+        }`}>
+          <CardContent className="flex items-center gap-4 py-4">
+            <div className={`p-3 rounded-lg ${
+              worstStatus === "CRITICAL" ? "bg-red-500/10" :
+              worstStatus === "WARNING" ? "bg-amber-500/10" :
+              "bg-emerald-500/10"
+            }`}>
+              <Shield className={`h-5 w-5 ${
+                worstStatus === "CRITICAL" ? "text-red-400" :
+                worstStatus === "WARNING" ? "text-amber-400" :
+                "text-emerald-400"
+              }`} />
+            </div>
             <div>
-              <p className="text-xs text-muted-foreground">System Status</p>
-              <p className="text-lg font-bold">{worstStatus}</p>
+              <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider">System Status</p>
+              <p className={`text-2xl font-bold ${
+                worstStatus === "CRITICAL" ? "text-red-400" :
+                worstStatus === "WARNING" ? "text-amber-400" :
+                "text-emerald-400"
+              }`}>{worstStatus}</p>
             </div>
           </CardContent>
         </Card>

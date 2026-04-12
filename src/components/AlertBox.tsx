@@ -1,25 +1,25 @@
 "use client";
 
-import { AlertTriangle, CheckCircle, Info, XCircle } from "lucide-react";
+import { AlertTriangle, CheckCircle, AlertCircle, XOctagon, Wrench } from "lucide-react";
 import type { AnomalyResult, Recommendation } from "@/lib/types";
 
 const ICON_MAP = {
   NORMAL: CheckCircle,
-  ADVISORY: Info,
+  ADVISORY: AlertCircle,
   WARNING: AlertTriangle,
-  CRITICAL: XCircle,
+  CRITICAL: XOctagon,
 };
 
 const BG_MAP = {
-  NORMAL: "bg-emerald-500/5 border-emerald-500/20",
-  ADVISORY: "bg-blue-500/5 border-blue-500/20",
-  WARNING: "bg-amber-500/5 border-amber-500/20",
-  CRITICAL: "bg-red-500/5 border-red-500/20",
+  NORMAL: "bg-emerald-500/10 border-emerald-500/25",
+  ADVISORY: "bg-cyan-500/10 border-cyan-500/25",
+  WARNING: "bg-amber-500/10 border-amber-500/25",
+  CRITICAL: "bg-red-500/15 border-red-500/30",
 };
 
 const TEXT_MAP = {
   NORMAL: "text-emerald-400",
-  ADVISORY: "text-blue-400",
+  ADVISORY: "text-cyan-400",
   WARNING: "text-amber-400",
   CRITICAL: "text-red-400",
 };
@@ -65,11 +65,14 @@ export function AlertBox({
         </div>
       </div>
       {recommendations && recommendations.length > 0 && (
-        <div className="rounded-md border bg-card/50 p-2">
-          <p className="text-xs text-muted-foreground mb-0.5">Recommended Action:</p>
-          <p className="text-xs">{recommendations[0].actionSummary}</p>
-          <p className="text-xs text-muted-foreground mt-0.5 italic">
-            Ref: {recommendations[0].docId}
+        <div className="rounded-md border border-primary/20 bg-primary/5 p-2.5">
+          <div className="flex items-center gap-1.5 mb-1">
+            <Wrench className="h-3 w-3 text-primary" />
+            <p className="text-xs text-primary font-medium">Recommended Action</p>
+          </div>
+          <p className="text-xs leading-relaxed">{recommendations[0].actionSummary}</p>
+          <p className="text-[10px] text-muted-foreground mt-1.5 font-mono">
+            REF: {recommendations[0].docId}
           </p>
         </div>
       )}

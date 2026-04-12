@@ -28,9 +28,16 @@ const SENSOR_LABELS: Record<string, string> = {
 
 const STATUS_COLORS: Record<string, string> = {
   NORMAL: "text-emerald-400",
-  ADVISORY: "text-blue-400",
+  ADVISORY: "text-cyan-400",
   WARNING: "text-amber-400",
   CRITICAL: "text-red-400",
+};
+
+const STATUS_BG: Record<string, string> = {
+  NORMAL: "",
+  ADVISORY: "bg-cyan-500/5",
+  WARNING: "bg-amber-500/5",
+  CRITICAL: "bg-red-500/10",
 };
 
 function formatLabel(key: string): string {
@@ -54,25 +61,30 @@ export function SensorDisplay({
   }
 
   return (
-    <div className="space-y-1">
+    <div className="space-y-0.5">
       {Object.entries(sensors).map(([key, value]) => {
         const alert = alertMap.get(key);
         const status = alert?.status || "NORMAL";
         const colorClass = STATUS_COLORS[status];
+        const bgClass = STATUS_BG[status];
         const unit = alert?.unit || "";
 
         return (
           <div
             key={key}
-            className="flex items-center justify-between text-sm font-mono"
+            className={`flex items-center justify-between text-sm font-mono px-2 py-1 rounded ${bgClass} ${status !== "NORMAL" ? "border-l-2" : ""} ${
+              status === "CRITICAL" ? "border-l-red-400" :
+              status === "WARNING" ? "border-l-amber-400" :
+              status === "ADVISORY" ? "border-l-cyan-400" : ""
+            }`}
           >
             <span className="text-muted-foreground text-xs truncate mr-2">
               {formatLabel(key)}
             </span>
-            <span className={colorClass}>
+            <span className={`${colorClass} font-semibold tabular-nums`}>
               {typeof value === "number" ? value.toFixed(1) : value}
               {unit && (
-                <span className="text-xs opacity-60 ml-0.5">{unit}</span>
+                <span className="text-[10px] opacity-60 ml-0.5 font-normal">{unit}</span>
               )}
             </span>
           </div>
