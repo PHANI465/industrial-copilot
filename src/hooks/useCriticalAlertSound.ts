@@ -4,7 +4,8 @@ import { useEffect, useRef, useCallback, useState } from "react";
 
 /**
  * Generates an industrial alarm sound using Web Audio API
- * Plays when critical alert is detected, with option to mute
+ * Plays when critical alert is detected, with option to enable/disable
+ * Factory lockdown siren with two-tone alternating pattern
  * NOTE: Sounds are OFF by default - user must enable them due to browser autoplay policy
  */
 export function useCriticalAlertSound(isCritical: boolean) {
