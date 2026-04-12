@@ -3,6 +3,8 @@
 import { useState, useCallback, useEffect, useMemo } from "react";
 import Image from "next/image";
 import { useCriticalAlertNotify } from "@/hooks/useCriticalAlertNotify";
+import { useCriticalAlertSound } from "@/hooks/useCriticalAlertSound";
+import { SoundControl } from "@/components/SoundControl";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   SimulatorControls,
@@ -84,6 +86,7 @@ export default function SimulatorPage() {
     [isCritical, result, asset]
   );
   useCriticalAlertNotify(isCritical, criticalTags, "simulator");
+  const { isMuted, isPlaying, toggleMute, stopAlarm } = useCriticalAlertSound(isCritical);
   const currentAssetName =
     assetOptions.find((a) => a.tag === asset)?.name || asset;
 
@@ -96,20 +99,28 @@ export default function SimulatorPage() {
           style={{ backgroundImage: "url('/images/pump-equipment.jpg')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/80 to-background" />
-        <div className="relative">
-          <div className="flex items-center gap-2 mb-2">
-            <div className="p-2 rounded-lg bg-primary/10 border border-primary/20">
-              <FlaskConical className="h-5 w-5 text-primary" />
+        <div className="relative flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <div className="p-2 rounded-lg bg-primary/10 border border-primary/20">
+                <FlaskConical className="h-5 w-5 text-primary" />
+              </div>
+              <span className="text-xs font-mono text-primary tracking-wider">TESTING ENVIRONMENT</span>
             </div>
-            <span className="text-xs font-mono text-primary tracking-wider">TESTING ENVIRONMENT</span>
+            <h1 className="text-3xl font-bold tracking-tight">
+              Interactive Simulator
+            </h1>
+            <p className="text-sm text-muted-foreground mt-1 max-w-xl">
+              Select any system, manually adjust sensor values, and test anomaly detection 
+              algorithms in a safe sandbox environment
+            </p>
           </div>
-          <h1 className="text-3xl font-bold tracking-tight">
-            Interactive Simulator
-          </h1>
-          <p className="text-sm text-muted-foreground mt-1 max-w-xl">
-            Select any system, manually adjust sensor values, and test anomaly detection 
-            algorithms in a safe sandbox environment
-          </p>
+          <SoundControl 
+            isMuted={isMuted}
+            isPlaying={isPlaying}
+            onToggleMute={toggleMute}
+            onStopAlarm={stopAlarm}
+          />
         </div>
       </div>
 

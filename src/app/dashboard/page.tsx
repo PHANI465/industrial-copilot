@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useCriticalAlertNotify } from "@/hooks/useCriticalAlertNotify";
+import { useCriticalAlertSound } from "@/hooks/useCriticalAlertSound";
+import { SoundControl } from "@/components/SoundControl";
 import { AlertEmailSubscribe } from "@/components/AlertEmailSubscribe";
 import { SystemCard } from "@/components/SystemCard";
 import type { AssetInfo } from "@/components/SystemCard";
@@ -228,6 +230,9 @@ export default function DashboardPage() {
   );
 
   useCriticalAlertNotify(isCritical, criticalAssets, "dashboard");
+  
+  // Sound alert for critical conditions
+  const { isMuted, isPlaying, toggleMute, stopAlarm } = useCriticalAlertSound(isCritical);
 
   const statusColor = (status: string) => {
     switch (status) {
@@ -336,6 +341,13 @@ export default function DashboardPage() {
               <option value={2000}>2s</option>
               <option value={3000}>3s</option>
             </select>
+            {/* Sound control for critical alerts */}
+            <SoundControl 
+              isMuted={isMuted}
+              isPlaying={isPlaying}
+              onToggleMute={toggleMute}
+              onStopAlarm={stopAlarm}
+            />
           </div>
         </div>
       </div>
