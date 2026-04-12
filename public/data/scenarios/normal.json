@@ -1,0 +1,6740 @@
+{
+  "name": "normal",
+  "asset": "V-101",
+  "start": "2025-10-04 07:00:00Z",
+  "end": "2025-10-11 07:00:00Z",
+  "description": "Stable baseline operation — V-101 HP Separator",
+  "dataPoints": 673,
+  "data": [
+    {
+      "timestamp": "2025-10-04 07:00:00Z",
+      "sensors": {
+        "PRESS": 49.892,
+        "LEVEL": 47.867,
+        "TEMP": 64.001,
+        "GAS_FLOW": 8.328,
+        "OIL_FLOW": 89.634
+      }
+    },
+    {
+      "timestamp": "2025-10-04 07:15:00Z",
+      "sensors": {
+        "PRESS": 49.308,
+        "LEVEL": 46.976,
+        "TEMP": 63.222,
+        "GAS_FLOW": 8.97,
+        "OIL_FLOW": 92.825
+      }
+    },
+    {
+      "timestamp": "2025-10-04 07:30:00Z",
+      "sensors": {
+        "PRESS": 49.755,
+        "LEVEL": 46.823,
+        "TEMP": 62.564,
+        "GAS_FLOW": 9.269,
+        "OIL_FLOW": 91.001
+      }
+    },
+    {
+      "timestamp": "2025-10-04 07:45:00Z",
+      "sensors": {
+        "PRESS": 50.405,
+        "LEVEL": 47.155,
+        "TEMP": 63.261,
+        "GAS_FLOW": 9.187,
+        "OIL_FLOW": 91.432
+      }
+    },
+    {
+      "timestamp": "2025-10-04 08:00:00Z",
+      "sensors": {
+        "PRESS": 48.442,
+        "LEVEL": 48.105,
+        "TEMP": 63.682,
+        "GAS_FLOW": 9.065,
+        "OIL_FLOW": 90.54
+      }
+    },
+    {
+      "timestamp": "2025-10-04 08:15:00Z",
+      "sensors": {
+        "PRESS": 47.745,
+        "LEVEL": 46.091,
+        "TEMP": 64.157,
+        "GAS_FLOW": 8.468,
+        "OIL_FLOW": 92.2
+      }
+    },
+    {
+      "timestamp": "2025-10-04 08:30:00Z",
+      "sensors": {
+        "PRESS": 47.352,
+        "LEVEL": 46.902,
+        "TEMP": 63.001,
+        "GAS_FLOW": 8.722,
+        "OIL_FLOW": 92.976
+      }
+    },
+    {
+      "timestamp": "2025-10-04 08:45:00Z",
+      "sensors": {
+        "PRESS": 47.943,
+        "LEVEL": 47.043,
+        "TEMP": 63.1,
+        "GAS_FLOW": 9.407,
+        "OIL_FLOW": 94.946
+      }
+    },
+    {
+      "timestamp": "2025-10-04 09:00:00Z",
+      "sensors": {
+        "PRESS": 48.113,
+        "LEVEL": 46.81,
+        "TEMP": 63.937,
+        "GAS_FLOW": 9.35,
+        "OIL_FLOW": 88.322
+      }
+    },
+    {
+      "timestamp": "2025-10-04 09:15:00Z",
+      "sensors": {
+        "PRESS": 46.977,
+        "LEVEL": 45.495,
+        "TEMP": 65.976,
+        "GAS_FLOW": 9.042,
+        "OIL_FLOW": 88.291
+      }
+    },
+    {
+      "timestamp": "2025-10-04 09:30:00Z",
+      "sensors": {
+        "PRESS": 48.442,
+        "LEVEL": 45,
+        "TEMP": 65.562,
+        "GAS_FLOW": 9.066,
+        "OIL_FLOW": 85.23
+      }
+    },
+    {
+      "timestamp": "2025-10-04 09:45:00Z",
+      "sensors": {
+        "PRESS": 50.879,
+        "LEVEL": 45.315,
+        "TEMP": 66.079,
+        "GAS_FLOW": 9.357,
+        "OIL_FLOW": 84.058
+      }
+    },
+    {
+      "timestamp": "2025-10-04 10:00:00Z",
+      "sensors": {
+        "PRESS": 50.529,
+        "LEVEL": 46.237,
+        "TEMP": 66.97,
+        "GAS_FLOW": 9.014,
+        "OIL_FLOW": 83.483
+      }
+    },
+    {
+      "timestamp": "2025-10-04 10:15:00Z",
+      "sensors": {
+        "PRESS": 50.91,
+        "LEVEL": 48.174,
+        "TEMP": 68.825,
+        "GAS_FLOW": 9.347,
+        "OIL_FLOW": 82.213
+      }
+    },
+    {
+      "timestamp": "2025-10-04 10:30:00Z",
+      "sensors": {
+        "PRESS": 51.763,
+        "LEVEL": 47.775,
+        "TEMP": 70.261,
+        "GAS_FLOW": 9.367,
+        "OIL_FLOW": 83.279
+      }
+    },
+    {
+      "timestamp": "2025-10-04 10:45:00Z",
+      "sensors": {
+        "PRESS": 52.945,
+        "LEVEL": 47.214,
+        "TEMP": 69.971,
+        "GAS_FLOW": 9.594,
+        "OIL_FLOW": 85.13
+      }
+    },
+    {
+      "timestamp": "2025-10-04 11:00:00Z",
+      "sensors": {
+        "PRESS": 53.589,
+        "LEVEL": 46.727,
+        "TEMP": 69.587,
+        "GAS_FLOW": 9.82,
+        "OIL_FLOW": 89.224
+      }
+    },
+    {
+      "timestamp": "2025-10-04 11:15:00Z",
+      "sensors": {
+        "PRESS": 53.015,
+        "LEVEL": 48.154,
+        "TEMP": 67.388,
+        "GAS_FLOW": 9.806,
+        "OIL_FLOW": 89.396
+      }
+    },
+    {
+      "timestamp": "2025-10-04 11:30:00Z",
+      "sensors": {
+        "PRESS": 54.203,
+        "LEVEL": 49.072,
+        "TEMP": 67.611,
+        "GAS_FLOW": 10.23,
+        "OIL_FLOW": 92.678
+      }
+    },
+    {
+      "timestamp": "2025-10-04 11:45:00Z",
+      "sensors": {
+        "PRESS": 54.86,
+        "LEVEL": 50.525,
+        "TEMP": 70.16,
+        "GAS_FLOW": 10.267,
+        "OIL_FLOW": 92.606
+      }
+    },
+    {
+      "timestamp": "2025-10-04 12:00:00Z",
+      "sensors": {
+        "PRESS": 55.669,
+        "LEVEL": 48.041,
+        "TEMP": 69.988,
+        "GAS_FLOW": 10.798,
+        "OIL_FLOW": 86.367
+      }
+    },
+    {
+      "timestamp": "2025-10-04 12:15:00Z",
+      "sensors": {
+        "PRESS": 56.135,
+        "LEVEL": 48.248,
+        "TEMP": 71.108,
+        "GAS_FLOW": 10.68,
+        "OIL_FLOW": 87.96
+      }
+    },
+    {
+      "timestamp": "2025-10-04 12:30:00Z",
+      "sensors": {
+        "PRESS": 54.924,
+        "LEVEL": 48.868,
+        "TEMP": 69.654,
+        "GAS_FLOW": 10.974,
+        "OIL_FLOW": 87.912
+      }
+    },
+    {
+      "timestamp": "2025-10-04 12:45:00Z",
+      "sensors": {
+        "PRESS": 55.424,
+        "LEVEL": 49.028,
+        "TEMP": 70.214,
+        "GAS_FLOW": 11.248,
+        "OIL_FLOW": 90.633
+      }
+    },
+    {
+      "timestamp": "2025-10-04 13:00:00Z",
+      "sensors": {
+        "PRESS": 57.806,
+        "LEVEL": 49.652,
+        "TEMP": 70.302,
+        "GAS_FLOW": 11.362,
+        "OIL_FLOW": 87.135
+      }
+    },
+    {
+      "timestamp": "2025-10-04 13:15:00Z",
+      "sensors": {
+        "PRESS": 57.971,
+        "LEVEL": 49.541,
+        "TEMP": 70.435,
+        "GAS_FLOW": 11.7,
+        "OIL_FLOW": 88.013
+      }
+    },
+    {
+      "timestamp": "2025-10-04 13:30:00Z",
+      "sensors": {
+        "PRESS": 58.491,
+        "LEVEL": 49.917,
+        "TEMP": 71.365,
+        "GAS_FLOW": 11.317,
+        "OIL_FLOW": 87.037
+      }
+    },
+    {
+      "timestamp": "2025-10-04 13:45:00Z",
+      "sensors": {
+        "PRESS": 58.072,
+        "LEVEL": 49.108,
+        "TEMP": 71.828,
+        "GAS_FLOW": 11.145,
+        "OIL_FLOW": 86.479
+      }
+    },
+    {
+      "timestamp": "2025-10-04 14:00:00Z",
+      "sensors": {
+        "PRESS": 57.728,
+        "LEVEL": 49.745,
+        "TEMP": 74.421,
+        "GAS_FLOW": 10.964,
+        "OIL_FLOW": 80.734
+      }
+    },
+    {
+      "timestamp": "2025-10-04 14:15:00Z",
+      "sensors": {
+        "PRESS": 58.902,
+        "LEVEL": 51.164,
+        "TEMP": 73.879,
+        "GAS_FLOW": 10.878,
+        "OIL_FLOW": 79.12
+      }
+    },
+    {
+      "timestamp": "2025-10-04 14:30:00Z",
+      "sensors": {
+        "PRESS": 59.151,
+        "LEVEL": 51.225,
+        "TEMP": 75.402,
+        "GAS_FLOW": 11.009,
+        "OIL_FLOW": 82.455
+      }
+    },
+    {
+      "timestamp": "2025-10-04 14:45:00Z",
+      "sensors": {
+        "PRESS": 59.361,
+        "LEVEL": 50.466,
+        "TEMP": 76.67,
+        "GAS_FLOW": 10.656,
+        "OIL_FLOW": 79.741
+      }
+    },
+    {
+      "timestamp": "2025-10-04 15:00:00Z",
+      "sensors": {
+        "PRESS": 59.131,
+        "LEVEL": 51.697,
+        "TEMP": 77.368,
+        "GAS_FLOW": 10.389,
+        "OIL_FLOW": 77.468
+      }
+    },
+    {
+      "timestamp": "2025-10-04 15:15:00Z",
+      "sensors": {
+        "PRESS": 57.6,
+        "LEVEL": 50.813,
+        "TEMP": 76.189,
+        "GAS_FLOW": 10.337,
+        "OIL_FLOW": 74.925
+      }
+    },
+    {
+      "timestamp": "2025-10-04 15:30:00Z",
+      "sensors": {
+        "PRESS": 58.259,
+        "LEVEL": 51.328,
+        "TEMP": 76.193,
+        "GAS_FLOW": 10.366,
+        "OIL_FLOW": 73.648
+      }
+    },
+    {
+      "timestamp": "2025-10-04 15:45:00Z",
+      "sensors": {
+        "PRESS": 58.369,
+        "LEVEL": 51.154,
+        "TEMP": 76.31,
+        "GAS_FLOW": 10.546,
+        "OIL_FLOW": 74.626
+      }
+    },
+    {
+      "timestamp": "2025-10-04 16:00:00Z",
+      "sensors": {
+        "PRESS": 58.191,
+        "LEVEL": 49.942,
+        "TEMP": 75.532,
+        "GAS_FLOW": 10.586,
+        "OIL_FLOW": 78.52
+      }
+    },
+    {
+      "timestamp": "2025-10-04 16:15:00Z",
+      "sensors": {
+        "PRESS": 56.707,
+        "LEVEL": 51.039,
+        "TEMP": 75.141,
+        "GAS_FLOW": 10.352,
+        "OIL_FLOW": 76.773
+      }
+    },
+    {
+      "timestamp": "2025-10-04 16:30:00Z",
+      "sensors": {
+        "PRESS": 56.62,
+        "LEVEL": 51.215,
+        "TEMP": 76.105,
+        "GAS_FLOW": 10.044,
+        "OIL_FLOW": 81.319
+      }
+    },
+    {
+      "timestamp": "2025-10-04 16:45:00Z",
+      "sensors": {
+        "PRESS": 57.069,
+        "LEVEL": 48.287,
+        "TEMP": 75.254,
+        "GAS_FLOW": 9.879,
+        "OIL_FLOW": 76.551
+      }
+    },
+    {
+      "timestamp": "2025-10-04 17:00:00Z",
+      "sensors": {
+        "PRESS": 57.066,
+        "LEVEL": 49.497,
+        "TEMP": 74.823,
+        "GAS_FLOW": 9.357,
+        "OIL_FLOW": 74.651
+      }
+    },
+    {
+      "timestamp": "2025-10-04 17:15:00Z",
+      "sensors": {
+        "PRESS": 57.684,
+        "LEVEL": 48.389,
+        "TEMP": 76.192,
+        "GAS_FLOW": 9.297,
+        "OIL_FLOW": 77.925
+      }
+    },
+    {
+      "timestamp": "2025-10-04 17:30:00Z",
+      "sensors": {
+        "PRESS": 56.703,
+        "LEVEL": 46.882,
+        "TEMP": 74.902,
+        "GAS_FLOW": 9.366,
+        "OIL_FLOW": 78.674
+      }
+    },
+    {
+      "timestamp": "2025-10-04 17:45:00Z",
+      "sensors": {
+        "PRESS": 55.321,
+        "LEVEL": 45.959,
+        "TEMP": 74.02,
+        "GAS_FLOW": 9.613,
+        "OIL_FLOW": 76.071
+      }
+    },
+    {
+      "timestamp": "2025-10-04 18:00:00Z",
+      "sensors": {
+        "PRESS": 54.286,
+        "LEVEL": 45.635,
+        "TEMP": 74.254,
+        "GAS_FLOW": 9.671,
+        "OIL_FLOW": 72.931
+      }
+    },
+    {
+      "timestamp": "2025-10-04 18:15:00Z",
+      "sensors": {
+        "PRESS": 56.918,
+        "LEVEL": 44.808,
+        "TEMP": 74.894,
+        "GAS_FLOW": 9.403,
+        "OIL_FLOW": 73.531
+      }
+    },
+    {
+      "timestamp": "2025-10-04 18:30:00Z",
+      "sensors": {
+        "PRESS": 57.482,
+        "LEVEL": 46.15,
+        "TEMP": 76.504,
+        "GAS_FLOW": 9.665,
+        "OIL_FLOW": 75.45
+      }
+    },
+    {
+      "timestamp": "2025-10-04 18:45:00Z",
+      "sensors": {
+        "PRESS": 57.368,
+        "LEVEL": 48.655,
+        "TEMP": 76.781,
+        "GAS_FLOW": 9.17,
+        "OIL_FLOW": 77.047
+      }
+    },
+    {
+      "timestamp": "2025-10-04 19:00:00Z",
+      "sensors": {
+        "PRESS": 58.029,
+        "LEVEL": 47.954,
+        "TEMP": 76.031,
+        "GAS_FLOW": 9.583,
+        "OIL_FLOW": 78.866
+      }
+    },
+    {
+      "timestamp": "2025-10-04 19:15:00Z",
+      "sensors": {
+        "PRESS": 57.408,
+        "LEVEL": 48.74,
+        "TEMP": 74.662,
+        "GAS_FLOW": 9.715,
+        "OIL_FLOW": 78.909
+      }
+    },
+    {
+      "timestamp": "2025-10-04 19:30:00Z",
+      "sensors": {
+        "PRESS": 58.246,
+        "LEVEL": 49.32,
+        "TEMP": 73.742,
+        "GAS_FLOW": 9.836,
+        "OIL_FLOW": 83.097
+      }
+    },
+    {
+      "timestamp": "2025-10-04 19:45:00Z",
+      "sensors": {
+        "PRESS": 57.768,
+        "LEVEL": 49.174,
+        "TEMP": 73.994,
+        "GAS_FLOW": 9.883,
+        "OIL_FLOW": 83.861
+      }
+    },
+    {
+      "timestamp": "2025-10-04 20:00:00Z",
+      "sensors": {
+        "PRESS": 56.837,
+        "LEVEL": 47.211,
+        "TEMP": 74.288,
+        "GAS_FLOW": 9.894,
+        "OIL_FLOW": 85.982
+      }
+    },
+    {
+      "timestamp": "2025-10-04 20:15:00Z",
+      "sensors": {
+        "PRESS": 56.863,
+        "LEVEL": 45.206,
+        "TEMP": 73.955,
+        "GAS_FLOW": 9.9,
+        "OIL_FLOW": 91.073
+      }
+    },
+    {
+      "timestamp": "2025-10-04 20:30:00Z",
+      "sensors": {
+        "PRESS": 56.624,
+        "LEVEL": 45.142,
+        "TEMP": 73.85,
+        "GAS_FLOW": 10.167,
+        "OIL_FLOW": 93.844
+      }
+    },
+    {
+      "timestamp": "2025-10-04 20:45:00Z",
+      "sensors": {
+        "PRESS": 55.707,
+        "LEVEL": 45.572,
+        "TEMP": 70.714,
+        "GAS_FLOW": 9.817,
+        "OIL_FLOW": 94.808
+      }
+    },
+    {
+      "timestamp": "2025-10-04 21:00:00Z",
+      "sensors": {
+        "PRESS": 57.185,
+        "LEVEL": 44.352,
+        "TEMP": 69.015,
+        "GAS_FLOW": 10.085,
+        "OIL_FLOW": 94.075
+      }
+    },
+    {
+      "timestamp": "2025-10-04 21:15:00Z",
+      "sensors": {
+        "PRESS": 58.521,
+        "LEVEL": 45.142,
+        "TEMP": 67.938,
+        "GAS_FLOW": 9.45,
+        "OIL_FLOW": 91.083
+      }
+    },
+    {
+      "timestamp": "2025-10-04 21:30:00Z",
+      "sensors": {
+        "PRESS": 57.643,
+        "LEVEL": 43.788,
+        "TEMP": 68.686,
+        "GAS_FLOW": 8.963,
+        "OIL_FLOW": 95.66
+      }
+    },
+    {
+      "timestamp": "2025-10-04 21:45:00Z",
+      "sensors": {
+        "PRESS": 58.82,
+        "LEVEL": 44.341,
+        "TEMP": 69.046,
+        "GAS_FLOW": 9.107,
+        "OIL_FLOW": 97.164
+      }
+    },
+    {
+      "timestamp": "2025-10-04 22:00:00Z",
+      "sensors": {
+        "PRESS": 59.769,
+        "LEVEL": 45.206,
+        "TEMP": 70.345,
+        "GAS_FLOW": 8.856,
+        "OIL_FLOW": 92.91
+      }
+    },
+    {
+      "timestamp": "2025-10-04 22:15:00Z",
+      "sensors": {
+        "PRESS": 59.971,
+        "LEVEL": 45.435,
+        "TEMP": 68.953,
+        "GAS_FLOW": 9.139,
+        "OIL_FLOW": 93.105
+      }
+    },
+    {
+      "timestamp": "2025-10-04 22:30:00Z",
+      "sensors": {
+        "PRESS": 61.291,
+        "LEVEL": 45.598,
+        "TEMP": 69.363,
+        "GAS_FLOW": 9.214,
+        "OIL_FLOW": 100.603
+      }
+    },
+    {
+      "timestamp": "2025-10-04 22:45:00Z",
+      "sensors": {
+        "PRESS": 61.214,
+        "LEVEL": 45.452,
+        "TEMP": 69.579,
+        "GAS_FLOW": 9.277,
+        "OIL_FLOW": 101.256
+      }
+    },
+    {
+      "timestamp": "2025-10-04 23:00:00Z",
+      "sensors": {
+        "PRESS": 59.745,
+        "LEVEL": 46.471,
+        "TEMP": 70.134,
+        "GAS_FLOW": 10.143,
+        "OIL_FLOW": 100.014
+      }
+    },
+    {
+      "timestamp": "2025-10-04 23:15:00Z",
+      "sensors": {
+        "PRESS": 59.292,
+        "LEVEL": 47.894,
+        "TEMP": 72.148,
+        "GAS_FLOW": 10.037,
+        "OIL_FLOW": 100.595
+      }
+    },
+    {
+      "timestamp": "2025-10-04 23:30:00Z",
+      "sensors": {
+        "PRESS": 59.712,
+        "LEVEL": 47.76,
+        "TEMP": 72.953,
+        "GAS_FLOW": 10.073,
+        "OIL_FLOW": 103.496
+      }
+    },
+    {
+      "timestamp": "2025-10-04 23:45:00Z",
+      "sensors": {
+        "PRESS": 60.448,
+        "LEVEL": 47.794,
+        "TEMP": 72.308,
+        "GAS_FLOW": 10.375,
+        "OIL_FLOW": 104.493
+      }
+    },
+    {
+      "timestamp": "2025-10-05 00:00:00Z",
+      "sensors": {
+        "PRESS": 60.529,
+        "LEVEL": 49.708,
+        "TEMP": 70.64,
+        "GAS_FLOW": 10.462,
+        "OIL_FLOW": 108.971
+      }
+    },
+    {
+      "timestamp": "2025-10-05 00:15:00Z",
+      "sensors": {
+        "PRESS": 60.199,
+        "LEVEL": 49.198,
+        "TEMP": 71.699,
+        "GAS_FLOW": 10.042,
+        "OIL_FLOW": 106.942
+      }
+    },
+    {
+      "timestamp": "2025-10-05 00:30:00Z",
+      "sensors": {
+        "PRESS": 61.944,
+        "LEVEL": 49.489,
+        "TEMP": 71.679,
+        "GAS_FLOW": 10.311,
+        "OIL_FLOW": 111.375
+      }
+    },
+    {
+      "timestamp": "2025-10-05 00:45:00Z",
+      "sensors": {
+        "PRESS": 61.296,
+        "LEVEL": 48.963,
+        "TEMP": 71.739,
+        "GAS_FLOW": 10.312,
+        "OIL_FLOW": 108.854
+      }
+    },
+    {
+      "timestamp": "2025-10-05 01:00:00Z",
+      "sensors": {
+        "PRESS": 61.375,
+        "LEVEL": 48.108,
+        "TEMP": 71.87,
+        "GAS_FLOW": 10.213,
+        "OIL_FLOW": 105.658
+      }
+    },
+    {
+      "timestamp": "2025-10-05 01:15:00Z",
+      "sensors": {
+        "PRESS": 59.43,
+        "LEVEL": 47.753,
+        "TEMP": 71.325,
+        "GAS_FLOW": 10.053,
+        "OIL_FLOW": 106.022
+      }
+    },
+    {
+      "timestamp": "2025-10-05 01:30:00Z",
+      "sensors": {
+        "PRESS": 58.941,
+        "LEVEL": 46.947,
+        "TEMP": 70.194,
+        "GAS_FLOW": 10.014,
+        "OIL_FLOW": 104.114
+      }
+    },
+    {
+      "timestamp": "2025-10-05 01:45:00Z",
+      "sensors": {
+        "PRESS": 57.329,
+        "LEVEL": 45.862,
+        "TEMP": 70.06,
+        "GAS_FLOW": 9.714,
+        "OIL_FLOW": 104.681
+      }
+    },
+    {
+      "timestamp": "2025-10-05 02:00:00Z",
+      "sensors": {
+        "PRESS": 56.968,
+        "LEVEL": 45.937,
+        "TEMP": 69.299,
+        "GAS_FLOW": 9.709,
+        "OIL_FLOW": 106.541
+      }
+    },
+    {
+      "timestamp": "2025-10-05 02:15:00Z",
+      "sensors": {
+        "PRESS": 55.95,
+        "LEVEL": 45.31,
+        "TEMP": 69.789,
+        "GAS_FLOW": 9.508,
+        "OIL_FLOW": 112.498
+      }
+    },
+    {
+      "timestamp": "2025-10-05 02:30:00Z",
+      "sensors": {
+        "PRESS": 55.014,
+        "LEVEL": 44.883,
+        "TEMP": 68.469,
+        "GAS_FLOW": 8.923,
+        "OIL_FLOW": 108.452
+      }
+    },
+    {
+      "timestamp": "2025-10-05 02:45:00Z",
+      "sensors": {
+        "PRESS": 55.547,
+        "LEVEL": 46.144,
+        "TEMP": 67.94,
+        "GAS_FLOW": 9.105,
+        "OIL_FLOW": 104.948
+      }
+    },
+    {
+      "timestamp": "2025-10-05 03:00:00Z",
+      "sensors": {
+        "PRESS": 55.271,
+        "LEVEL": 44.302,
+        "TEMP": 68.373,
+        "GAS_FLOW": 8.97,
+        "OIL_FLOW": 112.472
+      }
+    },
+    {
+      "timestamp": "2025-10-05 03:15:00Z",
+      "sensors": {
+        "PRESS": 54.494,
+        "LEVEL": 44.405,
+        "TEMP": 65.603,
+        "GAS_FLOW": 9.207,
+        "OIL_FLOW": 107.37
+      }
+    },
+    {
+      "timestamp": "2025-10-05 03:30:00Z",
+      "sensors": {
+        "PRESS": 52.967,
+        "LEVEL": 45.02,
+        "TEMP": 65.344,
+        "GAS_FLOW": 8.739,
+        "OIL_FLOW": 105.204
+      }
+    },
+    {
+      "timestamp": "2025-10-05 03:45:00Z",
+      "sensors": {
+        "PRESS": 52.473,
+        "LEVEL": 45.247,
+        "TEMP": 65.636,
+        "GAS_FLOW": 8.812,
+        "OIL_FLOW": 104.635
+      }
+    },
+    {
+      "timestamp": "2025-10-05 04:00:00Z",
+      "sensors": {
+        "PRESS": 52.006,
+        "LEVEL": 45.157,
+        "TEMP": 63.544,
+        "GAS_FLOW": 8.406,
+        "OIL_FLOW": 101.466
+      }
+    },
+    {
+      "timestamp": "2025-10-05 04:15:00Z",
+      "sensors": {
+        "PRESS": 51.278,
+        "LEVEL": 45.816,
+        "TEMP": 62.921,
+        "GAS_FLOW": 8.941,
+        "OIL_FLOW": 102.686
+      }
+    },
+    {
+      "timestamp": "2025-10-05 04:30:00Z",
+      "sensors": {
+        "PRESS": 52.075,
+        "LEVEL": 46.115,
+        "TEMP": 63.372,
+        "GAS_FLOW": 8.941,
+        "OIL_FLOW": 102.25
+      }
+    },
+    {
+      "timestamp": "2025-10-05 04:45:00Z",
+      "sensors": {
+        "PRESS": 52.788,
+        "LEVEL": 45.358,
+        "TEMP": 64.545,
+        "GAS_FLOW": 9.076,
+        "OIL_FLOW": 103.953
+      }
+    },
+    {
+      "timestamp": "2025-10-05 05:00:00Z",
+      "sensors": {
+        "PRESS": 52.561,
+        "LEVEL": 46.228,
+        "TEMP": 64.434,
+        "GAS_FLOW": 9.574,
+        "OIL_FLOW": 106.84
+      }
+    },
+    {
+      "timestamp": "2025-10-05 05:15:00Z",
+      "sensors": {
+        "PRESS": 50.239,
+        "LEVEL": 46.837,
+        "TEMP": 64.204,
+        "GAS_FLOW": 9.144,
+        "OIL_FLOW": 100.269
+      }
+    },
+    {
+      "timestamp": "2025-10-05 05:30:00Z",
+      "sensors": {
+        "PRESS": 50.731,
+        "LEVEL": 46.99,
+        "TEMP": 63.225,
+        "GAS_FLOW": 9.074,
+        "OIL_FLOW": 100.207
+      }
+    },
+    {
+      "timestamp": "2025-10-05 05:45:00Z",
+      "sensors": {
+        "PRESS": 49.444,
+        "LEVEL": 47.833,
+        "TEMP": 62.517,
+        "GAS_FLOW": 9.077,
+        "OIL_FLOW": 102.817
+      }
+    },
+    {
+      "timestamp": "2025-10-05 06:00:00Z",
+      "sensors": {
+        "PRESS": 48.674,
+        "LEVEL": 47.333,
+        "TEMP": 61.739,
+        "GAS_FLOW": 9.126,
+        "OIL_FLOW": 98.066
+      }
+    },
+    {
+      "timestamp": "2025-10-05 06:15:00Z",
+      "sensors": {
+        "PRESS": 48.083,
+        "LEVEL": 46.773,
+        "TEMP": 63.724,
+        "GAS_FLOW": 9.434,
+        "OIL_FLOW": 98.219
+      }
+    },
+    {
+      "timestamp": "2025-10-05 06:30:00Z",
+      "sensors": {
+        "PRESS": 48.795,
+        "LEVEL": 46.173,
+        "TEMP": 63.843,
+        "GAS_FLOW": 9.758,
+        "OIL_FLOW": 93.575
+      }
+    },
+    {
+      "timestamp": "2025-10-05 06:45:00Z",
+      "sensors": {
+        "PRESS": 49.151,
+        "LEVEL": 46.585,
+        "TEMP": 63.508,
+        "GAS_FLOW": 9.975,
+        "OIL_FLOW": 91.944
+      }
+    },
+    {
+      "timestamp": "2025-10-05 07:00:00Z",
+      "sensors": {
+        "PRESS": 49.851,
+        "LEVEL": 45.672,
+        "TEMP": 62.34,
+        "GAS_FLOW": 9.984,
+        "OIL_FLOW": 91.086
+      }
+    },
+    {
+      "timestamp": "2025-10-05 07:15:00Z",
+      "sensors": {
+        "PRESS": 50.017,
+        "LEVEL": 44.378,
+        "TEMP": 61.168,
+        "GAS_FLOW": 10.279,
+        "OIL_FLOW": 87.743
+      }
+    },
+    {
+      "timestamp": "2025-10-05 07:30:00Z",
+      "sensors": {
+        "PRESS": 50.457,
+        "LEVEL": 42.012,
+        "TEMP": 61.524,
+        "GAS_FLOW": 9.85,
+        "OIL_FLOW": 87.553
+      }
+    },
+    {
+      "timestamp": "2025-10-05 07:45:00Z",
+      "sensors": {
+        "PRESS": 49.958,
+        "LEVEL": 42.524,
+        "TEMP": 60.697,
+        "GAS_FLOW": 9.095,
+        "OIL_FLOW": 90.916
+      }
+    },
+    {
+      "timestamp": "2025-10-05 08:00:00Z",
+      "sensors": {
+        "PRESS": 50.352,
+        "LEVEL": 41.611,
+        "TEMP": 60.683,
+        "GAS_FLOW": 9.516,
+        "OIL_FLOW": 95.518
+      }
+    },
+    {
+      "timestamp": "2025-10-05 08:15:00Z",
+      "sensors": {
+        "PRESS": 49.942,
+        "LEVEL": 41.095,
+        "TEMP": 60.317,
+        "GAS_FLOW": 9.23,
+        "OIL_FLOW": 96.675
+      }
+    },
+    {
+      "timestamp": "2025-10-05 08:30:00Z",
+      "sensors": {
+        "PRESS": 48.891,
+        "LEVEL": 40.321,
+        "TEMP": 59.968,
+        "GAS_FLOW": 9.67,
+        "OIL_FLOW": 94.266
+      }
+    },
+    {
+      "timestamp": "2025-10-05 08:45:00Z",
+      "sensors": {
+        "PRESS": 50.167,
+        "LEVEL": 41.817,
+        "TEMP": 58.484,
+        "GAS_FLOW": 9.738,
+        "OIL_FLOW": 96.851
+      }
+    },
+    {
+      "timestamp": "2025-10-05 09:00:00Z",
+      "sensors": {
+        "PRESS": 50.18,
+        "LEVEL": 42.472,
+        "TEMP": 58.239,
+        "GAS_FLOW": 9.778,
+        "OIL_FLOW": 95.539
+      }
+    },
+    {
+      "timestamp": "2025-10-05 09:15:00Z",
+      "sensors": {
+        "PRESS": 49.857,
+        "LEVEL": 43.309,
+        "TEMP": 56.848,
+        "GAS_FLOW": 10.343,
+        "OIL_FLOW": 96.027
+      }
+    },
+    {
+      "timestamp": "2025-10-05 09:30:00Z",
+      "sensors": {
+        "PRESS": 49.774,
+        "LEVEL": 44.28,
+        "TEMP": 56.329,
+        "GAS_FLOW": 10.144,
+        "OIL_FLOW": 90.139
+      }
+    },
+    {
+      "timestamp": "2025-10-05 09:45:00Z",
+      "sensors": {
+        "PRESS": 49.517,
+        "LEVEL": 43.295,
+        "TEMP": 57.77,
+        "GAS_FLOW": 10.133,
+        "OIL_FLOW": 83.135
+      }
+    },
+    {
+      "timestamp": "2025-10-05 10:00:00Z",
+      "sensors": {
+        "PRESS": 49.997,
+        "LEVEL": 42.893,
+        "TEMP": 58.723,
+        "GAS_FLOW": 10.171,
+        "OIL_FLOW": 82.896
+      }
+    },
+    {
+      "timestamp": "2025-10-05 10:15:00Z",
+      "sensors": {
+        "PRESS": 48.844,
+        "LEVEL": 43.712,
+        "TEMP": 59.392,
+        "GAS_FLOW": 9.632,
+        "OIL_FLOW": 88.425
+      }
+    },
+    {
+      "timestamp": "2025-10-05 10:30:00Z",
+      "sensors": {
+        "PRESS": 49.01,
+        "LEVEL": 43.009,
+        "TEMP": 59.822,
+        "GAS_FLOW": 10.079,
+        "OIL_FLOW": 90.819
+      }
+    },
+    {
+      "timestamp": "2025-10-05 10:45:00Z",
+      "sensors": {
+        "PRESS": 48.413,
+        "LEVEL": 42.714,
+        "TEMP": 59.162,
+        "GAS_FLOW": 9.2,
+        "OIL_FLOW": 93.427
+      }
+    },
+    {
+      "timestamp": "2025-10-05 11:00:00Z",
+      "sensors": {
+        "PRESS": 48.958,
+        "LEVEL": 43.712,
+        "TEMP": 60.556,
+        "GAS_FLOW": 9.015,
+        "OIL_FLOW": 94.999
+      }
+    },
+    {
+      "timestamp": "2025-10-05 11:15:00Z",
+      "sensors": {
+        "PRESS": 50.165,
+        "LEVEL": 43.404,
+        "TEMP": 57.507,
+        "GAS_FLOW": 9.159,
+        "OIL_FLOW": 90.83
+      }
+    },
+    {
+      "timestamp": "2025-10-05 11:30:00Z",
+      "sensors": {
+        "PRESS": 49.486,
+        "LEVEL": 45.207,
+        "TEMP": 56.006,
+        "GAS_FLOW": 9.678,
+        "OIL_FLOW": 92.639
+      }
+    },
+    {
+      "timestamp": "2025-10-05 11:45:00Z",
+      "sensors": {
+        "PRESS": 49.585,
+        "LEVEL": 46.124,
+        "TEMP": 57.203,
+        "GAS_FLOW": 9.659,
+        "OIL_FLOW": 90.913
+      }
+    },
+    {
+      "timestamp": "2025-10-05 12:00:00Z",
+      "sensors": {
+        "PRESS": 49.392,
+        "LEVEL": 47.922,
+        "TEMP": 54.917,
+        "GAS_FLOW": 9.554,
+        "OIL_FLOW": 88.405
+      }
+    },
+    {
+      "timestamp": "2025-10-05 12:15:00Z",
+      "sensors": {
+        "PRESS": 49.078,
+        "LEVEL": 46.412,
+        "TEMP": 54.744,
+        "GAS_FLOW": 10.386,
+        "OIL_FLOW": 86.793
+      }
+    },
+    {
+      "timestamp": "2025-10-05 12:30:00Z",
+      "sensors": {
+        "PRESS": 49.698,
+        "LEVEL": 47.053,
+        "TEMP": 55.083,
+        "GAS_FLOW": 10.136,
+        "OIL_FLOW": 90.213
+      }
+    },
+    {
+      "timestamp": "2025-10-05 12:45:00Z",
+      "sensors": {
+        "PRESS": 50.343,
+        "LEVEL": 48.405,
+        "TEMP": 56.925,
+        "GAS_FLOW": 9.971,
+        "OIL_FLOW": 93.036
+      }
+    },
+    {
+      "timestamp": "2025-10-05 13:00:00Z",
+      "sensors": {
+        "PRESS": 48.61,
+        "LEVEL": 49.054,
+        "TEMP": 57.385,
+        "GAS_FLOW": 9.894,
+        "OIL_FLOW": 90.787
+      }
+    },
+    {
+      "timestamp": "2025-10-05 13:15:00Z",
+      "sensors": {
+        "PRESS": 49.847,
+        "LEVEL": 49.602,
+        "TEMP": 54.195,
+        "GAS_FLOW": 10.377,
+        "OIL_FLOW": 93.326
+      }
+    },
+    {
+      "timestamp": "2025-10-05 13:30:00Z",
+      "sensors": {
+        "PRESS": 48.971,
+        "LEVEL": 49.238,
+        "TEMP": 53.281,
+        "GAS_FLOW": 10.084,
+        "OIL_FLOW": 95.423
+      }
+    },
+    {
+      "timestamp": "2025-10-05 13:45:00Z",
+      "sensors": {
+        "PRESS": 49.346,
+        "LEVEL": 50.257,
+        "TEMP": 52.258,
+        "GAS_FLOW": 9.73,
+        "OIL_FLOW": 92.905
+      }
+    },
+    {
+      "timestamp": "2025-10-05 14:00:00Z",
+      "sensors": {
+        "PRESS": 49.695,
+        "LEVEL": 50.97,
+        "TEMP": 51.678,
+        "GAS_FLOW": 9.895,
+        "OIL_FLOW": 87.249
+      }
+    },
+    {
+      "timestamp": "2025-10-05 14:15:00Z",
+      "sensors": {
+        "PRESS": 49.959,
+        "LEVEL": 52.471,
+        "TEMP": 48.294,
+        "GAS_FLOW": 9.87,
+        "OIL_FLOW": 83.921
+      }
+    },
+    {
+      "timestamp": "2025-10-05 14:30:00Z",
+      "sensors": {
+        "PRESS": 50.067,
+        "LEVEL": 52.09,
+        "TEMP": 46.217,
+        "GAS_FLOW": 9.658,
+        "OIL_FLOW": 85.34
+      }
+    },
+    {
+      "timestamp": "2025-10-05 14:45:00Z",
+      "sensors": {
+        "PRESS": 49.972,
+        "LEVEL": 51.818,
+        "TEMP": 47.24,
+        "GAS_FLOW": 9.661,
+        "OIL_FLOW": 81.808
+      }
+    },
+    {
+      "timestamp": "2025-10-05 15:00:00Z",
+      "sensors": {
+        "PRESS": 50.372,
+        "LEVEL": 51.801,
+        "TEMP": 47.684,
+        "GAS_FLOW": 10.128,
+        "OIL_FLOW": 85.346
+      }
+    },
+    {
+      "timestamp": "2025-10-05 15:15:00Z",
+      "sensors": {
+        "PRESS": 51.882,
+        "LEVEL": 53.474,
+        "TEMP": 47.479,
+        "GAS_FLOW": 10.011,
+        "OIL_FLOW": 81.813
+      }
+    },
+    {
+      "timestamp": "2025-10-05 15:30:00Z",
+      "sensors": {
+        "PRESS": 51.049,
+        "LEVEL": 54.693,
+        "TEMP": 49.16,
+        "GAS_FLOW": 10.126,
+        "OIL_FLOW": 83.041
+      }
+    },
+    {
+      "timestamp": "2025-10-05 15:45:00Z",
+      "sensors": {
+        "PRESS": 49.42,
+        "LEVEL": 54.004,
+        "TEMP": 49.315,
+        "GAS_FLOW": 10.35,
+        "OIL_FLOW": 79.599
+      }
+    },
+    {
+      "timestamp": "2025-10-05 16:00:00Z",
+      "sensors": {
+        "PRESS": 50.854,
+        "LEVEL": 54.083,
+        "TEMP": 48.876,
+        "GAS_FLOW": 10.227,
+        "OIL_FLOW": 77.824
+      }
+    },
+    {
+      "timestamp": "2025-10-05 16:15:00Z",
+      "sensors": {
+        "PRESS": 51.147,
+        "LEVEL": 54.834,
+        "TEMP": 48.45,
+        "GAS_FLOW": 9.928,
+        "OIL_FLOW": 75.291
+      }
+    },
+    {
+      "timestamp": "2025-10-05 16:30:00Z",
+      "sensors": {
+        "PRESS": 51.605,
+        "LEVEL": 55.827,
+        "TEMP": 49.607,
+        "GAS_FLOW": 10.101,
+        "OIL_FLOW": 75.389
+      }
+    },
+    {
+      "timestamp": "2025-10-05 16:45:00Z",
+      "sensors": {
+        "PRESS": 51.765,
+        "LEVEL": 56.772,
+        "TEMP": 49.504,
+        "GAS_FLOW": 9.232,
+        "OIL_FLOW": 77.478
+      }
+    },
+    {
+      "timestamp": "2025-10-05 17:00:00Z",
+      "sensors": {
+        "PRESS": 50.32,
+        "LEVEL": 57.405,
+        "TEMP": 48.772,
+        "GAS_FLOW": 9.664,
+        "OIL_FLOW": 80.661
+      }
+    },
+    {
+      "timestamp": "2025-10-05 17:15:00Z",
+      "sensors": {
+        "PRESS": 48.725,
+        "LEVEL": 56.708,
+        "TEMP": 49.541,
+        "GAS_FLOW": 9.826,
+        "OIL_FLOW": 80.131
+      }
+    },
+    {
+      "timestamp": "2025-10-05 17:30:00Z",
+      "sensors": {
+        "PRESS": 49.291,
+        "LEVEL": 56.636,
+        "TEMP": 52.212,
+        "GAS_FLOW": 10.195,
+        "OIL_FLOW": 88.895
+      }
+    },
+    {
+      "timestamp": "2025-10-05 17:45:00Z",
+      "sensors": {
+        "PRESS": 49.895,
+        "LEVEL": 59.069,
+        "TEMP": 52.466,
+        "GAS_FLOW": 10.193,
+        "OIL_FLOW": 93.288
+      }
+    },
+    {
+      "timestamp": "2025-10-05 18:00:00Z",
+      "sensors": {
+        "PRESS": 48.436,
+        "LEVEL": 57.409,
+        "TEMP": 52.815,
+        "GAS_FLOW": 10.076,
+        "OIL_FLOW": 96.656
+      }
+    },
+    {
+      "timestamp": "2025-10-05 18:15:00Z",
+      "sensors": {
+        "PRESS": 48.888,
+        "LEVEL": 57.322,
+        "TEMP": 52.996,
+        "GAS_FLOW": 10.089,
+        "OIL_FLOW": 94.175
+      }
+    },
+    {
+      "timestamp": "2025-10-05 18:30:00Z",
+      "sensors": {
+        "PRESS": 45.891,
+        "LEVEL": 58.407,
+        "TEMP": 52.749,
+        "GAS_FLOW": 10.155,
+        "OIL_FLOW": 99.885
+      }
+    },
+    {
+      "timestamp": "2025-10-05 18:45:00Z",
+      "sensors": {
+        "PRESS": 46.295,
+        "LEVEL": 58.001,
+        "TEMP": 53.041,
+        "GAS_FLOW": 9.857,
+        "OIL_FLOW": 99.358
+      }
+    },
+    {
+      "timestamp": "2025-10-05 19:00:00Z",
+      "sensors": {
+        "PRESS": 46.066,
+        "LEVEL": 58.2,
+        "TEMP": 51.192,
+        "GAS_FLOW": 9.812,
+        "OIL_FLOW": 97.748
+      }
+    },
+    {
+      "timestamp": "2025-10-05 19:15:00Z",
+      "sensors": {
+        "PRESS": 46.982,
+        "LEVEL": 56.649,
+        "TEMP": 51.397,
+        "GAS_FLOW": 10.097,
+        "OIL_FLOW": 101.409
+      }
+    },
+    {
+      "timestamp": "2025-10-05 19:30:00Z",
+      "sensors": {
+        "PRESS": 46.473,
+        "LEVEL": 57.367,
+        "TEMP": 49.909,
+        "GAS_FLOW": 10.327,
+        "OIL_FLOW": 101.061
+      }
+    },
+    {
+      "timestamp": "2025-10-05 19:45:00Z",
+      "sensors": {
+        "PRESS": 46.257,
+        "LEVEL": 57.715,
+        "TEMP": 49.451,
+        "GAS_FLOW": 10.296,
+        "OIL_FLOW": 101.356
+      }
+    },
+    {
+      "timestamp": "2025-10-05 20:00:00Z",
+      "sensors": {
+        "PRESS": 46.657,
+        "LEVEL": 57.641,
+        "TEMP": 50.066,
+        "GAS_FLOW": 10.538,
+        "OIL_FLOW": 100.855
+      }
+    },
+    {
+      "timestamp": "2025-10-05 20:15:00Z",
+      "sensors": {
+        "PRESS": 47.154,
+        "LEVEL": 55.83,
+        "TEMP": 54.054,
+        "GAS_FLOW": 11.019,
+        "OIL_FLOW": 96.75
+      }
+    },
+    {
+      "timestamp": "2025-10-05 20:30:00Z",
+      "sensors": {
+        "PRESS": 47.915,
+        "LEVEL": 57.075,
+        "TEMP": 54.686,
+        "GAS_FLOW": 10.804,
+        "OIL_FLOW": 99.764
+      }
+    },
+    {
+      "timestamp": "2025-10-05 20:45:00Z",
+      "sensors": {
+        "PRESS": 47.895,
+        "LEVEL": 56.57,
+        "TEMP": 56.197,
+        "GAS_FLOW": 10.211,
+        "OIL_FLOW": 99.502
+      }
+    },
+    {
+      "timestamp": "2025-10-05 21:00:00Z",
+      "sensors": {
+        "PRESS": 46.474,
+        "LEVEL": 54.935,
+        "TEMP": 57.168,
+        "GAS_FLOW": 10.07,
+        "OIL_FLOW": 99.293
+      }
+    },
+    {
+      "timestamp": "2025-10-05 21:15:00Z",
+      "sensors": {
+        "PRESS": 45.413,
+        "LEVEL": 55.104,
+        "TEMP": 56.77,
+        "GAS_FLOW": 10.605,
+        "OIL_FLOW": 98.334
+      }
+    },
+    {
+      "timestamp": "2025-10-05 21:30:00Z",
+      "sensors": {
+        "PRESS": 43.753,
+        "LEVEL": 56.49,
+        "TEMP": 56.831,
+        "GAS_FLOW": 10.381,
+        "OIL_FLOW": 97.487
+      }
+    },
+    {
+      "timestamp": "2025-10-05 21:45:00Z",
+      "sensors": {
+        "PRESS": 44.165,
+        "LEVEL": 56.61,
+        "TEMP": 56.902,
+        "GAS_FLOW": 10.095,
+        "OIL_FLOW": 97.262
+      }
+    },
+    {
+      "timestamp": "2025-10-05 22:00:00Z",
+      "sensors": {
+        "PRESS": 43.057,
+        "LEVEL": 56.596,
+        "TEMP": 56.289,
+        "GAS_FLOW": 10.069,
+        "OIL_FLOW": 101.983
+      }
+    },
+    {
+      "timestamp": "2025-10-05 22:15:00Z",
+      "sensors": {
+        "PRESS": 42.43,
+        "LEVEL": 56.765,
+        "TEMP": 57.156,
+        "GAS_FLOW": 9.839,
+        "OIL_FLOW": 103.047
+      }
+    },
+    {
+      "timestamp": "2025-10-05 22:30:00Z",
+      "sensors": {
+        "PRESS": 43.032,
+        "LEVEL": 56.356,
+        "TEMP": 55.596,
+        "GAS_FLOW": 10.206,
+        "OIL_FLOW": 101.275
+      }
+    },
+    {
+      "timestamp": "2025-10-05 22:45:00Z",
+      "sensors": {
+        "PRESS": 42.367,
+        "LEVEL": 55.908,
+        "TEMP": 55.93,
+        "GAS_FLOW": 10.199,
+        "OIL_FLOW": 102.449
+      }
+    },
+    {
+      "timestamp": "2025-10-05 23:00:00Z",
+      "sensors": {
+        "PRESS": 42.949,
+        "LEVEL": 56.037,
+        "TEMP": 56.122,
+        "GAS_FLOW": 10.293,
+        "OIL_FLOW": 102.774
+      }
+    },
+    {
+      "timestamp": "2025-10-05 23:15:00Z",
+      "sensors": {
+        "PRESS": 41.616,
+        "LEVEL": 54.551,
+        "TEMP": 52.893,
+        "GAS_FLOW": 9.577,
+        "OIL_FLOW": 101.636
+      }
+    },
+    {
+      "timestamp": "2025-10-05 23:30:00Z",
+      "sensors": {
+        "PRESS": 40.629,
+        "LEVEL": 55.222,
+        "TEMP": 52.408,
+        "GAS_FLOW": 9.553,
+        "OIL_FLOW": 105.494
+      }
+    },
+    {
+      "timestamp": "2025-10-05 23:45:00Z",
+      "sensors": {
+        "PRESS": 39.901,
+        "LEVEL": 53.941,
+        "TEMP": 52.997,
+        "GAS_FLOW": 9.753,
+        "OIL_FLOW": 109.061
+      }
+    },
+    {
+      "timestamp": "2025-10-06 00:00:00Z",
+      "sensors": {
+        "PRESS": 40.586,
+        "LEVEL": 52.692,
+        "TEMP": 52.914,
+        "GAS_FLOW": 9.753,
+        "OIL_FLOW": 112.992
+      }
+    },
+    {
+      "timestamp": "2025-10-06 00:15:00Z",
+      "sensors": {
+        "PRESS": 40.64,
+        "LEVEL": 51.053,
+        "TEMP": 54.031,
+        "GAS_FLOW": 9.86,
+        "OIL_FLOW": 114.216
+      }
+    },
+    {
+      "timestamp": "2025-10-06 00:30:00Z",
+      "sensors": {
+        "PRESS": 40.784,
+        "LEVEL": 50.004,
+        "TEMP": 53.41,
+        "GAS_FLOW": 9.925,
+        "OIL_FLOW": 111.97
+      }
+    },
+    {
+      "timestamp": "2025-10-06 00:45:00Z",
+      "sensors": {
+        "PRESS": 38.96,
+        "LEVEL": 48.869,
+        "TEMP": 54.453,
+        "GAS_FLOW": 9.748,
+        "OIL_FLOW": 113.725
+      }
+    },
+    {
+      "timestamp": "2025-10-06 01:00:00Z",
+      "sensors": {
+        "PRESS": 39.948,
+        "LEVEL": 47.973,
+        "TEMP": 55.876,
+        "GAS_FLOW": 9.143,
+        "OIL_FLOW": 112.737
+      }
+    },
+    {
+      "timestamp": "2025-10-06 01:15:00Z",
+      "sensors": {
+        "PRESS": 39.194,
+        "LEVEL": 48.71,
+        "TEMP": 58.757,
+        "GAS_FLOW": 9.35,
+        "OIL_FLOW": 112.834
+      }
+    },
+    {
+      "timestamp": "2025-10-06 01:30:00Z",
+      "sensors": {
+        "PRESS": 37.677,
+        "LEVEL": 49.909,
+        "TEMP": 61.665,
+        "GAS_FLOW": 9.451,
+        "OIL_FLOW": 120.981
+      }
+    },
+    {
+      "timestamp": "2025-10-06 01:45:00Z",
+      "sensors": {
+        "PRESS": 35.459,
+        "LEVEL": 49.972,
+        "TEMP": 59.696,
+        "GAS_FLOW": 9.451,
+        "OIL_FLOW": 121.746
+      }
+    },
+    {
+      "timestamp": "2025-10-06 02:00:00Z",
+      "sensors": {
+        "PRESS": 36.566,
+        "LEVEL": 50.089,
+        "TEMP": 59.411,
+        "GAS_FLOW": 10.016,
+        "OIL_FLOW": 120.666
+      }
+    },
+    {
+      "timestamp": "2025-10-06 02:15:00Z",
+      "sensors": {
+        "PRESS": 37.121,
+        "LEVEL": 50.279,
+        "TEMP": 58.41,
+        "GAS_FLOW": 10.073,
+        "OIL_FLOW": 115.982
+      }
+    },
+    {
+      "timestamp": "2025-10-06 02:30:00Z",
+      "sensors": {
+        "PRESS": 37.327,
+        "LEVEL": 50.316,
+        "TEMP": 57.88,
+        "GAS_FLOW": 10.477,
+        "OIL_FLOW": 113.832
+      }
+    },
+    {
+      "timestamp": "2025-10-06 02:45:00Z",
+      "sensors": {
+        "PRESS": 39.828,
+        "LEVEL": 49.996,
+        "TEMP": 58.652,
+        "GAS_FLOW": 10.081,
+        "OIL_FLOW": 108.441
+      }
+    },
+    {
+      "timestamp": "2025-10-06 03:00:00Z",
+      "sensors": {
+        "PRESS": 40.822,
+        "LEVEL": 49.922,
+        "TEMP": 57.8,
+        "GAS_FLOW": 10.052,
+        "OIL_FLOW": 104.145
+      }
+    },
+    {
+      "timestamp": "2025-10-06 03:15:00Z",
+      "sensors": {
+        "PRESS": 40.069,
+        "LEVEL": 49.777,
+        "TEMP": 56.075,
+        "GAS_FLOW": 9.515,
+        "OIL_FLOW": 105.293
+      }
+    },
+    {
+      "timestamp": "2025-10-06 03:30:00Z",
+      "sensors": {
+        "PRESS": 40.802,
+        "LEVEL": 50.258,
+        "TEMP": 55.289,
+        "GAS_FLOW": 9.19,
+        "OIL_FLOW": 110.503
+      }
+    },
+    {
+      "timestamp": "2025-10-06 03:45:00Z",
+      "sensors": {
+        "PRESS": 41.202,
+        "LEVEL": 49.631,
+        "TEMP": 56.049,
+        "GAS_FLOW": 8.483,
+        "OIL_FLOW": 106.998
+      }
+    },
+    {
+      "timestamp": "2025-10-06 04:00:00Z",
+      "sensors": {
+        "PRESS": 41.394,
+        "LEVEL": 50.269,
+        "TEMP": 54.526,
+        "GAS_FLOW": 8.486,
+        "OIL_FLOW": 107.728
+      }
+    },
+    {
+      "timestamp": "2025-10-06 04:15:00Z",
+      "sensors": {
+        "PRESS": 41.674,
+        "LEVEL": 51.291,
+        "TEMP": 51.9,
+        "GAS_FLOW": 8.27,
+        "OIL_FLOW": 114.563
+      }
+    },
+    {
+      "timestamp": "2025-10-06 04:30:00Z",
+      "sensors": {
+        "PRESS": 42.284,
+        "LEVEL": 50.951,
+        "TEMP": 54.101,
+        "GAS_FLOW": 8.148,
+        "OIL_FLOW": 113.334
+      }
+    },
+    {
+      "timestamp": "2025-10-06 04:45:00Z",
+      "sensors": {
+        "PRESS": 41.498,
+        "LEVEL": 50.37,
+        "TEMP": 54.85,
+        "GAS_FLOW": 8.59,
+        "OIL_FLOW": 110.298
+      }
+    },
+    {
+      "timestamp": "2025-10-06 05:00:00Z",
+      "sensors": {
+        "PRESS": 43.11,
+        "LEVEL": 51.063,
+        "TEMP": 57.991,
+        "GAS_FLOW": 8.507,
+        "OIL_FLOW": 112.588
+      }
+    },
+    {
+      "timestamp": "2025-10-06 05:15:00Z",
+      "sensors": {
+        "PRESS": 43.008,
+        "LEVEL": 51.39,
+        "TEMP": 59.017,
+        "GAS_FLOW": 8.511,
+        "OIL_FLOW": 117.096
+      }
+    },
+    {
+      "timestamp": "2025-10-06 05:30:00Z",
+      "sensors": {
+        "PRESS": 43.671,
+        "LEVEL": 50.968,
+        "TEMP": 59.911,
+        "GAS_FLOW": 8.645,
+        "OIL_FLOW": 117.948
+      }
+    },
+    {
+      "timestamp": "2025-10-06 05:45:00Z",
+      "sensors": {
+        "PRESS": 44.073,
+        "LEVEL": 50.266,
+        "TEMP": 61.214,
+        "GAS_FLOW": 8.61,
+        "OIL_FLOW": 116.733
+      }
+    },
+    {
+      "timestamp": "2025-10-06 06:00:00Z",
+      "sensors": {
+        "PRESS": 44.697,
+        "LEVEL": 50.542,
+        "TEMP": 58.797,
+        "GAS_FLOW": 8.643,
+        "OIL_FLOW": 113.725
+      }
+    },
+    {
+      "timestamp": "2025-10-06 06:15:00Z",
+      "sensors": {
+        "PRESS": 46.352,
+        "LEVEL": 51.076,
+        "TEMP": 57.845,
+        "GAS_FLOW": 8.371,
+        "OIL_FLOW": 118.676
+      }
+    },
+    {
+      "timestamp": "2025-10-06 06:30:00Z",
+      "sensors": {
+        "PRESS": 48.283,
+        "LEVEL": 50.315,
+        "TEMP": 59.387,
+        "GAS_FLOW": 8.948,
+        "OIL_FLOW": 121.117
+      }
+    },
+    {
+      "timestamp": "2025-10-06 06:45:00Z",
+      "sensors": {
+        "PRESS": 49.192,
+        "LEVEL": 50.188,
+        "TEMP": 58.455,
+        "GAS_FLOW": 8.947,
+        "OIL_FLOW": 124.236
+      }
+    },
+    {
+      "timestamp": "2025-10-06 07:00:00Z",
+      "sensors": {
+        "PRESS": 48.067,
+        "LEVEL": 49.455,
+        "TEMP": 58.618,
+        "GAS_FLOW": 9.277,
+        "OIL_FLOW": 123.861
+      }
+    },
+    {
+      "timestamp": "2025-10-06 07:15:00Z",
+      "sensors": {
+        "PRESS": 49.338,
+        "LEVEL": 50.176,
+        "TEMP": 57.747,
+        "GAS_FLOW": 9.386,
+        "OIL_FLOW": 124.605
+      }
+    },
+    {
+      "timestamp": "2025-10-06 07:30:00Z",
+      "sensors": {
+        "PRESS": 49.136,
+        "LEVEL": 49.252,
+        "TEMP": 58.332,
+        "GAS_FLOW": 9.48,
+        "OIL_FLOW": 126.471
+      }
+    },
+    {
+      "timestamp": "2025-10-06 07:45:00Z",
+      "sensors": {
+        "PRESS": 48.426,
+        "LEVEL": 48.294,
+        "TEMP": 57.708,
+        "GAS_FLOW": 9.306,
+        "OIL_FLOW": 130.746
+      }
+    },
+    {
+      "timestamp": "2025-10-06 08:00:00Z",
+      "sensors": {
+        "PRESS": 48.131,
+        "LEVEL": 48.068,
+        "TEMP": 58.444,
+        "GAS_FLOW": 9.453,
+        "OIL_FLOW": 127.946
+      }
+    },
+    {
+      "timestamp": "2025-10-06 08:15:00Z",
+      "sensors": {
+        "PRESS": 49.513,
+        "LEVEL": 47.342,
+        "TEMP": 58.703,
+        "GAS_FLOW": 8.796,
+        "OIL_FLOW": 131.281
+      }
+    },
+    {
+      "timestamp": "2025-10-06 08:30:00Z",
+      "sensors": {
+        "PRESS": 49.236,
+        "LEVEL": 48.582,
+        "TEMP": 61.995,
+        "GAS_FLOW": 8.907,
+        "OIL_FLOW": 131.64
+      }
+    },
+    {
+      "timestamp": "2025-10-06 08:45:00Z",
+      "sensors": {
+        "PRESS": 49.1,
+        "LEVEL": 49.364,
+        "TEMP": 61.365,
+        "GAS_FLOW": 8.095,
+        "OIL_FLOW": 130.552
+      }
+    },
+    {
+      "timestamp": "2025-10-06 09:00:00Z",
+      "sensors": {
+        "PRESS": 50.67,
+        "LEVEL": 48.226,
+        "TEMP": 62.163,
+        "GAS_FLOW": 7.718,
+        "OIL_FLOW": 131.03
+      }
+    },
+    {
+      "timestamp": "2025-10-06 09:15:00Z",
+      "sensors": {
+        "PRESS": 51.119,
+        "LEVEL": 48.963,
+        "TEMP": 61.357,
+        "GAS_FLOW": 7.953,
+        "OIL_FLOW": 128.003
+      }
+    },
+    {
+      "timestamp": "2025-10-06 09:30:00Z",
+      "sensors": {
+        "PRESS": 50.459,
+        "LEVEL": 48.537,
+        "TEMP": 62.011,
+        "GAS_FLOW": 7.588,
+        "OIL_FLOW": 129.762
+      }
+    },
+    {
+      "timestamp": "2025-10-06 09:45:00Z",
+      "sensors": {
+        "PRESS": 51.604,
+        "LEVEL": 47.828,
+        "TEMP": 59.776,
+        "GAS_FLOW": 7.82,
+        "OIL_FLOW": 131.838
+      }
+    },
+    {
+      "timestamp": "2025-10-06 10:00:00Z",
+      "sensors": {
+        "PRESS": 51.534,
+        "LEVEL": 47.271,
+        "TEMP": 58.516,
+        "GAS_FLOW": 7.954,
+        "OIL_FLOW": 133.513
+      }
+    },
+    {
+      "timestamp": "2025-10-06 10:15:00Z",
+      "sensors": {
+        "PRESS": 53.646,
+        "LEVEL": 46.904,
+        "TEMP": 60.203,
+        "GAS_FLOW": 7.439,
+        "OIL_FLOW": 138.463
+      }
+    },
+    {
+      "timestamp": "2025-10-06 10:30:00Z",
+      "sensors": {
+        "PRESS": 52.749,
+        "LEVEL": 47.739,
+        "TEMP": 61.311,
+        "GAS_FLOW": 7.411,
+        "OIL_FLOW": 136.987
+      }
+    },
+    {
+      "timestamp": "2025-10-06 10:45:00Z",
+      "sensors": {
+        "PRESS": 53.802,
+        "LEVEL": 45.798,
+        "TEMP": 61.718,
+        "GAS_FLOW": 7.455,
+        "OIL_FLOW": 142.566
+      }
+    },
+    {
+      "timestamp": "2025-10-06 11:00:00Z",
+      "sensors": {
+        "PRESS": 55.647,
+        "LEVEL": 46.504,
+        "TEMP": 60.678,
+        "GAS_FLOW": 6.89,
+        "OIL_FLOW": 144.155
+      }
+    },
+    {
+      "timestamp": "2025-10-06 11:15:00Z",
+      "sensors": {
+        "PRESS": 55.996,
+        "LEVEL": 47.273,
+        "TEMP": 59.646,
+        "GAS_FLOW": 6.394,
+        "OIL_FLOW": 136.915
+      }
+    },
+    {
+      "timestamp": "2025-10-06 11:30:00Z",
+      "sensors": {
+        "PRESS": 56.089,
+        "LEVEL": 48.69,
+        "TEMP": 59.098,
+        "GAS_FLOW": 6.745,
+        "OIL_FLOW": 132.368
+      }
+    },
+    {
+      "timestamp": "2025-10-06 11:45:00Z",
+      "sensors": {
+        "PRESS": 57.812,
+        "LEVEL": 49.441,
+        "TEMP": 58.153,
+        "GAS_FLOW": 6.306,
+        "OIL_FLOW": 134.169
+      }
+    },
+    {
+      "timestamp": "2025-10-06 12:00:00Z",
+      "sensors": {
+        "PRESS": 58.165,
+        "LEVEL": 48.329,
+        "TEMP": 56.522,
+        "GAS_FLOW": 6.191,
+        "OIL_FLOW": 130.581
+      }
+    },
+    {
+      "timestamp": "2025-10-06 12:15:00Z",
+      "sensors": {
+        "PRESS": 58.316,
+        "LEVEL": 48.106,
+        "TEMP": 57.243,
+        "GAS_FLOW": 6.184,
+        "OIL_FLOW": 123.365
+      }
+    },
+    {
+      "timestamp": "2025-10-06 12:30:00Z",
+      "sensors": {
+        "PRESS": 58.625,
+        "LEVEL": 47.951,
+        "TEMP": 54.712,
+        "GAS_FLOW": 6.259,
+        "OIL_FLOW": 118.506
+      }
+    },
+    {
+      "timestamp": "2025-10-06 12:45:00Z",
+      "sensors": {
+        "PRESS": 59.62,
+        "LEVEL": 46.745,
+        "TEMP": 54.775,
+        "GAS_FLOW": 5.918,
+        "OIL_FLOW": 121.771
+      }
+    },
+    {
+      "timestamp": "2025-10-06 13:00:00Z",
+      "sensors": {
+        "PRESS": 59.956,
+        "LEVEL": 46.978,
+        "TEMP": 54.866,
+        "GAS_FLOW": 6.018,
+        "OIL_FLOW": 118.267
+      }
+    },
+    {
+      "timestamp": "2025-10-06 13:15:00Z",
+      "sensors": {
+        "PRESS": 61.174,
+        "LEVEL": 47.054,
+        "TEMP": 55.612,
+        "GAS_FLOW": 6.716,
+        "OIL_FLOW": 116.393
+      }
+    },
+    {
+      "timestamp": "2025-10-06 13:30:00Z",
+      "sensors": {
+        "PRESS": 61.719,
+        "LEVEL": 44.725,
+        "TEMP": 55.676,
+        "GAS_FLOW": 6.694,
+        "OIL_FLOW": 123.023
+      }
+    },
+    {
+      "timestamp": "2025-10-06 13:45:00Z",
+      "sensors": {
+        "PRESS": 62.736,
+        "LEVEL": 44.489,
+        "TEMP": 56.104,
+        "GAS_FLOW": 6.679,
+        "OIL_FLOW": 123.179
+      }
+    },
+    {
+      "timestamp": "2025-10-06 14:00:00Z",
+      "sensors": {
+        "PRESS": 63.997,
+        "LEVEL": 45.34,
+        "TEMP": 58.681,
+        "GAS_FLOW": 6.432,
+        "OIL_FLOW": 119.937
+      }
+    },
+    {
+      "timestamp": "2025-10-06 14:15:00Z",
+      "sensors": {
+        "PRESS": 63.731,
+        "LEVEL": 44.846,
+        "TEMP": 57.124,
+        "GAS_FLOW": 6.076,
+        "OIL_FLOW": 119.612
+      }
+    },
+    {
+      "timestamp": "2025-10-06 14:30:00Z",
+      "sensors": {
+        "PRESS": 63.281,
+        "LEVEL": 43.35,
+        "TEMP": 55.724,
+        "GAS_FLOW": 6.233,
+        "OIL_FLOW": 119.309
+      }
+    },
+    {
+      "timestamp": "2025-10-06 14:45:00Z",
+      "sensors": {
+        "PRESS": 63.391,
+        "LEVEL": 43.199,
+        "TEMP": 55.299,
+        "GAS_FLOW": 6.165,
+        "OIL_FLOW": 114.852
+      }
+    },
+    {
+      "timestamp": "2025-10-06 15:00:00Z",
+      "sensors": {
+        "PRESS": 63.246,
+        "LEVEL": 44.085,
+        "TEMP": 52.952,
+        "GAS_FLOW": 6.558,
+        "OIL_FLOW": 114.922
+      }
+    },
+    {
+      "timestamp": "2025-10-06 15:15:00Z",
+      "sensors": {
+        "PRESS": 65.046,
+        "LEVEL": 44.101,
+        "TEMP": 52.659,
+        "GAS_FLOW": 6.179,
+        "OIL_FLOW": 114.686
+      }
+    },
+    {
+      "timestamp": "2025-10-06 15:30:00Z",
+      "sensors": {
+        "PRESS": 65.863,
+        "LEVEL": 47.77,
+        "TEMP": 53.349,
+        "GAS_FLOW": 6.173,
+        "OIL_FLOW": 110.933
+      }
+    },
+    {
+      "timestamp": "2025-10-06 15:45:00Z",
+      "sensors": {
+        "PRESS": 66.644,
+        "LEVEL": 47.84,
+        "TEMP": 54.252,
+        "GAS_FLOW": 6.109,
+        "OIL_FLOW": 121.173
+      }
+    },
+    {
+      "timestamp": "2025-10-06 16:00:00Z",
+      "sensors": {
+        "PRESS": 65.902,
+        "LEVEL": 46.939,
+        "TEMP": 52.278,
+        "GAS_FLOW": 5.581,
+        "OIL_FLOW": 119.593
+      }
+    },
+    {
+      "timestamp": "2025-10-06 16:15:00Z",
+      "sensors": {
+        "PRESS": 66.756,
+        "LEVEL": 46.924,
+        "TEMP": 52.176,
+        "GAS_FLOW": 5.604,
+        "OIL_FLOW": 118.151
+      }
+    },
+    {
+      "timestamp": "2025-10-06 16:30:00Z",
+      "sensors": {
+        "PRESS": 66.61,
+        "LEVEL": 46.762,
+        "TEMP": 49.513,
+        "GAS_FLOW": 5.591,
+        "OIL_FLOW": 124.606
+      }
+    },
+    {
+      "timestamp": "2025-10-06 16:45:00Z",
+      "sensors": {
+        "PRESS": 66.242,
+        "LEVEL": 46.183,
+        "TEMP": 49.962,
+        "GAS_FLOW": 5.637,
+        "OIL_FLOW": 124.412
+      }
+    },
+    {
+      "timestamp": "2025-10-06 17:00:00Z",
+      "sensors": {
+        "PRESS": 64.466,
+        "LEVEL": 47.26,
+        "TEMP": 50.666,
+        "GAS_FLOW": 5.088,
+        "OIL_FLOW": 130.809
+      }
+    },
+    {
+      "timestamp": "2025-10-06 17:15:00Z",
+      "sensors": {
+        "PRESS": 64.013,
+        "LEVEL": 48.792,
+        "TEMP": 51.825,
+        "GAS_FLOW": 6.068,
+        "OIL_FLOW": 131.427
+      }
+    },
+    {
+      "timestamp": "2025-10-06 17:30:00Z",
+      "sensors": {
+        "PRESS": 65.24,
+        "LEVEL": 48.308,
+        "TEMP": 49.63,
+        "GAS_FLOW": 5.993,
+        "OIL_FLOW": 137.086
+      }
+    },
+    {
+      "timestamp": "2025-10-06 17:45:00Z",
+      "sensors": {
+        "PRESS": 65.733,
+        "LEVEL": 47.904,
+        "TEMP": 50.253,
+        "GAS_FLOW": 5.459,
+        "OIL_FLOW": 140.32
+      }
+    },
+    {
+      "timestamp": "2025-10-06 18:00:00Z",
+      "sensors": {
+        "PRESS": 66.522,
+        "LEVEL": 49.98,
+        "TEMP": 51.745,
+        "GAS_FLOW": 5.883,
+        "OIL_FLOW": 135.111
+      }
+    },
+    {
+      "timestamp": "2025-10-06 18:15:00Z",
+      "sensors": {
+        "PRESS": 66.356,
+        "LEVEL": 49.012,
+        "TEMP": 51.535,
+        "GAS_FLOW": 5.847,
+        "OIL_FLOW": 130.553
+      }
+    },
+    {
+      "timestamp": "2025-10-06 18:30:00Z",
+      "sensors": {
+        "PRESS": 68.444,
+        "LEVEL": 48.31,
+        "TEMP": 51.914,
+        "GAS_FLOW": 5.437,
+        "OIL_FLOW": 130.232
+      }
+    },
+    {
+      "timestamp": "2025-10-06 18:45:00Z",
+      "sensors": {
+        "PRESS": 68.96,
+        "LEVEL": 47.375,
+        "TEMP": 51.191,
+        "GAS_FLOW": 5.472,
+        "OIL_FLOW": 127.237
+      }
+    },
+    {
+      "timestamp": "2025-10-06 19:00:00Z",
+      "sensors": {
+        "PRESS": 68.93,
+        "LEVEL": 49.24,
+        "TEMP": 49.893,
+        "GAS_FLOW": 5.465,
+        "OIL_FLOW": 127.016
+      }
+    },
+    {
+      "timestamp": "2025-10-06 19:15:00Z",
+      "sensors": {
+        "PRESS": 67.48,
+        "LEVEL": 47.013,
+        "TEMP": 48.292,
+        "GAS_FLOW": 5.25,
+        "OIL_FLOW": 116.206
+      }
+    },
+    {
+      "timestamp": "2025-10-06 19:30:00Z",
+      "sensors": {
+        "PRESS": 66.519,
+        "LEVEL": 48.3,
+        "TEMP": 47.408,
+        "GAS_FLOW": 5.238,
+        "OIL_FLOW": 116.451
+      }
+    },
+    {
+      "timestamp": "2025-10-06 19:45:00Z",
+      "sensors": {
+        "PRESS": 65.653,
+        "LEVEL": 47.495,
+        "TEMP": 49.711,
+        "GAS_FLOW": 4.896,
+        "OIL_FLOW": 113.119
+      }
+    },
+    {
+      "timestamp": "2025-10-06 20:00:00Z",
+      "sensors": {
+        "PRESS": 65.507,
+        "LEVEL": 47.105,
+        "TEMP": 48.848,
+        "GAS_FLOW": 4.535,
+        "OIL_FLOW": 119.069
+      }
+    },
+    {
+      "timestamp": "2025-10-06 20:15:00Z",
+      "sensors": {
+        "PRESS": 64.705,
+        "LEVEL": 45.469,
+        "TEMP": 49.61,
+        "GAS_FLOW": 5.42,
+        "OIL_FLOW": 123.103
+      }
+    },
+    {
+      "timestamp": "2025-10-06 20:30:00Z",
+      "sensors": {
+        "PRESS": 65.233,
+        "LEVEL": 45.813,
+        "TEMP": 49.048,
+        "GAS_FLOW": 5.566,
+        "OIL_FLOW": 117.413
+      }
+    },
+    {
+      "timestamp": "2025-10-06 20:45:00Z",
+      "sensors": {
+        "PRESS": 65.249,
+        "LEVEL": 47.92,
+        "TEMP": 47.573,
+        "GAS_FLOW": 5.191,
+        "OIL_FLOW": 122.141
+      }
+    },
+    {
+      "timestamp": "2025-10-06 21:00:00Z",
+      "sensors": {
+        "PRESS": 67.139,
+        "LEVEL": 46.094,
+        "TEMP": 48.757,
+        "GAS_FLOW": 4.686,
+        "OIL_FLOW": 122.839
+      }
+    },
+    {
+      "timestamp": "2025-10-06 21:15:00Z",
+      "sensors": {
+        "PRESS": 68.546,
+        "LEVEL": 43.939,
+        "TEMP": 47.521,
+        "GAS_FLOW": 4.745,
+        "OIL_FLOW": 132.18
+      }
+    },
+    {
+      "timestamp": "2025-10-06 21:30:00Z",
+      "sensors": {
+        "PRESS": 68.624,
+        "LEVEL": 43.474,
+        "TEMP": 48.502,
+        "GAS_FLOW": 5.25,
+        "OIL_FLOW": 125.03
+      }
+    },
+    {
+      "timestamp": "2025-10-06 21:45:00Z",
+      "sensors": {
+        "PRESS": 68.265,
+        "LEVEL": 43.621,
+        "TEMP": 48.733,
+        "GAS_FLOW": 5.226,
+        "OIL_FLOW": 131.071
+      }
+    },
+    {
+      "timestamp": "2025-10-06 22:00:00Z",
+      "sensors": {
+        "PRESS": 69.221,
+        "LEVEL": 45.536,
+        "TEMP": 48.114,
+        "GAS_FLOW": 5.72,
+        "OIL_FLOW": 130.572
+      }
+    },
+    {
+      "timestamp": "2025-10-06 22:15:00Z",
+      "sensors": {
+        "PRESS": 68.066,
+        "LEVEL": 43.505,
+        "TEMP": 49.621,
+        "GAS_FLOW": 5.536,
+        "OIL_FLOW": 143.287
+      }
+    },
+    {
+      "timestamp": "2025-10-06 22:30:00Z",
+      "sensors": {
+        "PRESS": 68.374,
+        "LEVEL": 42.08,
+        "TEMP": 50.793,
+        "GAS_FLOW": 5.275,
+        "OIL_FLOW": 146.057
+      }
+    },
+    {
+      "timestamp": "2025-10-06 22:45:00Z",
+      "sensors": {
+        "PRESS": 69.782,
+        "LEVEL": 44.076,
+        "TEMP": 51.724,
+        "GAS_FLOW": 5.804,
+        "OIL_FLOW": 145.683
+      }
+    },
+    {
+      "timestamp": "2025-10-06 23:00:00Z",
+      "sensors": {
+        "PRESS": 69.48,
+        "LEVEL": 43.638,
+        "TEMP": 50.667,
+        "GAS_FLOW": 6.466,
+        "OIL_FLOW": 144.957
+      }
+    },
+    {
+      "timestamp": "2025-10-06 23:15:00Z",
+      "sensors": {
+        "PRESS": 69.383,
+        "LEVEL": 43.05,
+        "TEMP": 49.729,
+        "GAS_FLOW": 7.085,
+        "OIL_FLOW": 145.838
+      }
+    },
+    {
+      "timestamp": "2025-10-06 23:30:00Z",
+      "sensors": {
+        "PRESS": 68.112,
+        "LEVEL": 42.869,
+        "TEMP": 48.054,
+        "GAS_FLOW": 6.516,
+        "OIL_FLOW": 146.943
+      }
+    },
+    {
+      "timestamp": "2025-10-06 23:45:00Z",
+      "sensors": {
+        "PRESS": 65.952,
+        "LEVEL": 42.179,
+        "TEMP": 48.955,
+        "GAS_FLOW": 5.85,
+        "OIL_FLOW": 145.449
+      }
+    },
+    {
+      "timestamp": "2025-10-07 00:00:00Z",
+      "sensors": {
+        "PRESS": 66.825,
+        "LEVEL": 42.4,
+        "TEMP": 49.461,
+        "GAS_FLOW": 6.422,
+        "OIL_FLOW": 143.68
+      }
+    },
+    {
+      "timestamp": "2025-10-07 00:15:00Z",
+      "sensors": {
+        "PRESS": 66.397,
+        "LEVEL": 41.633,
+        "TEMP": 49.017,
+        "GAS_FLOW": 5.736,
+        "OIL_FLOW": 144.069
+      }
+    },
+    {
+      "timestamp": "2025-10-07 00:30:00Z",
+      "sensors": {
+        "PRESS": 66.654,
+        "LEVEL": 43.102,
+        "TEMP": 48.336,
+        "GAS_FLOW": 5.947,
+        "OIL_FLOW": 142.806
+      }
+    },
+    {
+      "timestamp": "2025-10-07 00:45:00Z",
+      "sensors": {
+        "PRESS": 64.284,
+        "LEVEL": 43.766,
+        "TEMP": 47.897,
+        "GAS_FLOW": 5.299,
+        "OIL_FLOW": 143.488
+      }
+    },
+    {
+      "timestamp": "2025-10-07 01:00:00Z",
+      "sensors": {
+        "PRESS": 63.974,
+        "LEVEL": 43.846,
+        "TEMP": 50.223,
+        "GAS_FLOW": 4.805,
+        "OIL_FLOW": 148.058
+      }
+    },
+    {
+      "timestamp": "2025-10-07 01:15:00Z",
+      "sensors": {
+        "PRESS": 65.558,
+        "LEVEL": 42.96,
+        "TEMP": 52.475,
+        "GAS_FLOW": 4.638,
+        "OIL_FLOW": 147.633
+      }
+    },
+    {
+      "timestamp": "2025-10-07 01:30:00Z",
+      "sensors": {
+        "PRESS": 64.751,
+        "LEVEL": 43.483,
+        "TEMP": 50.912,
+        "GAS_FLOW": 5.315,
+        "OIL_FLOW": 145.267
+      }
+    },
+    {
+      "timestamp": "2025-10-07 01:45:00Z",
+      "sensors": {
+        "PRESS": 64.199,
+        "LEVEL": 45.259,
+        "TEMP": 52.879,
+        "GAS_FLOW": 5.531,
+        "OIL_FLOW": 146.23
+      }
+    },
+    {
+      "timestamp": "2025-10-07 02:00:00Z",
+      "sensors": {
+        "PRESS": 63.056,
+        "LEVEL": 45.304,
+        "TEMP": 53.599,
+        "GAS_FLOW": 5.473,
+        "OIL_FLOW": 147.578
+      }
+    },
+    {
+      "timestamp": "2025-10-07 02:15:00Z",
+      "sensors": {
+        "PRESS": 64.698,
+        "LEVEL": 44.873,
+        "TEMP": 53.551,
+        "GAS_FLOW": 5.6,
+        "OIL_FLOW": 149.477
+      }
+    },
+    {
+      "timestamp": "2025-10-07 02:30:00Z",
+      "sensors": {
+        "PRESS": 64.96,
+        "LEVEL": 43.294,
+        "TEMP": 52.596,
+        "GAS_FLOW": 5.479,
+        "OIL_FLOW": 148.856
+      }
+    },
+    {
+      "timestamp": "2025-10-07 02:45:00Z",
+      "sensors": {
+        "PRESS": 65.777,
+        "LEVEL": 43.223,
+        "TEMP": 50.432,
+        "GAS_FLOW": 5.391,
+        "OIL_FLOW": 150.716
+      }
+    },
+    {
+      "timestamp": "2025-10-07 03:00:00Z",
+      "sensors": {
+        "PRESS": 64.763,
+        "LEVEL": 42.401,
+        "TEMP": 50.532,
+        "GAS_FLOW": 5.432,
+        "OIL_FLOW": 154.176
+      }
+    },
+    {
+      "timestamp": "2025-10-07 03:15:00Z",
+      "sensors": {
+        "PRESS": 64.478,
+        "LEVEL": 41.729,
+        "TEMP": 50.345,
+        "GAS_FLOW": 5.926,
+        "OIL_FLOW": 156.95
+      }
+    },
+    {
+      "timestamp": "2025-10-07 03:30:00Z",
+      "sensors": {
+        "PRESS": 63.834,
+        "LEVEL": 42,
+        "TEMP": 50.65,
+        "GAS_FLOW": 5.924,
+        "OIL_FLOW": 161.941
+      }
+    },
+    {
+      "timestamp": "2025-10-07 03:45:00Z",
+      "sensors": {
+        "PRESS": 65.185,
+        "LEVEL": 42.781,
+        "TEMP": 51.938,
+        "GAS_FLOW": 5.777,
+        "OIL_FLOW": 164.968
+      }
+    },
+    {
+      "timestamp": "2025-10-07 04:00:00Z",
+      "sensors": {
+        "PRESS": 66.193,
+        "LEVEL": 42.891,
+        "TEMP": 53.42,
+        "GAS_FLOW": 5.752,
+        "OIL_FLOW": 159.625
+      }
+    },
+    {
+      "timestamp": "2025-10-07 04:15:00Z",
+      "sensors": {
+        "PRESS": 65.387,
+        "LEVEL": 40.908,
+        "TEMP": 54.717,
+        "GAS_FLOW": 5.407,
+        "OIL_FLOW": 160.781
+      }
+    },
+    {
+      "timestamp": "2025-10-07 04:30:00Z",
+      "sensors": {
+        "PRESS": 65.398,
+        "LEVEL": 40.649,
+        "TEMP": 55.316,
+        "GAS_FLOW": 5.884,
+        "OIL_FLOW": 160.567
+      }
+    },
+    {
+      "timestamp": "2025-10-07 04:45:00Z",
+      "sensors": {
+        "PRESS": 64.687,
+        "LEVEL": 41.399,
+        "TEMP": 54.235,
+        "GAS_FLOW": 5.787,
+        "OIL_FLOW": 163.613
+      }
+    },
+    {
+      "timestamp": "2025-10-07 05:00:00Z",
+      "sensors": {
+        "PRESS": 66.362,
+        "LEVEL": 42.548,
+        "TEMP": 53.474,
+        "GAS_FLOW": 5.159,
+        "OIL_FLOW": 166.495
+      }
+    },
+    {
+      "timestamp": "2025-10-07 05:15:00Z",
+      "sensors": {
+        "PRESS": 66.141,
+        "LEVEL": 41.624,
+        "TEMP": 53.157,
+        "GAS_FLOW": 4.671,
+        "OIL_FLOW": 168.79
+      }
+    },
+    {
+      "timestamp": "2025-10-07 05:30:00Z",
+      "sensors": {
+        "PRESS": 65.496,
+        "LEVEL": 40.29,
+        "TEMP": 51.482,
+        "GAS_FLOW": 4.587,
+        "OIL_FLOW": 176.478
+      }
+    },
+    {
+      "timestamp": "2025-10-07 05:45:00Z",
+      "sensors": {
+        "PRESS": 65.895,
+        "LEVEL": 40.35,
+        "TEMP": 49.752,
+        "GAS_FLOW": 4.28,
+        "OIL_FLOW": 176.236
+      }
+    },
+    {
+      "timestamp": "2025-10-07 06:00:00Z",
+      "sensors": {
+        "PRESS": 65.2,
+        "LEVEL": 41.535,
+        "TEMP": 49.234,
+        "GAS_FLOW": 3.17,
+        "OIL_FLOW": 173.7
+      }
+    },
+    {
+      "timestamp": "2025-10-07 06:15:00Z",
+      "sensors": {
+        "PRESS": 64.246,
+        "LEVEL": 40.7,
+        "TEMP": 48.719,
+        "GAS_FLOW": 1.867,
+        "OIL_FLOW": 172.792
+      }
+    },
+    {
+      "timestamp": "2025-10-07 06:30:00Z",
+      "sensors": {
+        "PRESS": 63.18,
+        "LEVEL": 39.12,
+        "TEMP": 49.471,
+        "GAS_FLOW": 2.002,
+        "OIL_FLOW": 173.883
+      }
+    },
+    {
+      "timestamp": "2025-10-07 06:45:00Z",
+      "sensors": {
+        "PRESS": 62.92,
+        "LEVEL": 39.306,
+        "TEMP": 52.083,
+        "GAS_FLOW": 2.691,
+        "OIL_FLOW": 171.168
+      }
+    },
+    {
+      "timestamp": "2025-10-07 07:00:00Z",
+      "sensors": {
+        "PRESS": 63.809,
+        "LEVEL": 38.621,
+        "TEMP": 52.138,
+        "GAS_FLOW": 2.934,
+        "OIL_FLOW": 168.158
+      }
+    },
+    {
+      "timestamp": "2025-10-07 07:15:00Z",
+      "sensors": {
+        "PRESS": 64.571,
+        "LEVEL": 39.014,
+        "TEMP": 53.935,
+        "GAS_FLOW": 2.797,
+        "OIL_FLOW": 165.681
+      }
+    },
+    {
+      "timestamp": "2025-10-07 07:30:00Z",
+      "sensors": {
+        "PRESS": 64.512,
+        "LEVEL": 38.874,
+        "TEMP": 52.105,
+        "GAS_FLOW": 2.773,
+        "OIL_FLOW": 165.14
+      }
+    },
+    {
+      "timestamp": "2025-10-07 07:45:00Z",
+      "sensors": {
+        "PRESS": 65.504,
+        "LEVEL": 38.951,
+        "TEMP": 51.418,
+        "GAS_FLOW": 2.621,
+        "OIL_FLOW": 162.917
+      }
+    },
+    {
+      "timestamp": "2025-10-07 08:00:00Z",
+      "sensors": {
+        "PRESS": 63.996,
+        "LEVEL": 38.549,
+        "TEMP": 51.715,
+        "GAS_FLOW": 3.063,
+        "OIL_FLOW": 158.945
+      }
+    },
+    {
+      "timestamp": "2025-10-07 08:15:00Z",
+      "sensors": {
+        "PRESS": 64.487,
+        "LEVEL": 38.739,
+        "TEMP": 52.436,
+        "GAS_FLOW": 2.809,
+        "OIL_FLOW": 160.574
+      }
+    },
+    {
+      "timestamp": "2025-10-07 08:30:00Z",
+      "sensors": {
+        "PRESS": 65.613,
+        "LEVEL": 39.685,
+        "TEMP": 54.364,
+        "GAS_FLOW": 2.755,
+        "OIL_FLOW": 164.738
+      }
+    },
+    {
+      "timestamp": "2025-10-07 08:45:00Z",
+      "sensors": {
+        "PRESS": 65.501,
+        "LEVEL": 38.978,
+        "TEMP": 54.151,
+        "GAS_FLOW": 2.691,
+        "OIL_FLOW": 164.508
+      }
+    },
+    {
+      "timestamp": "2025-10-07 09:00:00Z",
+      "sensors": {
+        "PRESS": 65.372,
+        "LEVEL": 37.794,
+        "TEMP": 55.351,
+        "GAS_FLOW": 2.793,
+        "OIL_FLOW": 163.069
+      }
+    },
+    {
+      "timestamp": "2025-10-07 09:15:00Z",
+      "sensors": {
+        "PRESS": 65.5,
+        "LEVEL": 38.887,
+        "TEMP": 56.48,
+        "GAS_FLOW": 2.869,
+        "OIL_FLOW": 167.125
+      }
+    },
+    {
+      "timestamp": "2025-10-07 09:30:00Z",
+      "sensors": {
+        "PRESS": 67.655,
+        "LEVEL": 39.603,
+        "TEMP": 55.889,
+        "GAS_FLOW": 2.31,
+        "OIL_FLOW": 166.919
+      }
+    },
+    {
+      "timestamp": "2025-10-07 09:45:00Z",
+      "sensors": {
+        "PRESS": 67.547,
+        "LEVEL": 39.09,
+        "TEMP": 56.372,
+        "GAS_FLOW": 2.241,
+        "OIL_FLOW": 167.762
+      }
+    },
+    {
+      "timestamp": "2025-10-07 10:00:00Z",
+      "sensors": {
+        "PRESS": 67.682,
+        "LEVEL": 39.517,
+        "TEMP": 57.45,
+        "GAS_FLOW": 1.887,
+        "OIL_FLOW": 171.416
+      }
+    },
+    {
+      "timestamp": "2025-10-07 10:15:00Z",
+      "sensors": {
+        "PRESS": 67.907,
+        "LEVEL": 39.103,
+        "TEMP": 58.498,
+        "GAS_FLOW": 2.154,
+        "OIL_FLOW": 173.039
+      }
+    },
+    {
+      "timestamp": "2025-10-07 10:30:00Z",
+      "sensors": {
+        "PRESS": 67.388,
+        "LEVEL": 36.844,
+        "TEMP": 56.717,
+        "GAS_FLOW": 2.909,
+        "OIL_FLOW": 172.848
+      }
+    },
+    {
+      "timestamp": "2025-10-07 10:45:00Z",
+      "sensors": {
+        "PRESS": 67.675,
+        "LEVEL": 36.883,
+        "TEMP": 57.824,
+        "GAS_FLOW": 2.664,
+        "OIL_FLOW": 170.195
+      }
+    },
+    {
+      "timestamp": "2025-10-07 11:00:00Z",
+      "sensors": {
+        "PRESS": 67.252,
+        "LEVEL": 37.845,
+        "TEMP": 58.929,
+        "GAS_FLOW": 3.033,
+        "OIL_FLOW": 163.663
+      }
+    },
+    {
+      "timestamp": "2025-10-07 11:15:00Z",
+      "sensors": {
+        "PRESS": 67.877,
+        "LEVEL": 37.917,
+        "TEMP": 56.51,
+        "GAS_FLOW": 2.602,
+        "OIL_FLOW": 156.134
+      }
+    },
+    {
+      "timestamp": "2025-10-07 11:30:00Z",
+      "sensors": {
+        "PRESS": 68.156,
+        "LEVEL": 37.102,
+        "TEMP": 58.244,
+        "GAS_FLOW": 2.486,
+        "OIL_FLOW": 148.067
+      }
+    },
+    {
+      "timestamp": "2025-10-07 11:45:00Z",
+      "sensors": {
+        "PRESS": 67.411,
+        "LEVEL": 36.613,
+        "TEMP": 60.005,
+        "GAS_FLOW": 3.592,
+        "OIL_FLOW": 146.789
+      }
+    },
+    {
+      "timestamp": "2025-10-07 12:00:00Z",
+      "sensors": {
+        "PRESS": 67.7,
+        "LEVEL": 36.706,
+        "TEMP": 59.938,
+        "GAS_FLOW": 4.095,
+        "OIL_FLOW": 146.976
+      }
+    },
+    {
+      "timestamp": "2025-10-07 12:15:00Z",
+      "sensors": {
+        "PRESS": 67.607,
+        "LEVEL": 36.907,
+        "TEMP": 60.026,
+        "GAS_FLOW": 3.865,
+        "OIL_FLOW": 149.858
+      }
+    },
+    {
+      "timestamp": "2025-10-07 12:30:00Z",
+      "sensors": {
+        "PRESS": 66.734,
+        "LEVEL": 37.721,
+        "TEMP": 59.237,
+        "GAS_FLOW": 3.884,
+        "OIL_FLOW": 150.195
+      }
+    },
+    {
+      "timestamp": "2025-10-07 12:45:00Z",
+      "sensors": {
+        "PRESS": 67.29,
+        "LEVEL": 36.943,
+        "TEMP": 57.415,
+        "GAS_FLOW": 4.398,
+        "OIL_FLOW": 154.476
+      }
+    },
+    {
+      "timestamp": "2025-10-07 13:00:00Z",
+      "sensors": {
+        "PRESS": 68.566,
+        "LEVEL": 37.453,
+        "TEMP": 56.562,
+        "GAS_FLOW": 4.621,
+        "OIL_FLOW": 147.556
+      }
+    },
+    {
+      "timestamp": "2025-10-07 13:15:00Z",
+      "sensors": {
+        "PRESS": 68.993,
+        "LEVEL": 36.729,
+        "TEMP": 57.874,
+        "GAS_FLOW": 4.677,
+        "OIL_FLOW": 143.669
+      }
+    },
+    {
+      "timestamp": "2025-10-07 13:30:00Z",
+      "sensors": {
+        "PRESS": 67.51,
+        "LEVEL": 37.224,
+        "TEMP": 58.603,
+        "GAS_FLOW": 4.316,
+        "OIL_FLOW": 144.765
+      }
+    },
+    {
+      "timestamp": "2025-10-07 13:45:00Z",
+      "sensors": {
+        "PRESS": 67.2,
+        "LEVEL": 37.807,
+        "TEMP": 60.091,
+        "GAS_FLOW": 4.107,
+        "OIL_FLOW": 146.464
+      }
+    },
+    {
+      "timestamp": "2025-10-07 14:00:00Z",
+      "sensors": {
+        "PRESS": 66.136,
+        "LEVEL": 38.166,
+        "TEMP": 59.185,
+        "GAS_FLOW": 4.08,
+        "OIL_FLOW": 156.568
+      }
+    },
+    {
+      "timestamp": "2025-10-07 14:15:00Z",
+      "sensors": {
+        "PRESS": 65.541,
+        "LEVEL": 36.961,
+        "TEMP": 60.436,
+        "GAS_FLOW": 3.841,
+        "OIL_FLOW": 159.989
+      }
+    },
+    {
+      "timestamp": "2025-10-07 14:30:00Z",
+      "sensors": {
+        "PRESS": 65.512,
+        "LEVEL": 38.233,
+        "TEMP": 59.581,
+        "GAS_FLOW": 3.461,
+        "OIL_FLOW": 162.786
+      }
+    },
+    {
+      "timestamp": "2025-10-07 14:45:00Z",
+      "sensors": {
+        "PRESS": 66.819,
+        "LEVEL": 39.575,
+        "TEMP": 59.789,
+        "GAS_FLOW": 4.359,
+        "OIL_FLOW": 160.49
+      }
+    },
+    {
+      "timestamp": "2025-10-07 15:00:00Z",
+      "sensors": {
+        "PRESS": 64.671,
+        "LEVEL": 41.355,
+        "TEMP": 61.504,
+        "GAS_FLOW": 4.664,
+        "OIL_FLOW": 161.197
+      }
+    },
+    {
+      "timestamp": "2025-10-07 15:15:00Z",
+      "sensors": {
+        "PRESS": 67.186,
+        "LEVEL": 40.481,
+        "TEMP": 60.513,
+        "GAS_FLOW": 5.131,
+        "OIL_FLOW": 167.703
+      }
+    },
+    {
+      "timestamp": "2025-10-07 15:30:00Z",
+      "sensors": {
+        "PRESS": 66.48,
+        "LEVEL": 40.534,
+        "TEMP": 58.502,
+        "GAS_FLOW": 5.29,
+        "OIL_FLOW": 168.711
+      }
+    },
+    {
+      "timestamp": "2025-10-07 15:45:00Z",
+      "sensors": {
+        "PRESS": 67.723,
+        "LEVEL": 42.194,
+        "TEMP": 58.082,
+        "GAS_FLOW": 5.063,
+        "OIL_FLOW": 170.824
+      }
+    },
+    {
+      "timestamp": "2025-10-07 16:00:00Z",
+      "sensors": {
+        "PRESS": 66.841,
+        "LEVEL": 43.12,
+        "TEMP": 59.088,
+        "GAS_FLOW": 4.96,
+        "OIL_FLOW": 164.261
+      }
+    },
+    {
+      "timestamp": "2025-10-07 16:15:00Z",
+      "sensors": {
+        "PRESS": 65.748,
+        "LEVEL": 43.706,
+        "TEMP": 57.51,
+        "GAS_FLOW": 4.447,
+        "OIL_FLOW": 161.017
+      }
+    },
+    {
+      "timestamp": "2025-10-07 16:30:00Z",
+      "sensors": {
+        "PRESS": 64.561,
+        "LEVEL": 42.995,
+        "TEMP": 57.419,
+        "GAS_FLOW": 4.873,
+        "OIL_FLOW": 157.287
+      }
+    },
+    {
+      "timestamp": "2025-10-07 16:45:00Z",
+      "sensors": {
+        "PRESS": 63.03,
+        "LEVEL": 43.288,
+        "TEMP": 60.942,
+        "GAS_FLOW": 4.82,
+        "OIL_FLOW": 159.595
+      }
+    },
+    {
+      "timestamp": "2025-10-07 17:00:00Z",
+      "sensors": {
+        "PRESS": 63.468,
+        "LEVEL": 43.701,
+        "TEMP": 61.648,
+        "GAS_FLOW": 4.511,
+        "OIL_FLOW": 166.641
+      }
+    },
+    {
+      "timestamp": "2025-10-07 17:15:00Z",
+      "sensors": {
+        "PRESS": 63.4,
+        "LEVEL": 42.938,
+        "TEMP": 62.89,
+        "GAS_FLOW": 4.568,
+        "OIL_FLOW": 167.136
+      }
+    },
+    {
+      "timestamp": "2025-10-07 17:30:00Z",
+      "sensors": {
+        "PRESS": 63.316,
+        "LEVEL": 44.133,
+        "TEMP": 65.069,
+        "GAS_FLOW": 3.691,
+        "OIL_FLOW": 167.628
+      }
+    },
+    {
+      "timestamp": "2025-10-07 17:45:00Z",
+      "sensors": {
+        "PRESS": 64.093,
+        "LEVEL": 43.312,
+        "TEMP": 65.078,
+        "GAS_FLOW": 3.718,
+        "OIL_FLOW": 169.028
+      }
+    },
+    {
+      "timestamp": "2025-10-07 18:00:00Z",
+      "sensors": {
+        "PRESS": 63.393,
+        "LEVEL": 45.837,
+        "TEMP": 66.179,
+        "GAS_FLOW": 3.528,
+        "OIL_FLOW": 169.338
+      }
+    },
+    {
+      "timestamp": "2025-10-07 18:15:00Z",
+      "sensors": {
+        "PRESS": 63.745,
+        "LEVEL": 45.686,
+        "TEMP": 66.461,
+        "GAS_FLOW": 3.805,
+        "OIL_FLOW": 169.971
+      }
+    },
+    {
+      "timestamp": "2025-10-07 18:30:00Z",
+      "sensors": {
+        "PRESS": 63.702,
+        "LEVEL": 44.629,
+        "TEMP": 64.625,
+        "GAS_FLOW": 3.529,
+        "OIL_FLOW": 173.207
+      }
+    },
+    {
+      "timestamp": "2025-10-07 18:45:00Z",
+      "sensors": {
+        "PRESS": 64.433,
+        "LEVEL": 44.277,
+        "TEMP": 62.045,
+        "GAS_FLOW": 3.996,
+        "OIL_FLOW": 170.702
+      }
+    },
+    {
+      "timestamp": "2025-10-07 19:00:00Z",
+      "sensors": {
+        "PRESS": 64.812,
+        "LEVEL": 42.034,
+        "TEMP": 61.958,
+        "GAS_FLOW": 4.04,
+        "OIL_FLOW": 178.523
+      }
+    },
+    {
+      "timestamp": "2025-10-07 19:15:00Z",
+      "sensors": {
+        "PRESS": 65.038,
+        "LEVEL": 42.983,
+        "TEMP": 63.098,
+        "GAS_FLOW": 3.982,
+        "OIL_FLOW": 182.501
+      }
+    },
+    {
+      "timestamp": "2025-10-07 19:30:00Z",
+      "sensors": {
+        "PRESS": 64.149,
+        "LEVEL": 43.345,
+        "TEMP": 60.231,
+        "GAS_FLOW": 3.533,
+        "OIL_FLOW": 184.65
+      }
+    },
+    {
+      "timestamp": "2025-10-07 19:45:00Z",
+      "sensors": {
+        "PRESS": 64.188,
+        "LEVEL": 45.641,
+        "TEMP": 61.817,
+        "GAS_FLOW": 4.014,
+        "OIL_FLOW": 181.435
+      }
+    },
+    {
+      "timestamp": "2025-10-07 20:00:00Z",
+      "sensors": {
+        "PRESS": 63.465,
+        "LEVEL": 44.761,
+        "TEMP": 63.208,
+        "GAS_FLOW": 4.22,
+        "OIL_FLOW": 174.281
+      }
+    },
+    {
+      "timestamp": "2025-10-07 20:15:00Z",
+      "sensors": {
+        "PRESS": 65.042,
+        "LEVEL": 46.082,
+        "TEMP": 64.76,
+        "GAS_FLOW": 4.234,
+        "OIL_FLOW": 170.581
+      }
+    },
+    {
+      "timestamp": "2025-10-07 20:30:00Z",
+      "sensors": {
+        "PRESS": 66.628,
+        "LEVEL": 46.083,
+        "TEMP": 64.571,
+        "GAS_FLOW": 4.434,
+        "OIL_FLOW": 175.513
+      }
+    },
+    {
+      "timestamp": "2025-10-07 20:45:00Z",
+      "sensors": {
+        "PRESS": 65.487,
+        "LEVEL": 43.983,
+        "TEMP": 63.49,
+        "GAS_FLOW": 3.933,
+        "OIL_FLOW": 172.097
+      }
+    },
+    {
+      "timestamp": "2025-10-07 21:00:00Z",
+      "sensors": {
+        "PRESS": 66.186,
+        "LEVEL": 44.473,
+        "TEMP": 65.604,
+        "GAS_FLOW": 4.139,
+        "OIL_FLOW": 176.97
+      }
+    },
+    {
+      "timestamp": "2025-10-07 21:15:00Z",
+      "sensors": {
+        "PRESS": 66.85,
+        "LEVEL": 43.399,
+        "TEMP": 63.912,
+        "GAS_FLOW": 3.487,
+        "OIL_FLOW": 169.408
+      }
+    },
+    {
+      "timestamp": "2025-10-07 21:30:00Z",
+      "sensors": {
+        "PRESS": 66.569,
+        "LEVEL": 41.631,
+        "TEMP": 60.275,
+        "GAS_FLOW": 2.729,
+        "OIL_FLOW": 171.411
+      }
+    },
+    {
+      "timestamp": "2025-10-07 21:45:00Z",
+      "sensors": {
+        "PRESS": 65.45,
+        "LEVEL": 40.712,
+        "TEMP": 60.471,
+        "GAS_FLOW": 1.905,
+        "OIL_FLOW": 168.463
+      }
+    },
+    {
+      "timestamp": "2025-10-07 22:00:00Z",
+      "sensors": {
+        "PRESS": 64.859,
+        "LEVEL": 41.02,
+        "TEMP": 60.202,
+        "GAS_FLOW": 2.278,
+        "OIL_FLOW": 171.409
+      }
+    },
+    {
+      "timestamp": "2025-10-07 22:15:00Z",
+      "sensors": {
+        "PRESS": 62.479,
+        "LEVEL": 39.514,
+        "TEMP": 61.523,
+        "GAS_FLOW": 1.926,
+        "OIL_FLOW": 183.189
+      }
+    },
+    {
+      "timestamp": "2025-10-07 22:30:00Z",
+      "sensors": {
+        "PRESS": 63.914,
+        "LEVEL": 38.686,
+        "TEMP": 60.135,
+        "GAS_FLOW": 1.477,
+        "OIL_FLOW": 184.067
+      }
+    },
+    {
+      "timestamp": "2025-10-07 22:45:00Z",
+      "sensors": {
+        "PRESS": 62.837,
+        "LEVEL": 39.533,
+        "TEMP": 60.175,
+        "GAS_FLOW": 1.418,
+        "OIL_FLOW": 180.051
+      }
+    },
+    {
+      "timestamp": "2025-10-07 23:00:00Z",
+      "sensors": {
+        "PRESS": 62.49,
+        "LEVEL": 40.547,
+        "TEMP": 60.634,
+        "GAS_FLOW": 2.253,
+        "OIL_FLOW": 171.557
+      }
+    },
+    {
+      "timestamp": "2025-10-07 23:15:00Z",
+      "sensors": {
+        "PRESS": 63.933,
+        "LEVEL": 39.289,
+        "TEMP": 61.142,
+        "GAS_FLOW": 2.381,
+        "OIL_FLOW": 173.545
+      }
+    },
+    {
+      "timestamp": "2025-10-07 23:30:00Z",
+      "sensors": {
+        "PRESS": 66.485,
+        "LEVEL": 39.739,
+        "TEMP": 61.829,
+        "GAS_FLOW": 2.484,
+        "OIL_FLOW": 170.126
+      }
+    },
+    {
+      "timestamp": "2025-10-07 23:45:00Z",
+      "sensors": {
+        "PRESS": 65.118,
+        "LEVEL": 38.073,
+        "TEMP": 62.123,
+        "GAS_FLOW": 2.624,
+        "OIL_FLOW": 168.935
+      }
+    },
+    {
+      "timestamp": "2025-10-08 00:00:00Z",
+      "sensors": {
+        "PRESS": 65.698,
+        "LEVEL": 37.957,
+        "TEMP": 60.473,
+        "GAS_FLOW": 3.03,
+        "OIL_FLOW": 166.54
+      }
+    },
+    {
+      "timestamp": "2025-10-08 00:15:00Z",
+      "sensors": {
+        "PRESS": 66.847,
+        "LEVEL": 37.996,
+        "TEMP": 60.845,
+        "GAS_FLOW": 2.662,
+        "OIL_FLOW": 168.261
+      }
+    },
+    {
+      "timestamp": "2025-10-08 00:30:00Z",
+      "sensors": {
+        "PRESS": 66.187,
+        "LEVEL": 39.815,
+        "TEMP": 59.639,
+        "GAS_FLOW": 2.229,
+        "OIL_FLOW": 167.147
+      }
+    },
+    {
+      "timestamp": "2025-10-08 00:45:00Z",
+      "sensors": {
+        "PRESS": 66.807,
+        "LEVEL": 39.254,
+        "TEMP": 58.781,
+        "GAS_FLOW": 2.606,
+        "OIL_FLOW": 169.299
+      }
+    },
+    {
+      "timestamp": "2025-10-08 01:00:00Z",
+      "sensors": {
+        "PRESS": 67.468,
+        "LEVEL": 39.384,
+        "TEMP": 58.204,
+        "GAS_FLOW": 2.469,
+        "OIL_FLOW": 169.321
+      }
+    },
+    {
+      "timestamp": "2025-10-08 01:15:00Z",
+      "sensors": {
+        "PRESS": 67.26,
+        "LEVEL": 39.652,
+        "TEMP": 56.221,
+        "GAS_FLOW": 2.571,
+        "OIL_FLOW": 173.065
+      }
+    },
+    {
+      "timestamp": "2025-10-08 01:30:00Z",
+      "sensors": {
+        "PRESS": 66.662,
+        "LEVEL": 41.023,
+        "TEMP": 55.508,
+        "GAS_FLOW": 2.464,
+        "OIL_FLOW": 174.729
+      }
+    },
+    {
+      "timestamp": "2025-10-08 01:45:00Z",
+      "sensors": {
+        "PRESS": 64.716,
+        "LEVEL": 41.602,
+        "TEMP": 54.83,
+        "GAS_FLOW": 2.319,
+        "OIL_FLOW": 175.55
+      }
+    },
+    {
+      "timestamp": "2025-10-08 02:00:00Z",
+      "sensors": {
+        "PRESS": 62.893,
+        "LEVEL": 40.771,
+        "TEMP": 54.944,
+        "GAS_FLOW": 1.496,
+        "OIL_FLOW": 178.448
+      }
+    },
+    {
+      "timestamp": "2025-10-08 02:15:00Z",
+      "sensors": {
+        "PRESS": 61.888,
+        "LEVEL": 40.572,
+        "TEMP": 55.13,
+        "GAS_FLOW": 1.794,
+        "OIL_FLOW": 185.181
+      }
+    },
+    {
+      "timestamp": "2025-10-08 02:30:00Z",
+      "sensors": {
+        "PRESS": 61.657,
+        "LEVEL": 39.84,
+        "TEMP": 55.55,
+        "GAS_FLOW": 2.224,
+        "OIL_FLOW": 176.644
+      }
+    },
+    {
+      "timestamp": "2025-10-08 02:45:00Z",
+      "sensors": {
+        "PRESS": 61.656,
+        "LEVEL": 38.394,
+        "TEMP": 57.303,
+        "GAS_FLOW": 2.136,
+        "OIL_FLOW": 174.704
+      }
+    },
+    {
+      "timestamp": "2025-10-08 03:00:00Z",
+      "sensors": {
+        "PRESS": 63.02,
+        "LEVEL": 37.947,
+        "TEMP": 59.219,
+        "GAS_FLOW": 2.281,
+        "OIL_FLOW": 170.856
+      }
+    },
+    {
+      "timestamp": "2025-10-08 03:15:00Z",
+      "sensors": {
+        "PRESS": 62.345,
+        "LEVEL": 38.255,
+        "TEMP": 57.751,
+        "GAS_FLOW": 2.753,
+        "OIL_FLOW": 170.274
+      }
+    },
+    {
+      "timestamp": "2025-10-08 03:30:00Z",
+      "sensors": {
+        "PRESS": 63.552,
+        "LEVEL": 40.628,
+        "TEMP": 54.993,
+        "GAS_FLOW": 2.375,
+        "OIL_FLOW": 175.006
+      }
+    },
+    {
+      "timestamp": "2025-10-08 03:45:00Z",
+      "sensors": {
+        "PRESS": 63.853,
+        "LEVEL": 41.559,
+        "TEMP": 54.186,
+        "GAS_FLOW": 2.277,
+        "OIL_FLOW": 174.851
+      }
+    },
+    {
+      "timestamp": "2025-10-08 04:00:00Z",
+      "sensors": {
+        "PRESS": 64.455,
+        "LEVEL": 41.421,
+        "TEMP": 53.755,
+        "GAS_FLOW": 3.01,
+        "OIL_FLOW": 172.289
+      }
+    },
+    {
+      "timestamp": "2025-10-08 04:15:00Z",
+      "sensors": {
+        "PRESS": 63.641,
+        "LEVEL": 41.321,
+        "TEMP": 55.079,
+        "GAS_FLOW": 3.745,
+        "OIL_FLOW": 170.195
+      }
+    },
+    {
+      "timestamp": "2025-10-08 04:30:00Z",
+      "sensors": {
+        "PRESS": 63.531,
+        "LEVEL": 40.542,
+        "TEMP": 53.894,
+        "GAS_FLOW": 3.897,
+        "OIL_FLOW": 174.627
+      }
+    },
+    {
+      "timestamp": "2025-10-08 04:45:00Z",
+      "sensors": {
+        "PRESS": 63.153,
+        "LEVEL": 40.66,
+        "TEMP": 54.805,
+        "GAS_FLOW": 3.739,
+        "OIL_FLOW": 174.248
+      }
+    },
+    {
+      "timestamp": "2025-10-08 05:00:00Z",
+      "sensors": {
+        "PRESS": 62.476,
+        "LEVEL": 43.168,
+        "TEMP": 55.962,
+        "GAS_FLOW": 3.675,
+        "OIL_FLOW": 165.143
+      }
+    },
+    {
+      "timestamp": "2025-10-08 05:15:00Z",
+      "sensors": {
+        "PRESS": 60.863,
+        "LEVEL": 43.413,
+        "TEMP": 55.825,
+        "GAS_FLOW": 4.767,
+        "OIL_FLOW": 159.062
+      }
+    },
+    {
+      "timestamp": "2025-10-08 05:30:00Z",
+      "sensors": {
+        "PRESS": 61.095,
+        "LEVEL": 43.333,
+        "TEMP": 55.943,
+        "GAS_FLOW": 5.715,
+        "OIL_FLOW": 163.505
+      }
+    },
+    {
+      "timestamp": "2025-10-08 05:45:00Z",
+      "sensors": {
+        "PRESS": 60.67,
+        "LEVEL": 44.22,
+        "TEMP": 54.094,
+        "GAS_FLOW": 6.578,
+        "OIL_FLOW": 166.833
+      }
+    },
+    {
+      "timestamp": "2025-10-08 06:00:00Z",
+      "sensors": {
+        "PRESS": 58.202,
+        "LEVEL": 44.856,
+        "TEMP": 54.237,
+        "GAS_FLOW": 6.11,
+        "OIL_FLOW": 163.321
+      }
+    },
+    {
+      "timestamp": "2025-10-08 06:15:00Z",
+      "sensors": {
+        "PRESS": 58.108,
+        "LEVEL": 45.657,
+        "TEMP": 53.414,
+        "GAS_FLOW": 5.931,
+        "OIL_FLOW": 165.856
+      }
+    },
+    {
+      "timestamp": "2025-10-08 06:30:00Z",
+      "sensors": {
+        "PRESS": 57.511,
+        "LEVEL": 44.457,
+        "TEMP": 52.134,
+        "GAS_FLOW": 5.407,
+        "OIL_FLOW": 164.463
+      }
+    },
+    {
+      "timestamp": "2025-10-08 06:45:00Z",
+      "sensors": {
+        "PRESS": 58.106,
+        "LEVEL": 45.152,
+        "TEMP": 53.874,
+        "GAS_FLOW": 5.016,
+        "OIL_FLOW": 158.53
+      }
+    },
+    {
+      "timestamp": "2025-10-08 07:00:00Z",
+      "sensors": {
+        "PRESS": 56.788,
+        "LEVEL": 44.229,
+        "TEMP": 54.27,
+        "GAS_FLOW": 4.803,
+        "OIL_FLOW": 154.798
+      }
+    },
+    {
+      "timestamp": "2025-10-08 07:15:00Z",
+      "sensors": {
+        "PRESS": 56.436,
+        "LEVEL": 43.17,
+        "TEMP": 54.868,
+        "GAS_FLOW": 4.684,
+        "OIL_FLOW": 166.534
+      }
+    },
+    {
+      "timestamp": "2025-10-08 07:30:00Z",
+      "sensors": {
+        "PRESS": 56.138,
+        "LEVEL": 43.821,
+        "TEMP": 54.794,
+        "GAS_FLOW": 5.17,
+        "OIL_FLOW": 171.391
+      }
+    },
+    {
+      "timestamp": "2025-10-08 07:45:00Z",
+      "sensors": {
+        "PRESS": 56.226,
+        "LEVEL": 43.614,
+        "TEMP": 56.391,
+        "GAS_FLOW": 5.185,
+        "OIL_FLOW": 166.31
+      }
+    },
+    {
+      "timestamp": "2025-10-08 08:00:00Z",
+      "sensors": {
+        "PRESS": 57.838,
+        "LEVEL": 45.119,
+        "TEMP": 56.828,
+        "GAS_FLOW": 4.619,
+        "OIL_FLOW": 168.437
+      }
+    },
+    {
+      "timestamp": "2025-10-08 08:15:00Z",
+      "sensors": {
+        "PRESS": 58.206,
+        "LEVEL": 45.023,
+        "TEMP": 56.59,
+        "GAS_FLOW": 4.612,
+        "OIL_FLOW": 166.223
+      }
+    },
+    {
+      "timestamp": "2025-10-08 08:30:00Z",
+      "sensors": {
+        "PRESS": 57.82,
+        "LEVEL": 43.458,
+        "TEMP": 56.28,
+        "GAS_FLOW": 4.404,
+        "OIL_FLOW": 163.978
+      }
+    },
+    {
+      "timestamp": "2025-10-08 08:45:00Z",
+      "sensors": {
+        "PRESS": 57.016,
+        "LEVEL": 41.953,
+        "TEMP": 57.176,
+        "GAS_FLOW": 3.701,
+        "OIL_FLOW": 167.426
+      }
+    },
+    {
+      "timestamp": "2025-10-08 09:00:00Z",
+      "sensors": {
+        "PRESS": 56.738,
+        "LEVEL": 42.284,
+        "TEMP": 56.675,
+        "GAS_FLOW": 3.515,
+        "OIL_FLOW": 169.863
+      }
+    },
+    {
+      "timestamp": "2025-10-08 09:15:00Z",
+      "sensors": {
+        "PRESS": 57.758,
+        "LEVEL": 42.01,
+        "TEMP": 57.856,
+        "GAS_FLOW": 3.541,
+        "OIL_FLOW": 168.603
+      }
+    },
+    {
+      "timestamp": "2025-10-08 09:30:00Z",
+      "sensors": {
+        "PRESS": 58.072,
+        "LEVEL": 40.548,
+        "TEMP": 57.673,
+        "GAS_FLOW": 3.384,
+        "OIL_FLOW": 168.542
+      }
+    },
+    {
+      "timestamp": "2025-10-08 09:45:00Z",
+      "sensors": {
+        "PRESS": 57.237,
+        "LEVEL": 40.499,
+        "TEMP": 57.882,
+        "GAS_FLOW": 3.494,
+        "OIL_FLOW": 174.756
+      }
+    },
+    {
+      "timestamp": "2025-10-08 10:00:00Z",
+      "sensors": {
+        "PRESS": 57.555,
+        "LEVEL": 39.927,
+        "TEMP": 58.452,
+        "GAS_FLOW": 3.963,
+        "OIL_FLOW": 177.559
+      }
+    },
+    {
+      "timestamp": "2025-10-08 10:15:00Z",
+      "sensors": {
+        "PRESS": 57.054,
+        "LEVEL": 38.981,
+        "TEMP": 61.01,
+        "GAS_FLOW": 4.136,
+        "OIL_FLOW": 179.538
+      }
+    },
+    {
+      "timestamp": "2025-10-08 10:30:00Z",
+      "sensors": {
+        "PRESS": 57.011,
+        "LEVEL": 39.197,
+        "TEMP": 60.826,
+        "GAS_FLOW": 4.077,
+        "OIL_FLOW": 186.754
+      }
+    },
+    {
+      "timestamp": "2025-10-08 10:45:00Z",
+      "sensors": {
+        "PRESS": 55.55,
+        "LEVEL": 39.306,
+        "TEMP": 58.834,
+        "GAS_FLOW": 3.469,
+        "OIL_FLOW": 191.395
+      }
+    },
+    {
+      "timestamp": "2025-10-08 11:00:00Z",
+      "sensors": {
+        "PRESS": 57.159,
+        "LEVEL": 39.913,
+        "TEMP": 58.08,
+        "GAS_FLOW": 3.625,
+        "OIL_FLOW": 185.65
+      }
+    },
+    {
+      "timestamp": "2025-10-08 11:15:00Z",
+      "sensors": {
+        "PRESS": 56.871,
+        "LEVEL": 38.579,
+        "TEMP": 57.406,
+        "GAS_FLOW": 3.518,
+        "OIL_FLOW": 183.661
+      }
+    },
+    {
+      "timestamp": "2025-10-08 11:30:00Z",
+      "sensors": {
+        "PRESS": 57.583,
+        "LEVEL": 40.086,
+        "TEMP": 56.136,
+        "GAS_FLOW": 3.577,
+        "OIL_FLOW": 189.038
+      }
+    },
+    {
+      "timestamp": "2025-10-08 11:45:00Z",
+      "sensors": {
+        "PRESS": 58.762,
+        "LEVEL": 40.701,
+        "TEMP": 55.766,
+        "GAS_FLOW": 3.241,
+        "OIL_FLOW": 190.195
+      }
+    },
+    {
+      "timestamp": "2025-10-08 12:00:00Z",
+      "sensors": {
+        "PRESS": 58.975,
+        "LEVEL": 41.062,
+        "TEMP": 54.134,
+        "GAS_FLOW": 3.321,
+        "OIL_FLOW": 185.983
+      }
+    },
+    {
+      "timestamp": "2025-10-08 12:15:00Z",
+      "sensors": {
+        "PRESS": 58.948,
+        "LEVEL": 38.498,
+        "TEMP": 54.806,
+        "GAS_FLOW": 3.214,
+        "OIL_FLOW": 185.087
+      }
+    },
+    {
+      "timestamp": "2025-10-08 12:30:00Z",
+      "sensors": {
+        "PRESS": 60.413,
+        "LEVEL": 39.365,
+        "TEMP": 53.486,
+        "GAS_FLOW": 3.114,
+        "OIL_FLOW": 188.846
+      }
+    },
+    {
+      "timestamp": "2025-10-08 12:45:00Z",
+      "sensors": {
+        "PRESS": 58.776,
+        "LEVEL": 38.738,
+        "TEMP": 50.476,
+        "GAS_FLOW": 2.302,
+        "OIL_FLOW": 195.127
+      }
+    },
+    {
+      "timestamp": "2025-10-08 13:00:00Z",
+      "sensors": {
+        "PRESS": 59.611,
+        "LEVEL": 38.848,
+        "TEMP": 49.362,
+        "GAS_FLOW": 2.336,
+        "OIL_FLOW": 196.48
+      }
+    },
+    {
+      "timestamp": "2025-10-08 13:15:00Z",
+      "sensors": {
+        "PRESS": 59.375,
+        "LEVEL": 38.995,
+        "TEMP": 49.741,
+        "GAS_FLOW": 2.299,
+        "OIL_FLOW": 195.467
+      }
+    },
+    {
+      "timestamp": "2025-10-08 13:30:00Z",
+      "sensors": {
+        "PRESS": 59.136,
+        "LEVEL": 39.655,
+        "TEMP": 49.805,
+        "GAS_FLOW": 1.992,
+        "OIL_FLOW": 187.446
+      }
+    },
+    {
+      "timestamp": "2025-10-08 13:45:00Z",
+      "sensors": {
+        "PRESS": 57.392,
+        "LEVEL": 40.5,
+        "TEMP": 49.129,
+        "GAS_FLOW": 2.604,
+        "OIL_FLOW": 189.296
+      }
+    },
+    {
+      "timestamp": "2025-10-08 14:00:00Z",
+      "sensors": {
+        "PRESS": 56.689,
+        "LEVEL": 40.338,
+        "TEMP": 47.814,
+        "GAS_FLOW": 2.54,
+        "OIL_FLOW": 192.551
+      }
+    },
+    {
+      "timestamp": "2025-10-08 14:15:00Z",
+      "sensors": {
+        "PRESS": 55.488,
+        "LEVEL": 39.217,
+        "TEMP": 48.828,
+        "GAS_FLOW": 2.439,
+        "OIL_FLOW": 187.205
+      }
+    },
+    {
+      "timestamp": "2025-10-08 14:30:00Z",
+      "sensors": {
+        "PRESS": 54.79,
+        "LEVEL": 39.215,
+        "TEMP": 50.418,
+        "GAS_FLOW": 2.126,
+        "OIL_FLOW": 173.982
+      }
+    },
+    {
+      "timestamp": "2025-10-08 14:45:00Z",
+      "sensors": {
+        "PRESS": 55.147,
+        "LEVEL": 37.579,
+        "TEMP": 50.112,
+        "GAS_FLOW": 1.348,
+        "OIL_FLOW": 173.276
+      }
+    },
+    {
+      "timestamp": "2025-10-08 15:00:00Z",
+      "sensors": {
+        "PRESS": 57.332,
+        "LEVEL": 37.99,
+        "TEMP": 49.222,
+        "GAS_FLOW": 1.708,
+        "OIL_FLOW": 181.209
+      }
+    },
+    {
+      "timestamp": "2025-10-08 15:15:00Z",
+      "sensors": {
+        "PRESS": 57.93,
+        "LEVEL": 37.545,
+        "TEMP": 46.574,
+        "GAS_FLOW": 1.939,
+        "OIL_FLOW": 171.269
+      }
+    },
+    {
+      "timestamp": "2025-10-08 15:30:00Z",
+      "sensors": {
+        "PRESS": 57.914,
+        "LEVEL": 38.633,
+        "TEMP": 45.846,
+        "GAS_FLOW": 2.544,
+        "OIL_FLOW": 179.399
+      }
+    },
+    {
+      "timestamp": "2025-10-08 15:45:00Z",
+      "sensors": {
+        "PRESS": 57.97,
+        "LEVEL": 39.568,
+        "TEMP": 44.798,
+        "GAS_FLOW": 2.946,
+        "OIL_FLOW": 180.516
+      }
+    },
+    {
+      "timestamp": "2025-10-08 16:00:00Z",
+      "sensors": {
+        "PRESS": 58.801,
+        "LEVEL": 37.374,
+        "TEMP": 44.971,
+        "GAS_FLOW": 1.966,
+        "OIL_FLOW": 184.529
+      }
+    },
+    {
+      "timestamp": "2025-10-08 16:15:00Z",
+      "sensors": {
+        "PRESS": 58.786,
+        "LEVEL": 38.49,
+        "TEMP": 45.366,
+        "GAS_FLOW": 1.691,
+        "OIL_FLOW": 182.704
+      }
+    },
+    {
+      "timestamp": "2025-10-08 16:30:00Z",
+      "sensors": {
+        "PRESS": 59.63,
+        "LEVEL": 38.8,
+        "TEMP": 45.481,
+        "GAS_FLOW": 1.454,
+        "OIL_FLOW": 179.273
+      }
+    },
+    {
+      "timestamp": "2025-10-08 16:45:00Z",
+      "sensors": {
+        "PRESS": 59.765,
+        "LEVEL": 37.866,
+        "TEMP": 45.64,
+        "GAS_FLOW": 1.463,
+        "OIL_FLOW": 180.033
+      }
+    },
+    {
+      "timestamp": "2025-10-08 17:00:00Z",
+      "sensors": {
+        "PRESS": 59.205,
+        "LEVEL": 37.326,
+        "TEMP": 47.438,
+        "GAS_FLOW": 1.488,
+        "OIL_FLOW": 178.639
+      }
+    },
+    {
+      "timestamp": "2025-10-08 17:15:00Z",
+      "sensors": {
+        "PRESS": 59.498,
+        "LEVEL": 36.472,
+        "TEMP": 47.995,
+        "GAS_FLOW": 1.04,
+        "OIL_FLOW": 173.205
+      }
+    },
+    {
+      "timestamp": "2025-10-08 17:30:00Z",
+      "sensors": {
+        "PRESS": 59.738,
+        "LEVEL": 37.774,
+        "TEMP": 48.51,
+        "GAS_FLOW": 1.041,
+        "OIL_FLOW": 170.361
+      }
+    },
+    {
+      "timestamp": "2025-10-08 17:45:00Z",
+      "sensors": {
+        "PRESS": 60.184,
+        "LEVEL": 38.067,
+        "TEMP": 43.481,
+        "GAS_FLOW": 1.041,
+        "OIL_FLOW": 178.785
+      }
+    },
+    {
+      "timestamp": "2025-10-08 18:00:00Z",
+      "sensors": {
+        "PRESS": 61.544,
+        "LEVEL": 37.864,
+        "TEMP": 45.068,
+        "GAS_FLOW": 1.085,
+        "OIL_FLOW": 180.067
+      }
+    },
+    {
+      "timestamp": "2025-10-08 18:15:00Z",
+      "sensors": {
+        "PRESS": 61.315,
+        "LEVEL": 36.96,
+        "TEMP": 45.319,
+        "GAS_FLOW": 1.306,
+        "OIL_FLOW": 183.266
+      }
+    },
+    {
+      "timestamp": "2025-10-08 18:30:00Z",
+      "sensors": {
+        "PRESS": 61.871,
+        "LEVEL": 35.701,
+        "TEMP": 44.532,
+        "GAS_FLOW": 1.042,
+        "OIL_FLOW": 190.874
+      }
+    },
+    {
+      "timestamp": "2025-10-08 18:45:00Z",
+      "sensors": {
+        "PRESS": 62.982,
+        "LEVEL": 34.229,
+        "TEMP": 44.884,
+        "GAS_FLOW": 1.783,
+        "OIL_FLOW": 186.248
+      }
+    },
+    {
+      "timestamp": "2025-10-08 19:00:00Z",
+      "sensors": {
+        "PRESS": 61.48,
+        "LEVEL": 34.66,
+        "TEMP": 45.018,
+        "GAS_FLOW": 1.339,
+        "OIL_FLOW": 183.523
+      }
+    },
+    {
+      "timestamp": "2025-10-08 19:15:00Z",
+      "sensors": {
+        "PRESS": 61.55,
+        "LEVEL": 33.549,
+        "TEMP": 44.661,
+        "GAS_FLOW": 1.513,
+        "OIL_FLOW": 186.245
+      }
+    },
+    {
+      "timestamp": "2025-10-08 19:30:00Z",
+      "sensors": {
+        "PRESS": 60.72,
+        "LEVEL": 35.703,
+        "TEMP": 43.436,
+        "GAS_FLOW": 1.583,
+        "OIL_FLOW": 188.086
+      }
+    },
+    {
+      "timestamp": "2025-10-08 19:45:00Z",
+      "sensors": {
+        "PRESS": 60.323,
+        "LEVEL": 35.461,
+        "TEMP": 42.641,
+        "GAS_FLOW": 1.924,
+        "OIL_FLOW": 193.179
+      }
+    },
+    {
+      "timestamp": "2025-10-08 20:00:00Z",
+      "sensors": {
+        "PRESS": 60.996,
+        "LEVEL": 35.613,
+        "TEMP": 45.977,
+        "GAS_FLOW": 1.676,
+        "OIL_FLOW": 193.642
+      }
+    },
+    {
+      "timestamp": "2025-10-08 20:15:00Z",
+      "sensors": {
+        "PRESS": 60.669,
+        "LEVEL": 34.012,
+        "TEMP": 45.377,
+        "GAS_FLOW": 2.048,
+        "OIL_FLOW": 196.215
+      }
+    },
+    {
+      "timestamp": "2025-10-08 20:30:00Z",
+      "sensors": {
+        "PRESS": 59.766,
+        "LEVEL": 34.717,
+        "TEMP": 46.732,
+        "GAS_FLOW": 2.694,
+        "OIL_FLOW": 196.105
+      }
+    },
+    {
+      "timestamp": "2025-10-08 20:45:00Z",
+      "sensors": {
+        "PRESS": 61.937,
+        "LEVEL": 34.003,
+        "TEMP": 47.702,
+        "GAS_FLOW": 2.999,
+        "OIL_FLOW": 194.073
+      }
+    },
+    {
+      "timestamp": "2025-10-08 21:00:00Z",
+      "sensors": {
+        "PRESS": 61.551,
+        "LEVEL": 34.232,
+        "TEMP": 49.669,
+        "GAS_FLOW": 2.784,
+        "OIL_FLOW": 190.057
+      }
+    },
+    {
+      "timestamp": "2025-10-08 21:15:00Z",
+      "sensors": {
+        "PRESS": 62.072,
+        "LEVEL": 34.484,
+        "TEMP": 49.512,
+        "GAS_FLOW": 2.85,
+        "OIL_FLOW": 193.189
+      }
+    },
+    {
+      "timestamp": "2025-10-08 21:30:00Z",
+      "sensors": {
+        "PRESS": 60.23,
+        "LEVEL": 34.114,
+        "TEMP": 50.604,
+        "GAS_FLOW": 2.717,
+        "OIL_FLOW": 197.041
+      }
+    },
+    {
+      "timestamp": "2025-10-08 21:45:00Z",
+      "sensors": {
+        "PRESS": 63.255,
+        "LEVEL": 34.878,
+        "TEMP": 49.25,
+        "GAS_FLOW": 2.456,
+        "OIL_FLOW": 191.103
+      }
+    },
+    {
+      "timestamp": "2025-10-08 22:00:00Z",
+      "sensors": {
+        "PRESS": 63.621,
+        "LEVEL": 36.22,
+        "TEMP": 49.316,
+        "GAS_FLOW": 2.811,
+        "OIL_FLOW": 192.052
+      }
+    },
+    {
+      "timestamp": "2025-10-08 22:15:00Z",
+      "sensors": {
+        "PRESS": 64.127,
+        "LEVEL": 37.399,
+        "TEMP": 47.968,
+        "GAS_FLOW": 2.804,
+        "OIL_FLOW": 194.737
+      }
+    },
+    {
+      "timestamp": "2025-10-08 22:30:00Z",
+      "sensors": {
+        "PRESS": 64.342,
+        "LEVEL": 36.637,
+        "TEMP": 49.704,
+        "GAS_FLOW": 2.812,
+        "OIL_FLOW": 197.044
+      }
+    },
+    {
+      "timestamp": "2025-10-08 22:45:00Z",
+      "sensors": {
+        "PRESS": 63.501,
+        "LEVEL": 35.937,
+        "TEMP": 49.462,
+        "GAS_FLOW": 3.063,
+        "OIL_FLOW": 194.637
+      }
+    },
+    {
+      "timestamp": "2025-10-08 23:00:00Z",
+      "sensors": {
+        "PRESS": 63.46,
+        "LEVEL": 37.659,
+        "TEMP": 49.315,
+        "GAS_FLOW": 3.41,
+        "OIL_FLOW": 188.078
+      }
+    },
+    {
+      "timestamp": "2025-10-08 23:15:00Z",
+      "sensors": {
+        "PRESS": 63.033,
+        "LEVEL": 38.263,
+        "TEMP": 49.914,
+        "GAS_FLOW": 2.978,
+        "OIL_FLOW": 182.75
+      }
+    },
+    {
+      "timestamp": "2025-10-08 23:30:00Z",
+      "sensors": {
+        "PRESS": 63.016,
+        "LEVEL": 39.857,
+        "TEMP": 52.692,
+        "GAS_FLOW": 3.784,
+        "OIL_FLOW": 185.349
+      }
+    },
+    {
+      "timestamp": "2025-10-08 23:45:00Z",
+      "sensors": {
+        "PRESS": 61.491,
+        "LEVEL": 39.942,
+        "TEMP": 53.315,
+        "GAS_FLOW": 4.035,
+        "OIL_FLOW": 183.839
+      }
+    },
+    {
+      "timestamp": "2025-10-09 00:00:00Z",
+      "sensors": {
+        "PRESS": 61.029,
+        "LEVEL": 38.683,
+        "TEMP": 50.984,
+        "GAS_FLOW": 4.317,
+        "OIL_FLOW": 183.093
+      }
+    },
+    {
+      "timestamp": "2025-10-09 00:15:00Z",
+      "sensors": {
+        "PRESS": 59.201,
+        "LEVEL": 37.865,
+        "TEMP": 50.803,
+        "GAS_FLOW": 4.266,
+        "OIL_FLOW": 186.498
+      }
+    },
+    {
+      "timestamp": "2025-10-09 00:30:00Z",
+      "sensors": {
+        "PRESS": 59.615,
+        "LEVEL": 37.09,
+        "TEMP": 48.829,
+        "GAS_FLOW": 4.55,
+        "OIL_FLOW": 192.459
+      }
+    },
+    {
+      "timestamp": "2025-10-09 00:45:00Z",
+      "sensors": {
+        "PRESS": 59.954,
+        "LEVEL": 36.932,
+        "TEMP": 48.885,
+        "GAS_FLOW": 4.885,
+        "OIL_FLOW": 193.193
+      }
+    },
+    {
+      "timestamp": "2025-10-09 01:00:00Z",
+      "sensors": {
+        "PRESS": 57.645,
+        "LEVEL": 37.962,
+        "TEMP": 49.573,
+        "GAS_FLOW": 5.322,
+        "OIL_FLOW": 191.43
+      }
+    },
+    {
+      "timestamp": "2025-10-09 01:15:00Z",
+      "sensors": {
+        "PRESS": 57.623,
+        "LEVEL": 39.203,
+        "TEMP": 51.085,
+        "GAS_FLOW": 5.519,
+        "OIL_FLOW": 190.184
+      }
+    },
+    {
+      "timestamp": "2025-10-09 01:30:00Z",
+      "sensors": {
+        "PRESS": 56.279,
+        "LEVEL": 39.568,
+        "TEMP": 50.47,
+        "GAS_FLOW": 5.347,
+        "OIL_FLOW": 194.545
+      }
+    },
+    {
+      "timestamp": "2025-10-09 01:45:00Z",
+      "sensors": {
+        "PRESS": 55.384,
+        "LEVEL": 39.38,
+        "TEMP": 49.846,
+        "GAS_FLOW": 5.739,
+        "OIL_FLOW": 195.975
+      }
+    },
+    {
+      "timestamp": "2025-10-09 02:00:00Z",
+      "sensors": {
+        "PRESS": 54.527,
+        "LEVEL": 40.777,
+        "TEMP": 50.713,
+        "GAS_FLOW": 4.861,
+        "OIL_FLOW": 188.325
+      }
+    },
+    {
+      "timestamp": "2025-10-09 02:15:00Z",
+      "sensors": {
+        "PRESS": 54.198,
+        "LEVEL": 40.547,
+        "TEMP": 50.897,
+        "GAS_FLOW": 4.709,
+        "OIL_FLOW": 183.736
+      }
+    },
+    {
+      "timestamp": "2025-10-09 02:30:00Z",
+      "sensors": {
+        "PRESS": 52.798,
+        "LEVEL": 42.054,
+        "TEMP": 51.669,
+        "GAS_FLOW": 4.919,
+        "OIL_FLOW": 185.287
+      }
+    },
+    {
+      "timestamp": "2025-10-09 02:45:00Z",
+      "sensors": {
+        "PRESS": 52.024,
+        "LEVEL": 41.547,
+        "TEMP": 51.727,
+        "GAS_FLOW": 4.84,
+        "OIL_FLOW": 188.815
+      }
+    },
+    {
+      "timestamp": "2025-10-09 03:00:00Z",
+      "sensors": {
+        "PRESS": 52.087,
+        "LEVEL": 41.539,
+        "TEMP": 52.46,
+        "GAS_FLOW": 4.451,
+        "OIL_FLOW": 194.817
+      }
+    },
+    {
+      "timestamp": "2025-10-09 03:15:00Z",
+      "sensors": {
+        "PRESS": 50.548,
+        "LEVEL": 43.59,
+        "TEMP": 53.294,
+        "GAS_FLOW": 5.144,
+        "OIL_FLOW": 194.715
+      }
+    },
+    {
+      "timestamp": "2025-10-09 03:30:00Z",
+      "sensors": {
+        "PRESS": 51.758,
+        "LEVEL": 41.989,
+        "TEMP": 51.284,
+        "GAS_FLOW": 5.261,
+        "OIL_FLOW": 198.459
+      }
+    },
+    {
+      "timestamp": "2025-10-09 03:45:00Z",
+      "sensors": {
+        "PRESS": 52.658,
+        "LEVEL": 41.537,
+        "TEMP": 52.419,
+        "GAS_FLOW": 5.152,
+        "OIL_FLOW": 198.44
+      }
+    },
+    {
+      "timestamp": "2025-10-09 04:00:00Z",
+      "sensors": {
+        "PRESS": 52.564,
+        "LEVEL": 42.323,
+        "TEMP": 50.232,
+        "GAS_FLOW": 5.522,
+        "OIL_FLOW": 196.465
+      }
+    },
+    {
+      "timestamp": "2025-10-09 04:15:00Z",
+      "sensors": {
+        "PRESS": 53.673,
+        "LEVEL": 42.323,
+        "TEMP": 50.414,
+        "GAS_FLOW": 4.958,
+        "OIL_FLOW": 196.605
+      }
+    },
+    {
+      "timestamp": "2025-10-09 04:30:00Z",
+      "sensors": {
+        "PRESS": 55.574,
+        "LEVEL": 43.57,
+        "TEMP": 51.865,
+        "GAS_FLOW": 5.739,
+        "OIL_FLOW": 196.473
+      }
+    },
+    {
+      "timestamp": "2025-10-09 04:45:00Z",
+      "sensors": {
+        "PRESS": 55.804,
+        "LEVEL": 42.339,
+        "TEMP": 52.186,
+        "GAS_FLOW": 5.903,
+        "OIL_FLOW": 191.345
+      }
+    },
+    {
+      "timestamp": "2025-10-09 05:00:00Z",
+      "sensors": {
+        "PRESS": 54.859,
+        "LEVEL": 41.238,
+        "TEMP": 51.545,
+        "GAS_FLOW": 6.499,
+        "OIL_FLOW": 192.075
+      }
+    },
+    {
+      "timestamp": "2025-10-09 05:15:00Z",
+      "sensors": {
+        "PRESS": 54.105,
+        "LEVEL": 42.481,
+        "TEMP": 52.314,
+        "GAS_FLOW": 6.279,
+        "OIL_FLOW": 192.637
+      }
+    },
+    {
+      "timestamp": "2025-10-09 05:30:00Z",
+      "sensors": {
+        "PRESS": 52.515,
+        "LEVEL": 44.406,
+        "TEMP": 51.64,
+        "GAS_FLOW": 6.719,
+        "OIL_FLOW": 189.022
+      }
+    },
+    {
+      "timestamp": "2025-10-09 05:45:00Z",
+      "sensors": {
+        "PRESS": 51.647,
+        "LEVEL": 45.759,
+        "TEMP": 52.537,
+        "GAS_FLOW": 6.585,
+        "OIL_FLOW": 192.268
+      }
+    },
+    {
+      "timestamp": "2025-10-09 06:00:00Z",
+      "sensors": {
+        "PRESS": 51.048,
+        "LEVEL": 44.401,
+        "TEMP": 51.008,
+        "GAS_FLOW": 6.822,
+        "OIL_FLOW": 187.704
+      }
+    },
+    {
+      "timestamp": "2025-10-09 06:15:00Z",
+      "sensors": {
+        "PRESS": 52.89,
+        "LEVEL": 46.651,
+        "TEMP": 51.697,
+        "GAS_FLOW": 7.514,
+        "OIL_FLOW": 187.964
+      }
+    },
+    {
+      "timestamp": "2025-10-09 06:30:00Z",
+      "sensors": {
+        "PRESS": 52.911,
+        "LEVEL": 46.77,
+        "TEMP": 52.4,
+        "GAS_FLOW": 7.305,
+        "OIL_FLOW": 192.936
+      }
+    },
+    {
+      "timestamp": "2025-10-09 06:45:00Z",
+      "sensors": {
+        "PRESS": 54.21,
+        "LEVEL": 45.52,
+        "TEMP": 52.883,
+        "GAS_FLOW": 7.793,
+        "OIL_FLOW": 198.069
+      }
+    },
+    {
+      "timestamp": "2025-10-09 07:00:00Z",
+      "sensors": {
+        "PRESS": 53.912,
+        "LEVEL": 44.759,
+        "TEMP": 53.83,
+        "GAS_FLOW": 7.95,
+        "OIL_FLOW": 195.282
+      }
+    },
+    {
+      "timestamp": "2025-10-09 07:15:00Z",
+      "sensors": {
+        "PRESS": 53.736,
+        "LEVEL": 42.821,
+        "TEMP": 54.414,
+        "GAS_FLOW": 7.929,
+        "OIL_FLOW": 193.366
+      }
+    },
+    {
+      "timestamp": "2025-10-09 07:30:00Z",
+      "sensors": {
+        "PRESS": 52.79,
+        "LEVEL": 41.837,
+        "TEMP": 54.682,
+        "GAS_FLOW": 7.903,
+        "OIL_FLOW": 187.551
+      }
+    },
+    {
+      "timestamp": "2025-10-09 07:45:00Z",
+      "sensors": {
+        "PRESS": 51.545,
+        "LEVEL": 41.646,
+        "TEMP": 53.113,
+        "GAS_FLOW": 7.744,
+        "OIL_FLOW": 192.771
+      }
+    },
+    {
+      "timestamp": "2025-10-09 08:00:00Z",
+      "sensors": {
+        "PRESS": 51.362,
+        "LEVEL": 41.022,
+        "TEMP": 52.496,
+        "GAS_FLOW": 7.869,
+        "OIL_FLOW": 194.872
+      }
+    },
+    {
+      "timestamp": "2025-10-09 08:15:00Z",
+      "sensors": {
+        "PRESS": 51.663,
+        "LEVEL": 41.044,
+        "TEMP": 53.852,
+        "GAS_FLOW": 8.592,
+        "OIL_FLOW": 193.639
+      }
+    },
+    {
+      "timestamp": "2025-10-09 08:30:00Z",
+      "sensors": {
+        "PRESS": 50.832,
+        "LEVEL": 39.129,
+        "TEMP": 53.665,
+        "GAS_FLOW": 8.222,
+        "OIL_FLOW": 184.198
+      }
+    },
+    {
+      "timestamp": "2025-10-09 08:45:00Z",
+      "sensors": {
+        "PRESS": 51.172,
+        "LEVEL": 37.193,
+        "TEMP": 54.255,
+        "GAS_FLOW": 8.147,
+        "OIL_FLOW": 187.154
+      }
+    },
+    {
+      "timestamp": "2025-10-09 09:00:00Z",
+      "sensors": {
+        "PRESS": 51.255,
+        "LEVEL": 36.297,
+        "TEMP": 54.795,
+        "GAS_FLOW": 8.311,
+        "OIL_FLOW": 181.589
+      }
+    },
+    {
+      "timestamp": "2025-10-09 09:15:00Z",
+      "sensors": {
+        "PRESS": 51.596,
+        "LEVEL": 36.604,
+        "TEMP": 53.834,
+        "GAS_FLOW": 7.791,
+        "OIL_FLOW": 178.48
+      }
+    },
+    {
+      "timestamp": "2025-10-09 09:30:00Z",
+      "sensors": {
+        "PRESS": 52.036,
+        "LEVEL": 36.992,
+        "TEMP": 55.299,
+        "GAS_FLOW": 8.013,
+        "OIL_FLOW": 173.857
+      }
+    },
+    {
+      "timestamp": "2025-10-09 09:45:00Z",
+      "sensors": {
+        "PRESS": 52.041,
+        "LEVEL": 38.587,
+        "TEMP": 52.932,
+        "GAS_FLOW": 8.974,
+        "OIL_FLOW": 175.6
+      }
+    },
+    {
+      "timestamp": "2025-10-09 10:00:00Z",
+      "sensors": {
+        "PRESS": 51.726,
+        "LEVEL": 39.038,
+        "TEMP": 53.85,
+        "GAS_FLOW": 9.258,
+        "OIL_FLOW": 181.372
+      }
+    },
+    {
+      "timestamp": "2025-10-09 10:15:00Z",
+      "sensors": {
+        "PRESS": 51.592,
+        "LEVEL": 39.176,
+        "TEMP": 53.277,
+        "GAS_FLOW": 9.312,
+        "OIL_FLOW": 186.532
+      }
+    },
+    {
+      "timestamp": "2025-10-09 10:30:00Z",
+      "sensors": {
+        "PRESS": 51.078,
+        "LEVEL": 40.203,
+        "TEMP": 54.853,
+        "GAS_FLOW": 9.46,
+        "OIL_FLOW": 189.257
+      }
+    },
+    {
+      "timestamp": "2025-10-09 10:45:00Z",
+      "sensors": {
+        "PRESS": 50.302,
+        "LEVEL": 40.283,
+        "TEMP": 54.015,
+        "GAS_FLOW": 8.897,
+        "OIL_FLOW": 194.176
+      }
+    },
+    {
+      "timestamp": "2025-10-09 11:00:00Z",
+      "sensors": {
+        "PRESS": 49.652,
+        "LEVEL": 40.138,
+        "TEMP": 55.909,
+        "GAS_FLOW": 9.062,
+        "OIL_FLOW": 188.186
+      }
+    },
+    {
+      "timestamp": "2025-10-09 11:15:00Z",
+      "sensors": {
+        "PRESS": 49.372,
+        "LEVEL": 39.93,
+        "TEMP": 55.122,
+        "GAS_FLOW": 9.924,
+        "OIL_FLOW": 187.308
+      }
+    },
+    {
+      "timestamp": "2025-10-09 11:30:00Z",
+      "sensors": {
+        "PRESS": 47.851,
+        "LEVEL": 39.801,
+        "TEMP": 55.282,
+        "GAS_FLOW": 9.225,
+        "OIL_FLOW": 183.574
+      }
+    },
+    {
+      "timestamp": "2025-10-09 11:45:00Z",
+      "sensors": {
+        "PRESS": 47.641,
+        "LEVEL": 38.467,
+        "TEMP": 58.337,
+        "GAS_FLOW": 9.116,
+        "OIL_FLOW": 184.322
+      }
+    },
+    {
+      "timestamp": "2025-10-09 12:00:00Z",
+      "sensors": {
+        "PRESS": 48.107,
+        "LEVEL": 37.521,
+        "TEMP": 58.937,
+        "GAS_FLOW": 9.071,
+        "OIL_FLOW": 183.226
+      }
+    },
+    {
+      "timestamp": "2025-10-09 12:15:00Z",
+      "sensors": {
+        "PRESS": 48.436,
+        "LEVEL": 38.394,
+        "TEMP": 58.451,
+        "GAS_FLOW": 8.506,
+        "OIL_FLOW": 182.833
+      }
+    },
+    {
+      "timestamp": "2025-10-09 12:30:00Z",
+      "sensors": {
+        "PRESS": 48.752,
+        "LEVEL": 39.25,
+        "TEMP": 57.658,
+        "GAS_FLOW": 9.03,
+        "OIL_FLOW": 178.922
+      }
+    },
+    {
+      "timestamp": "2025-10-09 12:45:00Z",
+      "sensors": {
+        "PRESS": 47.89,
+        "LEVEL": 39.282,
+        "TEMP": 60.53,
+        "GAS_FLOW": 8.935,
+        "OIL_FLOW": 188.891
+      }
+    },
+    {
+      "timestamp": "2025-10-09 13:00:00Z",
+      "sensors": {
+        "PRESS": 48.5,
+        "LEVEL": 39.988,
+        "TEMP": 59.001,
+        "GAS_FLOW": 8.395,
+        "OIL_FLOW": 187.909
+      }
+    },
+    {
+      "timestamp": "2025-10-09 13:15:00Z",
+      "sensors": {
+        "PRESS": 48.281,
+        "LEVEL": 41.797,
+        "TEMP": 56.335,
+        "GAS_FLOW": 8.047,
+        "OIL_FLOW": 188.399
+      }
+    },
+    {
+      "timestamp": "2025-10-09 13:30:00Z",
+      "sensors": {
+        "PRESS": 47.479,
+        "LEVEL": 41.899,
+        "TEMP": 56.141,
+        "GAS_FLOW": 8.174,
+        "OIL_FLOW": 185.789
+      }
+    },
+    {
+      "timestamp": "2025-10-09 13:45:00Z",
+      "sensors": {
+        "PRESS": 47.204,
+        "LEVEL": 40.131,
+        "TEMP": 59.035,
+        "GAS_FLOW": 8.606,
+        "OIL_FLOW": 184.346
+      }
+    },
+    {
+      "timestamp": "2025-10-09 14:00:00Z",
+      "sensors": {
+        "PRESS": 46.778,
+        "LEVEL": 40.094,
+        "TEMP": 59.866,
+        "GAS_FLOW": 8.078,
+        "OIL_FLOW": 181.132
+      }
+    },
+    {
+      "timestamp": "2025-10-09 14:15:00Z",
+      "sensors": {
+        "PRESS": 47.321,
+        "LEVEL": 42.306,
+        "TEMP": 61.812,
+        "GAS_FLOW": 7.625,
+        "OIL_FLOW": 172.611
+      }
+    },
+    {
+      "timestamp": "2025-10-09 14:30:00Z",
+      "sensors": {
+        "PRESS": 48.345,
+        "LEVEL": 44.358,
+        "TEMP": 63.582,
+        "GAS_FLOW": 8.205,
+        "OIL_FLOW": 170.614
+      }
+    },
+    {
+      "timestamp": "2025-10-09 14:45:00Z",
+      "sensors": {
+        "PRESS": 46.92,
+        "LEVEL": 44.515,
+        "TEMP": 62.022,
+        "GAS_FLOW": 8.18,
+        "OIL_FLOW": 171.943
+      }
+    },
+    {
+      "timestamp": "2025-10-09 15:00:00Z",
+      "sensors": {
+        "PRESS": 46.007,
+        "LEVEL": 43.774,
+        "TEMP": 62.397,
+        "GAS_FLOW": 7.935,
+        "OIL_FLOW": 169.524
+      }
+    },
+    {
+      "timestamp": "2025-10-09 15:15:00Z",
+      "sensors": {
+        "PRESS": 46.263,
+        "LEVEL": 43.63,
+        "TEMP": 62.953,
+        "GAS_FLOW": 7.871,
+        "OIL_FLOW": 161.071
+      }
+    },
+    {
+      "timestamp": "2025-10-09 15:30:00Z",
+      "sensors": {
+        "PRESS": 47.13,
+        "LEVEL": 44.009,
+        "TEMP": 62.527,
+        "GAS_FLOW": 7.874,
+        "OIL_FLOW": 155.189
+      }
+    },
+    {
+      "timestamp": "2025-10-09 15:45:00Z",
+      "sensors": {
+        "PRESS": 45.238,
+        "LEVEL": 43.966,
+        "TEMP": 63.899,
+        "GAS_FLOW": 8.203,
+        "OIL_FLOW": 150.824
+      }
+    },
+    {
+      "timestamp": "2025-10-09 16:00:00Z",
+      "sensors": {
+        "PRESS": 45.523,
+        "LEVEL": 42.61,
+        "TEMP": 65.653,
+        "GAS_FLOW": 8.807,
+        "OIL_FLOW": 151.847
+      }
+    },
+    {
+      "timestamp": "2025-10-09 16:15:00Z",
+      "sensors": {
+        "PRESS": 45.879,
+        "LEVEL": 44.793,
+        "TEMP": 67.38,
+        "GAS_FLOW": 8.754,
+        "OIL_FLOW": 160.053
+      }
+    },
+    {
+      "timestamp": "2025-10-09 16:30:00Z",
+      "sensors": {
+        "PRESS": 45.252,
+        "LEVEL": 44.775,
+        "TEMP": 66.229,
+        "GAS_FLOW": 8.606,
+        "OIL_FLOW": 162.083
+      }
+    },
+    {
+      "timestamp": "2025-10-09 16:45:00Z",
+      "sensors": {
+        "PRESS": 47.826,
+        "LEVEL": 43.818,
+        "TEMP": 65.442,
+        "GAS_FLOW": 7.706,
+        "OIL_FLOW": 165.455
+      }
+    },
+    {
+      "timestamp": "2025-10-09 17:00:00Z",
+      "sensors": {
+        "PRESS": 48.222,
+        "LEVEL": 42.861,
+        "TEMP": 66.185,
+        "GAS_FLOW": 7.654,
+        "OIL_FLOW": 172.862
+      }
+    },
+    {
+      "timestamp": "2025-10-09 17:15:00Z",
+      "sensors": {
+        "PRESS": 46.084,
+        "LEVEL": 44.156,
+        "TEMP": 65.348,
+        "GAS_FLOW": 7.283,
+        "OIL_FLOW": 168.272
+      }
+    },
+    {
+      "timestamp": "2025-10-09 17:30:00Z",
+      "sensors": {
+        "PRESS": 46.358,
+        "LEVEL": 44.557,
+        "TEMP": 66.659,
+        "GAS_FLOW": 8.062,
+        "OIL_FLOW": 170.03
+      }
+    },
+    {
+      "timestamp": "2025-10-09 17:45:00Z",
+      "sensors": {
+        "PRESS": 44.751,
+        "LEVEL": 43.316,
+        "TEMP": 68.577,
+        "GAS_FLOW": 7.939,
+        "OIL_FLOW": 165.002
+      }
+    },
+    {
+      "timestamp": "2025-10-09 18:00:00Z",
+      "sensors": {
+        "PRESS": 44.012,
+        "LEVEL": 43.62,
+        "TEMP": 67.893,
+        "GAS_FLOW": 8.646,
+        "OIL_FLOW": 168.375
+      }
+    },
+    {
+      "timestamp": "2025-10-09 18:15:00Z",
+      "sensors": {
+        "PRESS": 43.776,
+        "LEVEL": 45.006,
+        "TEMP": 69.789,
+        "GAS_FLOW": 8.929,
+        "OIL_FLOW": 164.605
+      }
+    },
+    {
+      "timestamp": "2025-10-09 18:30:00Z",
+      "sensors": {
+        "PRESS": 44.971,
+        "LEVEL": 45.559,
+        "TEMP": 71.397,
+        "GAS_FLOW": 8.588,
+        "OIL_FLOW": 160.503
+      }
+    },
+    {
+      "timestamp": "2025-10-09 18:45:00Z",
+      "sensors": {
+        "PRESS": 44.62,
+        "LEVEL": 45.595,
+        "TEMP": 71.216,
+        "GAS_FLOW": 8.77,
+        "OIL_FLOW": 158.771
+      }
+    },
+    {
+      "timestamp": "2025-10-09 19:00:00Z",
+      "sensors": {
+        "PRESS": 44.433,
+        "LEVEL": 45.393,
+        "TEMP": 71.887,
+        "GAS_FLOW": 9.432,
+        "OIL_FLOW": 159.899
+      }
+    },
+    {
+      "timestamp": "2025-10-09 19:15:00Z",
+      "sensors": {
+        "PRESS": 43.159,
+        "LEVEL": 44.512,
+        "TEMP": 73.858,
+        "GAS_FLOW": 8.998,
+        "OIL_FLOW": 151.76
+      }
+    },
+    {
+      "timestamp": "2025-10-09 19:30:00Z",
+      "sensors": {
+        "PRESS": 43.098,
+        "LEVEL": 43.557,
+        "TEMP": 72.064,
+        "GAS_FLOW": 10.002,
+        "OIL_FLOW": 152.121
+      }
+    },
+    {
+      "timestamp": "2025-10-09 19:45:00Z",
+      "sensors": {
+        "PRESS": 43.344,
+        "LEVEL": 44.9,
+        "TEMP": 74.119,
+        "GAS_FLOW": 9.531,
+        "OIL_FLOW": 150.314
+      }
+    },
+    {
+      "timestamp": "2025-10-09 20:00:00Z",
+      "sensors": {
+        "PRESS": 43.968,
+        "LEVEL": 45.328,
+        "TEMP": 73.626,
+        "GAS_FLOW": 9.092,
+        "OIL_FLOW": 150.503
+      }
+    },
+    {
+      "timestamp": "2025-10-09 20:15:00Z",
+      "sensors": {
+        "PRESS": 45.632,
+        "LEVEL": 45.335,
+        "TEMP": 74.015,
+        "GAS_FLOW": 10.167,
+        "OIL_FLOW": 147.82
+      }
+    },
+    {
+      "timestamp": "2025-10-09 20:30:00Z",
+      "sensors": {
+        "PRESS": 44.675,
+        "LEVEL": 46.283,
+        "TEMP": 73.564,
+        "GAS_FLOW": 9.727,
+        "OIL_FLOW": 145.941
+      }
+    },
+    {
+      "timestamp": "2025-10-09 20:45:00Z",
+      "sensors": {
+        "PRESS": 47.622,
+        "LEVEL": 47.402,
+        "TEMP": 73.342,
+        "GAS_FLOW": 9.405,
+        "OIL_FLOW": 144.203
+      }
+    },
+    {
+      "timestamp": "2025-10-09 21:00:00Z",
+      "sensors": {
+        "PRESS": 49.399,
+        "LEVEL": 48.863,
+        "TEMP": 72.965,
+        "GAS_FLOW": 9.797,
+        "OIL_FLOW": 140.16
+      }
+    },
+    {
+      "timestamp": "2025-10-09 21:15:00Z",
+      "sensors": {
+        "PRESS": 51.78,
+        "LEVEL": 48.136,
+        "TEMP": 73.204,
+        "GAS_FLOW": 9.75,
+        "OIL_FLOW": 140.744
+      }
+    },
+    {
+      "timestamp": "2025-10-09 21:30:00Z",
+      "sensors": {
+        "PRESS": 50.949,
+        "LEVEL": 46.697,
+        "TEMP": 71.217,
+        "GAS_FLOW": 10.153,
+        "OIL_FLOW": 135.861
+      }
+    },
+    {
+      "timestamp": "2025-10-09 21:45:00Z",
+      "sensors": {
+        "PRESS": 50.356,
+        "LEVEL": 46.264,
+        "TEMP": 69.97,
+        "GAS_FLOW": 9.858,
+        "OIL_FLOW": 138.241
+      }
+    },
+    {
+      "timestamp": "2025-10-09 22:00:00Z",
+      "sensors": {
+        "PRESS": 48.549,
+        "LEVEL": 45.019,
+        "TEMP": 69.501,
+        "GAS_FLOW": 9.803,
+        "OIL_FLOW": 132.266
+      }
+    },
+    {
+      "timestamp": "2025-10-09 22:15:00Z",
+      "sensors": {
+        "PRESS": 48.176,
+        "LEVEL": 45.243,
+        "TEMP": 71.433,
+        "GAS_FLOW": 9.287,
+        "OIL_FLOW": 129.213
+      }
+    },
+    {
+      "timestamp": "2025-10-09 22:30:00Z",
+      "sensors": {
+        "PRESS": 49.851,
+        "LEVEL": 46.595,
+        "TEMP": 71.54,
+        "GAS_FLOW": 9.637,
+        "OIL_FLOW": 131.542
+      }
+    },
+    {
+      "timestamp": "2025-10-09 22:45:00Z",
+      "sensors": {
+        "PRESS": 48.95,
+        "LEVEL": 46.276,
+        "TEMP": 70.904,
+        "GAS_FLOW": 9.42,
+        "OIL_FLOW": 129.541
+      }
+    },
+    {
+      "timestamp": "2025-10-09 23:00:00Z",
+      "sensors": {
+        "PRESS": 50.296,
+        "LEVEL": 46.928,
+        "TEMP": 72.029,
+        "GAS_FLOW": 9.65,
+        "OIL_FLOW": 121.95
+      }
+    },
+    {
+      "timestamp": "2025-10-09 23:15:00Z",
+      "sensors": {
+        "PRESS": 50.634,
+        "LEVEL": 47.709,
+        "TEMP": 71.742,
+        "GAS_FLOW": 9.534,
+        "OIL_FLOW": 121.193
+      }
+    },
+    {
+      "timestamp": "2025-10-09 23:30:00Z",
+      "sensors": {
+        "PRESS": 50.861,
+        "LEVEL": 47.559,
+        "TEMP": 72.816,
+        "GAS_FLOW": 9.534,
+        "OIL_FLOW": 123.544
+      }
+    },
+    {
+      "timestamp": "2025-10-09 23:45:00Z",
+      "sensors": {
+        "PRESS": 51.191,
+        "LEVEL": 46.502,
+        "TEMP": 72.056,
+        "GAS_FLOW": 9.903,
+        "OIL_FLOW": 124.532
+      }
+    },
+    {
+      "timestamp": "2025-10-10 00:00:00Z",
+      "sensors": {
+        "PRESS": 51.709,
+        "LEVEL": 46.213,
+        "TEMP": 70.732,
+        "GAS_FLOW": 9.902,
+        "OIL_FLOW": 116.413
+      }
+    },
+    {
+      "timestamp": "2025-10-10 00:15:00Z",
+      "sensors": {
+        "PRESS": 52.798,
+        "LEVEL": 48.026,
+        "TEMP": 71.633,
+        "GAS_FLOW": 10.153,
+        "OIL_FLOW": 113.235
+      }
+    },
+    {
+      "timestamp": "2025-10-10 00:30:00Z",
+      "sensors": {
+        "PRESS": 52.872,
+        "LEVEL": 46.682,
+        "TEMP": 69.118,
+        "GAS_FLOW": 10.282,
+        "OIL_FLOW": 110.127
+      }
+    },
+    {
+      "timestamp": "2025-10-10 00:45:00Z",
+      "sensors": {
+        "PRESS": 53.389,
+        "LEVEL": 47.285,
+        "TEMP": 66.468,
+        "GAS_FLOW": 10.033,
+        "OIL_FLOW": 109.543
+      }
+    },
+    {
+      "timestamp": "2025-10-10 01:00:00Z",
+      "sensors": {
+        "PRESS": 54.347,
+        "LEVEL": 45.975,
+        "TEMP": 67.048,
+        "GAS_FLOW": 10.352,
+        "OIL_FLOW": 117.861
+      }
+    },
+    {
+      "timestamp": "2025-10-10 01:15:00Z",
+      "sensors": {
+        "PRESS": 53.948,
+        "LEVEL": 46.904,
+        "TEMP": 70.124,
+        "GAS_FLOW": 10.662,
+        "OIL_FLOW": 110.807
+      }
+    },
+    {
+      "timestamp": "2025-10-10 01:30:00Z",
+      "sensors": {
+        "PRESS": 54.575,
+        "LEVEL": 46.744,
+        "TEMP": 69.394,
+        "GAS_FLOW": 10.895,
+        "OIL_FLOW": 111.701
+      }
+    },
+    {
+      "timestamp": "2025-10-10 01:45:00Z",
+      "sensors": {
+        "PRESS": 53.106,
+        "LEVEL": 47.695,
+        "TEMP": 71.168,
+        "GAS_FLOW": 11.16,
+        "OIL_FLOW": 118.816
+      }
+    },
+    {
+      "timestamp": "2025-10-10 02:00:00Z",
+      "sensors": {
+        "PRESS": 52.518,
+        "LEVEL": 48.436,
+        "TEMP": 71.487,
+        "GAS_FLOW": 11.027,
+        "OIL_FLOW": 122.746
+      }
+    },
+    {
+      "timestamp": "2025-10-10 02:15:00Z",
+      "sensors": {
+        "PRESS": 52.299,
+        "LEVEL": 49.543,
+        "TEMP": 71.818,
+        "GAS_FLOW": 10.367,
+        "OIL_FLOW": 127.165
+      }
+    },
+    {
+      "timestamp": "2025-10-10 02:30:00Z",
+      "sensors": {
+        "PRESS": 53.825,
+        "LEVEL": 50.687,
+        "TEMP": 74.099,
+        "GAS_FLOW": 9.902,
+        "OIL_FLOW": 124.773
+      }
+    },
+    {
+      "timestamp": "2025-10-10 02:45:00Z",
+      "sensors": {
+        "PRESS": 53.037,
+        "LEVEL": 49.709,
+        "TEMP": 73.784,
+        "GAS_FLOW": 10.177,
+        "OIL_FLOW": 124.289
+      }
+    },
+    {
+      "timestamp": "2025-10-10 03:00:00Z",
+      "sensors": {
+        "PRESS": 52.642,
+        "LEVEL": 48.78,
+        "TEMP": 74.806,
+        "GAS_FLOW": 9.747,
+        "OIL_FLOW": 123.079
+      }
+    },
+    {
+      "timestamp": "2025-10-10 03:15:00Z",
+      "sensors": {
+        "PRESS": 51.754,
+        "LEVEL": 48.53,
+        "TEMP": 74.9,
+        "GAS_FLOW": 9.992,
+        "OIL_FLOW": 123.373
+      }
+    },
+    {
+      "timestamp": "2025-10-10 03:30:00Z",
+      "sensors": {
+        "PRESS": 51.81,
+        "LEVEL": 49.163,
+        "TEMP": 73.16,
+        "GAS_FLOW": 10.07,
+        "OIL_FLOW": 123.421
+      }
+    },
+    {
+      "timestamp": "2025-10-10 03:45:00Z",
+      "sensors": {
+        "PRESS": 52.913,
+        "LEVEL": 48.872,
+        "TEMP": 72.001,
+        "GAS_FLOW": 9.418,
+        "OIL_FLOW": 123.822
+      }
+    },
+    {
+      "timestamp": "2025-10-10 04:00:00Z",
+      "sensors": {
+        "PRESS": 53.662,
+        "LEVEL": 49.581,
+        "TEMP": 71.525,
+        "GAS_FLOW": 9.191,
+        "OIL_FLOW": 128.42
+      }
+    },
+    {
+      "timestamp": "2025-10-10 04:15:00Z",
+      "sensors": {
+        "PRESS": 52.65,
+        "LEVEL": 48.939,
+        "TEMP": 69.934,
+        "GAS_FLOW": 9.142,
+        "OIL_FLOW": 131.799
+      }
+    },
+    {
+      "timestamp": "2025-10-10 04:30:00Z",
+      "sensors": {
+        "PRESS": 52.678,
+        "LEVEL": 47.394,
+        "TEMP": 69.516,
+        "GAS_FLOW": 8.015,
+        "OIL_FLOW": 128.622
+      }
+    },
+    {
+      "timestamp": "2025-10-10 04:45:00Z",
+      "sensors": {
+        "PRESS": 50.872,
+        "LEVEL": 46.537,
+        "TEMP": 68.692,
+        "GAS_FLOW": 7.741,
+        "OIL_FLOW": 125.588
+      }
+    },
+    {
+      "timestamp": "2025-10-10 05:00:00Z",
+      "sensors": {
+        "PRESS": 51.097,
+        "LEVEL": 46.789,
+        "TEMP": 68.046,
+        "GAS_FLOW": 8.178,
+        "OIL_FLOW": 126.022
+      }
+    },
+    {
+      "timestamp": "2025-10-10 05:15:00Z",
+      "sensors": {
+        "PRESS": 50.075,
+        "LEVEL": 46.272,
+        "TEMP": 67.126,
+        "GAS_FLOW": 7.911,
+        "OIL_FLOW": 117.451
+      }
+    },
+    {
+      "timestamp": "2025-10-10 05:30:00Z",
+      "sensors": {
+        "PRESS": 49.993,
+        "LEVEL": 46.359,
+        "TEMP": 67.431,
+        "GAS_FLOW": 7.977,
+        "OIL_FLOW": 114.965
+      }
+    },
+    {
+      "timestamp": "2025-10-10 05:45:00Z",
+      "sensors": {
+        "PRESS": 48.752,
+        "LEVEL": 45.576,
+        "TEMP": 65.559,
+        "GAS_FLOW": 8.049,
+        "OIL_FLOW": 117.114
+      }
+    },
+    {
+      "timestamp": "2025-10-10 06:00:00Z",
+      "sensors": {
+        "PRESS": 49.909,
+        "LEVEL": 44.424,
+        "TEMP": 64.931,
+        "GAS_FLOW": 8.32,
+        "OIL_FLOW": 120.326
+      }
+    },
+    {
+      "timestamp": "2025-10-10 06:15:00Z",
+      "sensors": {
+        "PRESS": 49.579,
+        "LEVEL": 44.949,
+        "TEMP": 63.922,
+        "GAS_FLOW": 8.996,
+        "OIL_FLOW": 126.603
+      }
+    },
+    {
+      "timestamp": "2025-10-10 06:30:00Z",
+      "sensors": {
+        "PRESS": 50.01,
+        "LEVEL": 42.688,
+        "TEMP": 64.26,
+        "GAS_FLOW": 9.312,
+        "OIL_FLOW": 118.771
+      }
+    },
+    {
+      "timestamp": "2025-10-10 06:45:00Z",
+      "sensors": {
+        "PRESS": 50.178,
+        "LEVEL": 41.226,
+        "TEMP": 65.354,
+        "GAS_FLOW": 9.508,
+        "OIL_FLOW": 120.449
+      }
+    },
+    {
+      "timestamp": "2025-10-10 07:00:00Z",
+      "sensors": {
+        "PRESS": 50.856,
+        "LEVEL": 41.237,
+        "TEMP": 64.785,
+        "GAS_FLOW": 9.423,
+        "OIL_FLOW": 118.269
+      }
+    },
+    {
+      "timestamp": "2025-10-10 07:15:00Z",
+      "sensors": {
+        "PRESS": 50.539,
+        "LEVEL": 40.894,
+        "TEMP": 65.411,
+        "GAS_FLOW": 9.12,
+        "OIL_FLOW": 125.563
+      }
+    },
+    {
+      "timestamp": "2025-10-10 07:30:00Z",
+      "sensors": {
+        "PRESS": 50.892,
+        "LEVEL": 41.684,
+        "TEMP": 63.609,
+        "GAS_FLOW": 9.342,
+        "OIL_FLOW": 118.823
+      }
+    },
+    {
+      "timestamp": "2025-10-10 07:45:00Z",
+      "sensors": {
+        "PRESS": 48.96,
+        "LEVEL": 40.793,
+        "TEMP": 63.322,
+        "GAS_FLOW": 9.185,
+        "OIL_FLOW": 121.177
+      }
+    },
+    {
+      "timestamp": "2025-10-10 08:00:00Z",
+      "sensors": {
+        "PRESS": 47.606,
+        "LEVEL": 40.188,
+        "TEMP": 62.757,
+        "GAS_FLOW": 9.395,
+        "OIL_FLOW": 116.459
+      }
+    },
+    {
+      "timestamp": "2025-10-10 08:15:00Z",
+      "sensors": {
+        "PRESS": 48.306,
+        "LEVEL": 38.841,
+        "TEMP": 63.457,
+        "GAS_FLOW": 9.293,
+        "OIL_FLOW": 108.337
+      }
+    },
+    {
+      "timestamp": "2025-10-10 08:30:00Z",
+      "sensors": {
+        "PRESS": 49.272,
+        "LEVEL": 40.405,
+        "TEMP": 63.418,
+        "GAS_FLOW": 9.202,
+        "OIL_FLOW": 117.024
+      }
+    },
+    {
+      "timestamp": "2025-10-10 08:45:00Z",
+      "sensors": {
+        "PRESS": 49.614,
+        "LEVEL": 39.792,
+        "TEMP": 64.94,
+        "GAS_FLOW": 9.05,
+        "OIL_FLOW": 119.589
+      }
+    },
+    {
+      "timestamp": "2025-10-10 09:00:00Z",
+      "sensors": {
+        "PRESS": 50.628,
+        "LEVEL": 40.02,
+        "TEMP": 64.534,
+        "GAS_FLOW": 9.129,
+        "OIL_FLOW": 115.941
+      }
+    },
+    {
+      "timestamp": "2025-10-10 09:15:00Z",
+      "sensors": {
+        "PRESS": 51.089,
+        "LEVEL": 39.817,
+        "TEMP": 64.825,
+        "GAS_FLOW": 8.854,
+        "OIL_FLOW": 110.981
+      }
+    },
+    {
+      "timestamp": "2025-10-10 09:30:00Z",
+      "sensors": {
+        "PRESS": 50.183,
+        "LEVEL": 40.498,
+        "TEMP": 65.489,
+        "GAS_FLOW": 9.288,
+        "OIL_FLOW": 110.334
+      }
+    },
+    {
+      "timestamp": "2025-10-10 09:45:00Z",
+      "sensors": {
+        "PRESS": 49.551,
+        "LEVEL": 39.98,
+        "TEMP": 65.611,
+        "GAS_FLOW": 8.935,
+        "OIL_FLOW": 111.965
+      }
+    },
+    {
+      "timestamp": "2025-10-10 10:00:00Z",
+      "sensors": {
+        "PRESS": 49.94,
+        "LEVEL": 38.532,
+        "TEMP": 68.104,
+        "GAS_FLOW": 9.197,
+        "OIL_FLOW": 110.612
+      }
+    },
+    {
+      "timestamp": "2025-10-10 10:15:00Z",
+      "sensors": {
+        "PRESS": 49.984,
+        "LEVEL": 39.01,
+        "TEMP": 67.087,
+        "GAS_FLOW": 9.228,
+        "OIL_FLOW": 110.977
+      }
+    },
+    {
+      "timestamp": "2025-10-10 10:30:00Z",
+      "sensors": {
+        "PRESS": 48.104,
+        "LEVEL": 37.982,
+        "TEMP": 71.131,
+        "GAS_FLOW": 9.997,
+        "OIL_FLOW": 113.599
+      }
+    },
+    {
+      "timestamp": "2025-10-10 10:45:00Z",
+      "sensors": {
+        "PRESS": 49.302,
+        "LEVEL": 38.15,
+        "TEMP": 69.697,
+        "GAS_FLOW": 9.769,
+        "OIL_FLOW": 108.091
+      }
+    },
+    {
+      "timestamp": "2025-10-10 11:00:00Z",
+      "sensors": {
+        "PRESS": 50.054,
+        "LEVEL": 37.328,
+        "TEMP": 69.269,
+        "GAS_FLOW": 10.503,
+        "OIL_FLOW": 105.086
+      }
+    },
+    {
+      "timestamp": "2025-10-10 11:15:00Z",
+      "sensors": {
+        "PRESS": 50.849,
+        "LEVEL": 35.628,
+        "TEMP": 69.397,
+        "GAS_FLOW": 9.89,
+        "OIL_FLOW": 106.798
+      }
+    },
+    {
+      "timestamp": "2025-10-10 11:30:00Z",
+      "sensors": {
+        "PRESS": 49.925,
+        "LEVEL": 34.117,
+        "TEMP": 67.67,
+        "GAS_FLOW": 10.022,
+        "OIL_FLOW": 106.339
+      }
+    },
+    {
+      "timestamp": "2025-10-10 11:45:00Z",
+      "sensors": {
+        "PRESS": 49.817,
+        "LEVEL": 34.607,
+        "TEMP": 68.647,
+        "GAS_FLOW": 10.012,
+        "OIL_FLOW": 105.551
+      }
+    },
+    {
+      "timestamp": "2025-10-10 12:00:00Z",
+      "sensors": {
+        "PRESS": 48.577,
+        "LEVEL": 35.563,
+        "TEMP": 67.962,
+        "GAS_FLOW": 9.97,
+        "OIL_FLOW": 104.435
+      }
+    },
+    {
+      "timestamp": "2025-10-10 12:15:00Z",
+      "sensors": {
+        "PRESS": 48.18,
+        "LEVEL": 36.261,
+        "TEMP": 68.402,
+        "GAS_FLOW": 9.666,
+        "OIL_FLOW": 106.503
+      }
+    },
+    {
+      "timestamp": "2025-10-10 12:30:00Z",
+      "sensors": {
+        "PRESS": 47.3,
+        "LEVEL": 36.944,
+        "TEMP": 69.172,
+        "GAS_FLOW": 9.393,
+        "OIL_FLOW": 107.026
+      }
+    },
+    {
+      "timestamp": "2025-10-10 12:45:00Z",
+      "sensors": {
+        "PRESS": 47.877,
+        "LEVEL": 37.775,
+        "TEMP": 66.545,
+        "GAS_FLOW": 9.181,
+        "OIL_FLOW": 109.398
+      }
+    },
+    {
+      "timestamp": "2025-10-10 13:00:00Z",
+      "sensors": {
+        "PRESS": 48.697,
+        "LEVEL": 38.472,
+        "TEMP": 63.979,
+        "GAS_FLOW": 9.235,
+        "OIL_FLOW": 116.995
+      }
+    },
+    {
+      "timestamp": "2025-10-10 13:15:00Z",
+      "sensors": {
+        "PRESS": 48.461,
+        "LEVEL": 38.608,
+        "TEMP": 65.533,
+        "GAS_FLOW": 9.689,
+        "OIL_FLOW": 114.56
+      }
+    },
+    {
+      "timestamp": "2025-10-10 13:30:00Z",
+      "sensors": {
+        "PRESS": 47.094,
+        "LEVEL": 36.897,
+        "TEMP": 64.707,
+        "GAS_FLOW": 8.978,
+        "OIL_FLOW": 116.461
+      }
+    },
+    {
+      "timestamp": "2025-10-10 13:45:00Z",
+      "sensors": {
+        "PRESS": 48.353,
+        "LEVEL": 36.395,
+        "TEMP": 67.312,
+        "GAS_FLOW": 8.884,
+        "OIL_FLOW": 116.539
+      }
+    },
+    {
+      "timestamp": "2025-10-10 14:00:00Z",
+      "sensors": {
+        "PRESS": 49.083,
+        "LEVEL": 36.472,
+        "TEMP": 67.516,
+        "GAS_FLOW": 9.334,
+        "OIL_FLOW": 116.224
+      }
+    },
+    {
+      "timestamp": "2025-10-10 14:15:00Z",
+      "sensors": {
+        "PRESS": 48.56,
+        "LEVEL": 38.229,
+        "TEMP": 67.235,
+        "GAS_FLOW": 9.098,
+        "OIL_FLOW": 122.991
+      }
+    },
+    {
+      "timestamp": "2025-10-10 14:30:00Z",
+      "sensors": {
+        "PRESS": 48.965,
+        "LEVEL": 38.436,
+        "TEMP": 67.198,
+        "GAS_FLOW": 8.714,
+        "OIL_FLOW": 119.854
+      }
+    },
+    {
+      "timestamp": "2025-10-10 14:45:00Z",
+      "sensors": {
+        "PRESS": 48.936,
+        "LEVEL": 39.065,
+        "TEMP": 68.697,
+        "GAS_FLOW": 8.549,
+        "OIL_FLOW": 114.41
+      }
+    },
+    {
+      "timestamp": "2025-10-10 15:00:00Z",
+      "sensors": {
+        "PRESS": 48.898,
+        "LEVEL": 40.776,
+        "TEMP": 69.921,
+        "GAS_FLOW": 8.654,
+        "OIL_FLOW": 112.85
+      }
+    },
+    {
+      "timestamp": "2025-10-10 15:15:00Z",
+      "sensors": {
+        "PRESS": 49.272,
+        "LEVEL": 41.208,
+        "TEMP": 68.762,
+        "GAS_FLOW": 8.98,
+        "OIL_FLOW": 107.544
+      }
+    },
+    {
+      "timestamp": "2025-10-10 15:30:00Z",
+      "sensors": {
+        "PRESS": 49.26,
+        "LEVEL": 40.85,
+        "TEMP": 69.518,
+        "GAS_FLOW": 8.963,
+        "OIL_FLOW": 109.838
+      }
+    },
+    {
+      "timestamp": "2025-10-10 15:45:00Z",
+      "sensors": {
+        "PRESS": 49.449,
+        "LEVEL": 41.301,
+        "TEMP": 69.234,
+        "GAS_FLOW": 8.692,
+        "OIL_FLOW": 112.17
+      }
+    },
+    {
+      "timestamp": "2025-10-10 16:00:00Z",
+      "sensors": {
+        "PRESS": 48.514,
+        "LEVEL": 42.739,
+        "TEMP": 70.177,
+        "GAS_FLOW": 9.021,
+        "OIL_FLOW": 112.168
+      }
+    },
+    {
+      "timestamp": "2025-10-10 16:15:00Z",
+      "sensors": {
+        "PRESS": 47.289,
+        "LEVEL": 42.947,
+        "TEMP": 69.68,
+        "GAS_FLOW": 9.291,
+        "OIL_FLOW": 114.271
+      }
+    },
+    {
+      "timestamp": "2025-10-10 16:30:00Z",
+      "sensors": {
+        "PRESS": 47.592,
+        "LEVEL": 45.912,
+        "TEMP": 69.48,
+        "GAS_FLOW": 8.676,
+        "OIL_FLOW": 116.336
+      }
+    },
+    {
+      "timestamp": "2025-10-10 16:45:00Z",
+      "sensors": {
+        "PRESS": 48.06,
+        "LEVEL": 47.339,
+        "TEMP": 67.771,
+        "GAS_FLOW": 8.394,
+        "OIL_FLOW": 116.337
+      }
+    },
+    {
+      "timestamp": "2025-10-10 17:00:00Z",
+      "sensors": {
+        "PRESS": 48.802,
+        "LEVEL": 45.918,
+        "TEMP": 67.277,
+        "GAS_FLOW": 8.057,
+        "OIL_FLOW": 118.062
+      }
+    },
+    {
+      "timestamp": "2025-10-10 17:15:00Z",
+      "sensors": {
+        "PRESS": 46.241,
+        "LEVEL": 44.267,
+        "TEMP": 65.211,
+        "GAS_FLOW": 7.387,
+        "OIL_FLOW": 112.863
+      }
+    },
+    {
+      "timestamp": "2025-10-10 17:30:00Z",
+      "sensors": {
+        "PRESS": 46.695,
+        "LEVEL": 43.944,
+        "TEMP": 63.586,
+        "GAS_FLOW": 6.929,
+        "OIL_FLOW": 113.687
+      }
+    },
+    {
+      "timestamp": "2025-10-10 17:45:00Z",
+      "sensors": {
+        "PRESS": 45.591,
+        "LEVEL": 43.702,
+        "TEMP": 64.204,
+        "GAS_FLOW": 7.209,
+        "OIL_FLOW": 114.469
+      }
+    },
+    {
+      "timestamp": "2025-10-10 18:00:00Z",
+      "sensors": {
+        "PRESS": 45.694,
+        "LEVEL": 47.112,
+        "TEMP": 62.628,
+        "GAS_FLOW": 7.612,
+        "OIL_FLOW": 112.736
+      }
+    },
+    {
+      "timestamp": "2025-10-10 18:15:00Z",
+      "sensors": {
+        "PRESS": 47.278,
+        "LEVEL": 45.551,
+        "TEMP": 60.948,
+        "GAS_FLOW": 7.576,
+        "OIL_FLOW": 112.341
+      }
+    },
+    {
+      "timestamp": "2025-10-10 18:30:00Z",
+      "sensors": {
+        "PRESS": 47.824,
+        "LEVEL": 45.371,
+        "TEMP": 57.787,
+        "GAS_FLOW": 7.774,
+        "OIL_FLOW": 118.143
+      }
+    },
+    {
+      "timestamp": "2025-10-10 18:45:00Z",
+      "sensors": {
+        "PRESS": 49.006,
+        "LEVEL": 43.3,
+        "TEMP": 59.199,
+        "GAS_FLOW": 7.488,
+        "OIL_FLOW": 119.149
+      }
+    },
+    {
+      "timestamp": "2025-10-10 19:00:00Z",
+      "sensors": {
+        "PRESS": 48.985,
+        "LEVEL": 43.899,
+        "TEMP": 60.87,
+        "GAS_FLOW": 7.524,
+        "OIL_FLOW": 121.649
+      }
+    },
+    {
+      "timestamp": "2025-10-10 19:15:00Z",
+      "sensors": {
+        "PRESS": 51.128,
+        "LEVEL": 43.367,
+        "TEMP": 57.661,
+        "GAS_FLOW": 7.723,
+        "OIL_FLOW": 122.301
+      }
+    },
+    {
+      "timestamp": "2025-10-10 19:30:00Z",
+      "sensors": {
+        "PRESS": 51.847,
+        "LEVEL": 43.962,
+        "TEMP": 57.751,
+        "GAS_FLOW": 7.744,
+        "OIL_FLOW": 120.006
+      }
+    },
+    {
+      "timestamp": "2025-10-10 19:45:00Z",
+      "sensors": {
+        "PRESS": 52.732,
+        "LEVEL": 45.249,
+        "TEMP": 57.167,
+        "GAS_FLOW": 7.727,
+        "OIL_FLOW": 119.782
+      }
+    },
+    {
+      "timestamp": "2025-10-10 20:00:00Z",
+      "sensors": {
+        "PRESS": 51.264,
+        "LEVEL": 44.16,
+        "TEMP": 55.131,
+        "GAS_FLOW": 8.191,
+        "OIL_FLOW": 120.292
+      }
+    },
+    {
+      "timestamp": "2025-10-10 20:15:00Z",
+      "sensors": {
+        "PRESS": 52.592,
+        "LEVEL": 44.401,
+        "TEMP": 55.728,
+        "GAS_FLOW": 8.354,
+        "OIL_FLOW": 119.787
+      }
+    },
+    {
+      "timestamp": "2025-10-10 20:30:00Z",
+      "sensors": {
+        "PRESS": 52.953,
+        "LEVEL": 46.069,
+        "TEMP": 55.418,
+        "GAS_FLOW": 8.202,
+        "OIL_FLOW": 119.059
+      }
+    },
+    {
+      "timestamp": "2025-10-10 20:45:00Z",
+      "sensors": {
+        "PRESS": 52.562,
+        "LEVEL": 44.889,
+        "TEMP": 53.684,
+        "GAS_FLOW": 8.197,
+        "OIL_FLOW": 116.726
+      }
+    },
+    {
+      "timestamp": "2025-10-10 21:00:00Z",
+      "sensors": {
+        "PRESS": 52.997,
+        "LEVEL": 44.635,
+        "TEMP": 53.583,
+        "GAS_FLOW": 7.756,
+        "OIL_FLOW": 119.072
+      }
+    },
+    {
+      "timestamp": "2025-10-10 21:15:00Z",
+      "sensors": {
+        "PRESS": 52.704,
+        "LEVEL": 45.604,
+        "TEMP": 51.482,
+        "GAS_FLOW": 7.642,
+        "OIL_FLOW": 120.778
+      }
+    },
+    {
+      "timestamp": "2025-10-10 21:30:00Z",
+      "sensors": {
+        "PRESS": 53.207,
+        "LEVEL": 46.64,
+        "TEMP": 52.456,
+        "GAS_FLOW": 8.257,
+        "OIL_FLOW": 112.862
+      }
+    },
+    {
+      "timestamp": "2025-10-10 21:45:00Z",
+      "sensors": {
+        "PRESS": 52.088,
+        "LEVEL": 46.358,
+        "TEMP": 54.207,
+        "GAS_FLOW": 7.456,
+        "OIL_FLOW": 110.743
+      }
+    },
+    {
+      "timestamp": "2025-10-10 22:00:00Z",
+      "sensors": {
+        "PRESS": 52.484,
+        "LEVEL": 45.719,
+        "TEMP": 55.185,
+        "GAS_FLOW": 7.269,
+        "OIL_FLOW": 109.321
+      }
+    },
+    {
+      "timestamp": "2025-10-10 22:15:00Z",
+      "sensors": {
+        "PRESS": 53.074,
+        "LEVEL": 46.638,
+        "TEMP": 54.522,
+        "GAS_FLOW": 7.332,
+        "OIL_FLOW": 109.172
+      }
+    },
+    {
+      "timestamp": "2025-10-10 22:30:00Z",
+      "sensors": {
+        "PRESS": 54.784,
+        "LEVEL": 47.844,
+        "TEMP": 55.659,
+        "GAS_FLOW": 8.334,
+        "OIL_FLOW": 111.749
+      }
+    },
+    {
+      "timestamp": "2025-10-10 22:45:00Z",
+      "sensors": {
+        "PRESS": 56.211,
+        "LEVEL": 47.974,
+        "TEMP": 56.887,
+        "GAS_FLOW": 8.614,
+        "OIL_FLOW": 118.115
+      }
+    },
+    {
+      "timestamp": "2025-10-10 23:00:00Z",
+      "sensors": {
+        "PRESS": 55.995,
+        "LEVEL": 46.369,
+        "TEMP": 56.597,
+        "GAS_FLOW": 8.913,
+        "OIL_FLOW": 116.453
+      }
+    },
+    {
+      "timestamp": "2025-10-10 23:15:00Z",
+      "sensors": {
+        "PRESS": 55.391,
+        "LEVEL": 44.982,
+        "TEMP": 58.795,
+        "GAS_FLOW": 8.976,
+        "OIL_FLOW": 116.308
+      }
+    },
+    {
+      "timestamp": "2025-10-10 23:30:00Z",
+      "sensors": {
+        "PRESS": 54.581,
+        "LEVEL": 44.717,
+        "TEMP": 58.577,
+        "GAS_FLOW": 9.577,
+        "OIL_FLOW": 118.593
+      }
+    },
+    {
+      "timestamp": "2025-10-10 23:45:00Z",
+      "sensors": {
+        "PRESS": 54.884,
+        "LEVEL": 44.977,
+        "TEMP": 58.841,
+        "GAS_FLOW": 9.671,
+        "OIL_FLOW": 115.092
+      }
+    },
+    {
+      "timestamp": "2025-10-11 00:00:00Z",
+      "sensors": {
+        "PRESS": 54.934,
+        "LEVEL": 44.98,
+        "TEMP": 61.514,
+        "GAS_FLOW": 9.55,
+        "OIL_FLOW": 108.795
+      }
+    },
+    {
+      "timestamp": "2025-10-11 00:15:00Z",
+      "sensors": {
+        "PRESS": 54.642,
+        "LEVEL": 45.673,
+        "TEMP": 61.72,
+        "GAS_FLOW": 9.986,
+        "OIL_FLOW": 107.957
+      }
+    },
+    {
+      "timestamp": "2025-10-11 00:30:00Z",
+      "sensors": {
+        "PRESS": 54.897,
+        "LEVEL": 45.998,
+        "TEMP": 61.713,
+        "GAS_FLOW": 9.638,
+        "OIL_FLOW": 108.866
+      }
+    },
+    {
+      "timestamp": "2025-10-11 00:45:00Z",
+      "sensors": {
+        "PRESS": 55.487,
+        "LEVEL": 46.405,
+        "TEMP": 61.823,
+        "GAS_FLOW": 8.863,
+        "OIL_FLOW": 113.507
+      }
+    },
+    {
+      "timestamp": "2025-10-11 01:00:00Z",
+      "sensors": {
+        "PRESS": 54.853,
+        "LEVEL": 46.689,
+        "TEMP": 63.92,
+        "GAS_FLOW": 8.52,
+        "OIL_FLOW": 109.958
+      }
+    },
+    {
+      "timestamp": "2025-10-11 01:15:00Z",
+      "sensors": {
+        "PRESS": 53.153,
+        "LEVEL": 46.573,
+        "TEMP": 65.479,
+        "GAS_FLOW": 8.491,
+        "OIL_FLOW": 100.889
+      }
+    },
+    {
+      "timestamp": "2025-10-11 01:30:00Z",
+      "sensors": {
+        "PRESS": 54.939,
+        "LEVEL": 46.738,
+        "TEMP": 67.627,
+        "GAS_FLOW": 8.607,
+        "OIL_FLOW": 103.284
+      }
+    },
+    {
+      "timestamp": "2025-10-11 01:45:00Z",
+      "sensors": {
+        "PRESS": 53.573,
+        "LEVEL": 46.964,
+        "TEMP": 66.656,
+        "GAS_FLOW": 8.892,
+        "OIL_FLOW": 104.05
+      }
+    },
+    {
+      "timestamp": "2025-10-11 02:00:00Z",
+      "sensors": {
+        "PRESS": 53.452,
+        "LEVEL": 46.985,
+        "TEMP": 67.832,
+        "GAS_FLOW": 8.386,
+        "OIL_FLOW": 98.104
+      }
+    },
+    {
+      "timestamp": "2025-10-11 02:15:00Z",
+      "sensors": {
+        "PRESS": 53.21,
+        "LEVEL": 45.504,
+        "TEMP": 67.314,
+        "GAS_FLOW": 8.903,
+        "OIL_FLOW": 95.109
+      }
+    },
+    {
+      "timestamp": "2025-10-11 02:30:00Z",
+      "sensors": {
+        "PRESS": 53.198,
+        "LEVEL": 44.896,
+        "TEMP": 68.295,
+        "GAS_FLOW": 8.8,
+        "OIL_FLOW": 97.382
+      }
+    },
+    {
+      "timestamp": "2025-10-11 02:45:00Z",
+      "sensors": {
+        "PRESS": 52.765,
+        "LEVEL": 45.937,
+        "TEMP": 68.801,
+        "GAS_FLOW": 8.261,
+        "OIL_FLOW": 92.651
+      }
+    },
+    {
+      "timestamp": "2025-10-11 03:00:00Z",
+      "sensors": {
+        "PRESS": 54.301,
+        "LEVEL": 45.869,
+        "TEMP": 68.141,
+        "GAS_FLOW": 8.522,
+        "OIL_FLOW": 90.452
+      }
+    },
+    {
+      "timestamp": "2025-10-11 03:15:00Z",
+      "sensors": {
+        "PRESS": 53.143,
+        "LEVEL": 45.075,
+        "TEMP": 69.27,
+        "GAS_FLOW": 8.413,
+        "OIL_FLOW": 91.511
+      }
+    },
+    {
+      "timestamp": "2025-10-11 03:30:00Z",
+      "sensors": {
+        "PRESS": 54.543,
+        "LEVEL": 45.084,
+        "TEMP": 70.747,
+        "GAS_FLOW": 8.085,
+        "OIL_FLOW": 92.219
+      }
+    },
+    {
+      "timestamp": "2025-10-11 03:45:00Z",
+      "sensors": {
+        "PRESS": 55.109,
+        "LEVEL": 43.661,
+        "TEMP": 71.29,
+        "GAS_FLOW": 8.413,
+        "OIL_FLOW": 87.127
+      }
+    },
+    {
+      "timestamp": "2025-10-11 04:00:00Z",
+      "sensors": {
+        "PRESS": 55.405,
+        "LEVEL": 43.124,
+        "TEMP": 69.726,
+        "GAS_FLOW": 7.578,
+        "OIL_FLOW": 89.986
+      }
+    },
+    {
+      "timestamp": "2025-10-11 04:15:00Z",
+      "sensors": {
+        "PRESS": 56.06,
+        "LEVEL": 44.878,
+        "TEMP": 68.207,
+        "GAS_FLOW": 7.8,
+        "OIL_FLOW": 88.54
+      }
+    },
+    {
+      "timestamp": "2025-10-11 04:30:00Z",
+      "sensors": {
+        "PRESS": 57.519,
+        "LEVEL": 44.052,
+        "TEMP": 67.652,
+        "GAS_FLOW": 7.233,
+        "OIL_FLOW": 86.629
+      }
+    },
+    {
+      "timestamp": "2025-10-11 04:45:00Z",
+      "sensors": {
+        "PRESS": 56.463,
+        "LEVEL": 43.209,
+        "TEMP": 67.998,
+        "GAS_FLOW": 7.19,
+        "OIL_FLOW": 85.807
+      }
+    },
+    {
+      "timestamp": "2025-10-11 05:00:00Z",
+      "sensors": {
+        "PRESS": 55.718,
+        "LEVEL": 43.581,
+        "TEMP": 67.049,
+        "GAS_FLOW": 6.867,
+        "OIL_FLOW": 85.147
+      }
+    },
+    {
+      "timestamp": "2025-10-11 05:15:00Z",
+      "sensors": {
+        "PRESS": 56.493,
+        "LEVEL": 43.738,
+        "TEMP": 67.046,
+        "GAS_FLOW": 7.15,
+        "OIL_FLOW": 77.848
+      }
+    },
+    {
+      "timestamp": "2025-10-11 05:30:00Z",
+      "sensors": {
+        "PRESS": 55.985,
+        "LEVEL": 43.233,
+        "TEMP": 67.769,
+        "GAS_FLOW": 7.032,
+        "OIL_FLOW": 79.581
+      }
+    },
+    {
+      "timestamp": "2025-10-11 05:45:00Z",
+      "sensors": {
+        "PRESS": 55.485,
+        "LEVEL": 42.332,
+        "TEMP": 68.683,
+        "GAS_FLOW": 7.003,
+        "OIL_FLOW": 80.233
+      }
+    },
+    {
+      "timestamp": "2025-10-11 06:00:00Z",
+      "sensors": {
+        "PRESS": 55.966,
+        "LEVEL": 40.774,
+        "TEMP": 69.96,
+        "GAS_FLOW": 6.911,
+        "OIL_FLOW": 74.251
+      }
+    },
+    {
+      "timestamp": "2025-10-11 06:15:00Z",
+      "sensors": {
+        "PRESS": 56.099,
+        "LEVEL": 40.464,
+        "TEMP": 70.965,
+        "GAS_FLOW": 6.793,
+        "OIL_FLOW": 72.902
+      }
+    },
+    {
+      "timestamp": "2025-10-11 06:30:00Z",
+      "sensors": {
+        "PRESS": 55.815,
+        "LEVEL": 40.582,
+        "TEMP": 70.005,
+        "GAS_FLOW": 6.369,
+        "OIL_FLOW": 73.462
+      }
+    },
+    {
+      "timestamp": "2025-10-11 06:45:00Z",
+      "sensors": {
+        "PRESS": 55.49,
+        "LEVEL": 39.667,
+        "TEMP": 70.883,
+        "GAS_FLOW": 6.683,
+        "OIL_FLOW": 70.132
+      }
+    },
+    {
+      "timestamp": "2025-10-11 07:00:00Z",
+      "sensors": {
+        "PRESS": 56.565,
+        "LEVEL": 39.065,
+        "TEMP": 70.8,
+        "GAS_FLOW": 6.511,
+        "OIL_FLOW": 74.97
+      }
+    }
+  ]
+}
