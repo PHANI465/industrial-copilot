@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Wrench, AlertTriangle, Clock, ChevronDown, ChevronUp,
-  Filter, Calendar, Zap, Download, ClipboardList, FileWarning,
+  Filter, Calendar, Zap, Download, FileWarning,
   Bell, CheckCircle2, AlertCircle, Send, X, User, FileText,
-  Plus, Mail, ExternalLink, Database, Activity, Gauge, TrendingUp,
+  Plus, Mail, ExternalLink,
 } from "lucide-react";
 import Link from "next/link";
 import { useAlertStore, TECHNICIANS, type Alert, type WorkOrder, type Priority } from "@/lib/alert-store";
