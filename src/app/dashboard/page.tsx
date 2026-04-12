@@ -13,10 +13,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { AnalysisResult, AnomalyResult, SimulateResponse } from "@/lib/types";
 import {
   Activity, Radio, Shield, MessageSquare, AlertTriangle,
-  ChevronDown, ChevronUp, X, Filter, Download, Search, Gauge, Zap,
+  ChevronDown, ChevronUp, X, Filter, Download, Search, Gauge, Zap, Bell,
 } from "lucide-react";
 import { downloadCSV } from "@/lib/csv-export";
 import { StatusLED } from "@/components/IndustrialGauge";
+import { useAlertStore } from "@/lib/alert-store";
+import Link from "next/link";
 
 interface AssetEntry {
   tag: string;
@@ -78,6 +80,10 @@ export default function DashboardPage() {
   const [trendData, setTrendData] = useState<Record<string, TrendPoint[]>>({});
   const [alertLog, setAlertLog] = useState<AlertLogEntry[]>([]);
   const [staticTimeseriesTags, setStaticTimeseriesTags] = useState<string[]>([]);
+  
+  // Alert store for work order management
+  const { addAlert, alerts: storeAlerts } = useAlertStore();
+  const newAlertCount = storeAlerts.filter((a) => a.status === "NEW").length;
 
   const assetInfoMap = useMemo(() => {
     const map: Record<string, AssetInfo> = {};
@@ -158,13 +164,32 @@ export default function DashboardPage() {
               );
               return [...newEntries, ...prev].slice(0, MAX_ALERT_LOG);
             });
+            
+            // Add critical/warning alerts to the store for work order management
+            const criticalWarningAlerts = nonNormalAlerts.filter(
+              (a: AnomalyResult) => a.status === "CRITICAL" || a.status === "WARNING"
+            );
+            const assetInfo = assetInfoMap[asset];
+            for (const alert of criticalWarningAlerts) {
+              addAlert({
+                assetTag: asset,
+                assetName: assetInfo?.name || asset,
+                sensorId: alert.sensorId,
+                sensorType: alert.sensorType,
+                severity: alert.status as "CRITICAL" | "WARNING",
+                value: alert.value,
+                unit: alert.unit,
+                threshold: alert.threshold || 0,
+                reason: alert.reason,
+              });
+            }
           }
         }
       } catch {
         // silently retry on next tick
       }
     },
-    [scenario]
+    [scenario, addAlert, assetInfoMap]
   );
 
   useEffect(() => {
@@ -278,6 +303,18 @@ export default function DashboardPage() {
               {criticalAssets.length > 1 ? "require" : "requires"} immediate attention
             </p>
           </div>
+          <Link
+            href="/history"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-red-500/20 border border-red-500/40 text-red-200 text-sm font-medium hover:bg-red-500/30 transition-colors"
+          >
+            <Bell className="h-4 w-4" />
+            Go to Alerts
+            {newAlertCount > 0 && (
+              <span className="px-1.5 py-0.5 rounded-full bg-red-500 text-white text-xs font-bold">
+                {newAlertCount}
+              </span>
+            )}
+          </Link>
         </div>
       )}
 

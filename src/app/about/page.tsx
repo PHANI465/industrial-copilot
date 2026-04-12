@@ -830,6 +830,18 @@ export default function AboutPage() {
                   Mobile-responsive PWA for field technicians.
                 </p>
               </div>
+              <div className="p-3 rounded-lg bg-accent/20 border border-border/30 space-y-1">
+                <p className="font-medium text-foreground flex items-center gap-1.5">
+                  <ClipboardList className="h-3.5 w-3.5 text-emerald-400" />
+                  Alert &amp; Work Order Persistence
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  Currently alerts and work orders are stored in browser session storage for
+                  demonstration purposes. Production implementation would use a database (Supabase,
+                  PostgreSQL) to persist alerts, work orders, technician assignments, and audit
+                  trails across sessions and devices.
+                </p>
+              </div>
             </div>
           </CardContent>
         </Card>
