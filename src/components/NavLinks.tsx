@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Gauge, Sliders, ClipboardList, FileText } from "lucide-react";
+import { Gauge, Sliders, Bell, FileText } from "lucide-react";
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: Gauge },
   { href: "/simulator", label: "Simulator", icon: Sliders },
-  { href: "/history", label: "History", icon: ClipboardList },
+  { href: "/history", label: "Alerts", icon: Bell },
   { href: "/about", label: "About", icon: FileText },
 ];
 
