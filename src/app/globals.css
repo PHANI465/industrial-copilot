@@ -172,7 +172,19 @@
   );
 }
 
+/* Light theme - more visible stripes */
 .warning-stripes-subtle {
+  background: repeating-linear-gradient(
+    -45deg,
+    oklch(0.7 0.18 85 / 0.25) 0px,
+    oklch(0.7 0.18 85 / 0.25) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+/* Dark theme - subtle stripes */
+.dark .warning-stripes-subtle {
   background: repeating-linear-gradient(
     -45deg,
     oklch(0.7 0.18 85 / 0.15) 0px,
@@ -200,7 +212,16 @@
   background-size: 20px 20px;
 }
 
+/* Light theme grid */
 .industrial-grid-subtle {
+  background-image: 
+    linear-gradient(oklch(0.7 0.01 240 / 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(0.7 0.01 240 / 0.2) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Dark theme grid */
+.dark .industrial-grid-subtle {
   background-image: 
     linear-gradient(oklch(0.3 0.01 240 / 0.3) 1px, transparent 1px),
     linear-gradient(90deg, oklch(0.3 0.01 240 / 0.3) 1px, transparent 1px);
@@ -244,8 +265,17 @@
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
 }
 
-/* Steel plate texture */
+/* Steel plate texture - Light theme */
 .steel-plate {
+  background: 
+    linear-gradient(135deg, oklch(0.92 0.01 240) 0%, oklch(0.88 0.01 240) 50%, oklch(0.90 0.01 240) 100%);
+  box-shadow: 
+    inset 0 1px 0 oklch(0.98 0 0),
+    inset 0 -1px 0 oklch(0.82 0.01 240);
+}
+
+/* Steel plate texture - Dark theme */
+.dark .steel-plate {
   background: 
     linear-gradient(135deg, oklch(0.25 0.01 240) 0%, oklch(0.18 0.01 240) 50%, oklch(0.22 0.01 240) 100%);
   box-shadow: 
@@ -260,8 +290,17 @@
   transform: rotate(-90deg);
 }
 
-/* Industrial panel styling */
+/* Industrial panel styling - Light theme */
 .industrial-panel {
+  background: linear-gradient(180deg, oklch(0.98 0.005 240) 0%, oklch(0.95 0.008 240) 100%);
+  border: 1px solid oklch(0.85 0.01 240);
+  box-shadow: 
+    inset 0 1px 0 oklch(1 0 0),
+    0 2px 8px oklch(0 0 0 / 0.08);
+}
+
+/* Industrial panel styling - Dark theme */
+.dark .industrial-panel {
   background: linear-gradient(180deg, oklch(0.2 0.015 240) 0%, oklch(0.15 0.01 240) 100%);
   border: 1px solid oklch(0.3 0.02 240);
   box-shadow: 

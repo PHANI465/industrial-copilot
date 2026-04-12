@@ -49,11 +49,11 @@ export function IndustrialGauge({
     <div className={`relative ${sizeClasses[size].container} industrial-panel rounded-lg p-2`}>
       {/* Background arc */}
       <svg viewBox="0 0 100 60" className="w-full h-full">
-        {/* Outer ring */}
+        {/* Outer ring - uses CSS variable for theme support */}
         <path
           d="M 10 55 A 40 40 0 0 1 90 55"
           fill="none"
-          stroke="oklch(0.25 0.01 240)"
+          className="stroke-muted"
           strokeWidth="6"
           strokeLinecap="round"
         />
@@ -81,7 +81,7 @@ export function IndustrialGauge({
               y1={y1}
               x2={x2}
               y2={y2}
-              stroke="oklch(0.5 0.01 240)"
+              className="stroke-muted-foreground"
               strokeWidth="1"
             />
           );

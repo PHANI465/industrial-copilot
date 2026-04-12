@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
-import { Gauge, Sliders, ClipboardList, FileText, Flame } from "lucide-react";
+import { Gauge, Sliders, ClipboardList, FileText } from "lucide-react";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { OilDerrickIcon } from "@/components/icons/PlatformIcon";
 
 export const metadata: Metadata = {
   title: "Industrial AI Copilot",
@@ -18,8 +19,8 @@ function Nav() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         <Link href="/dashboard" className="flex items-center gap-3 group">
           <div className="relative">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center shadow-lg shadow-amber-500/20 group-hover:shadow-amber-500/30 transition-shadow border border-amber-400/30">
-              <Flame className="h-5 w-5 text-white" />
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-600 dark:to-slate-800 flex items-center justify-center shadow-lg shadow-slate-500/20 group-hover:shadow-primary/30 transition-shadow border border-slate-500/30">
+              <OilDerrickIcon className="h-5 w-5 text-amber-400" />
             </div>
             {/* LED indicator */}
             <div className="absolute -top-1 -right-1 led led-green" />

@@ -4,6 +4,7 @@ import {
   Gauge, Activity, Brain, Shield, AlertTriangle, Wrench,
   ChevronRight, Zap, Clock, BarChart3, FileText
 } from "lucide-react";
+import { OilDerrickIcon } from "@/components/icons/PlatformIcon";
 
 export default function Home() {
   return (
@@ -24,9 +25,10 @@ export default function Home() {
         
         <div className="relative px-4 sm:px-6 py-20 lg:py-32">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-medium mb-6">
+            <div className="inline-flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-800/80 dark:bg-slate-700/80 border border-slate-600/30 text-slate-100 text-xs font-medium mb-6 backdrop-blur-sm">
+              <OilDerrickIcon className="h-5 w-5 text-amber-400" />
+              <span className="font-mono tracking-wider">NORTH SEA PLATFORM ALPHA</span>
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              Live Monitoring Active
             </div>
             
             <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-balance">
