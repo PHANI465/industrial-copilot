@@ -355,7 +355,7 @@ export default function HistoryPage() {
         <div className="relative">
           <div className="flex items-center gap-2 mb-2">
             <div className="p-2 rounded-lg bg-primary/10 border border-primary/20">
-              <ClipboardList className="h-5 w-5 text-primary" />
+              <Bell className="h-5 w-5 text-primary" />
             </div>
             <span className="text-xs font-mono text-primary tracking-wider">OPERATIONS CENTER</span>
           </div>
