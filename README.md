@@ -2,6 +2,19 @@
 
 Next.js demo: live-style monitoring for a fictional North Sea facility (~95 assets, 175 sensors), rule-based anomaly detection, failure matching, SOP recommendations, and an AI chat (OpenAI) with TF‑IDF document retrieval.
 
+## Scalability & AWS Migration
+
+This application is built to scale from prototype to production. Currently deployed on Vercel with a Next.js full-stack architecture, it can be migrated to AWS for enterprise-scale operations:
+
+- **AWS Lambda** for event-driven processing and anomaly detection at scale
+- **AWS DynamoDB** for time-series sensor data (millions of readings per second)
+- **AWS RDS PostgreSQL** for alerts, work orders, and historical records
+- **AWS S3** for archiving and long-term data retention
+- **AWS EventBridge** for complex alert routing and orchestration
+- **Hybrid approach:** Keep frontend on Vercel/Amplify, move backend to AWS Lambda for cost-efficient auto-scaling
+
+Migration requires minimal code changes—API routes become Lambda functions, JSON storage becomes DynamoDB, and the frontend remains unchanged. Current setup handles 5 equipment streams; AWS version scales to thousands.
+
 ## Setup
 
 ```bash
